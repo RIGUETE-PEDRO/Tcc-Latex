@@ -1,0 +1,40 @@
+\changetocdepth {4}
+\vspace {15pt}
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Introdução}}{14}{chapter.1}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Referencial Teórico}}{15}{chapter.2}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Conclusão}}{16}{chapter.3}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Testes}}{17}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Dummy text com figuras}{17}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Tabelas e Quadros}{18}{subsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.1.1}Teste com referências}{19}{subsubsection.4.1.1.1}%
+\contentsline {paragraph}{\numberline {4.1.1.1.1}Equações e Códigos}{20}{paragraph.4.1.1.1.1}%
+\vspace {\cftbeforechapterskip }
+\renewcommand *{\cftappendixname }{AP\^ENDICE \space }
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{{\normalfont Explicação}}}{22}{appendix.A}%
+\cftinsert {AAA}
+\renewcommand *{\cftappendixname }{ANEXO \space }
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{{\normalfont Explicação}}}{23}{appendix.anexochapback.1}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{{\normalfont EasyReview}}}{24}{appendix.anexochapback.2}%
+\vspace {\cftbeforechapterskip }
