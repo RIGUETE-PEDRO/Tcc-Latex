@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.20)  20 APR 2026 22:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.20)  22 APR 2026 22:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1600,72 +1600,76 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 
 ] (pre_textuais/dedicatoria.tex) [3
 
-] (pre_textuais/agradecimentos.tex) [4
+]
+(pre_textuais/declaracaoAutor.tex [4
 
 
-] (pre_textuais/epigrafe.tex) [5
+]) (pre_textuais/agradecimentos.tex)
+[5
 
-] (pre_textuais/resumo.tex [6
 
-] [7
+] (pre_textuais/epigrafe.tex) [6
+
+] (pre_textuais/resumo.tex [7
+
+] [8
+
+]) (main.lof) [9
+
+] (main.lot) [10
+
+] (main.loq) [11
+
+] (pre_textuais/siglas.tex [12
+
 
 ])
-(main.lof) [8
-
-] (main.lot) [9
-
-] (main.loq) [10
-
-] (pre_textuais/siglas.tex [11
-
-
-])
-(pre_textuais/simbolos.tex [12
+(pre_textuais/simbolos.tex [13
 
 
 ]) (main.toc
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 23.
-) [13
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 24.
+) [14
 
 ] (textuais/introducao.tex
 Cap\'{\i }tulo 1.
-) (textuais/ref_teorico.tex [14
+) (textuais/ref_teorico.tex [15
 
 
 ]
 Cap\'{\i }tulo 2.
-) (textuais/conclusao.tex [15
+) (textuais/conclusao.tex [16
 
 ]
 Cap\'{\i }tulo 3.
-) (textuais/testes.tex [16
+) (textuais/testes.tex [17
 
 ]
 Cap\'{\i }tulo 4.
-<figuras/graduation.png, id=153, 752.8125pt x 401.5pt>
+<figuras/graduation.png, id=160, 752.8125pt x 401.5pt>
 File: figuras/graduation.png Graphic file (type png)
 <use figuras/graduation.png>
 Package pdftex.def Info: figuras/graduation.png  used on input line 14.
 (pdftex.def)             Requested size: 318.66948pt x 169.95827pt.
-<figuras/overleaf.png, id=154, 192.72pt x 192.72pt>
+<figuras/overleaf.png, id=161, 192.72pt x 192.72pt>
 File: figuras/overleaf.png Graphic file (type png)
 <use figuras/overleaf.png>
 Package pdftex.def Info: figuras/overleaf.png  used on input line 23.
 (pdftex.def)             Requested size: 136.57462pt x 136.57336pt.
-<figuras/latex.png, id=156, 696.6025pt x 293.095pt>
+<figuras/latex.png, id=163, 696.6025pt x 293.095pt>
 File: figuras/latex.png Graphic file (type png)
 <use figuras/latex.png>
 Package pdftex.def Info: figuras/latex.png  used on input line 25.
 (pdftex.def)             Requested size: 136.57462pt x 57.46411pt.
-<figuras/github.png, id=157, 1204.5pt x 1204.5pt>
+<figuras/github.png, id=164, 1204.5pt x 1204.5pt>
 File: figuras/github.png Graphic file (type png)
 <use figuras/github.png>
 Package pdftex.def Info: figuras/github.png  used on input line 27.
 (pdftex.def)             Requested size: 136.57462pt x 136.57558pt.
-[17
+[18
 
- <./figuras/graduation.png (PNG copy)>] [18 <./figuras/overleaf.png> <./figuras
+ <./figuras/graduation.png (PNG copy)>] [19 <./figuras/overleaf.png> <./figuras
 /latex.png> <./figuras/github.png>]
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 8
 6.
@@ -1679,38 +1683,38 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 
 
-LaTeX Warning: Citation `Goodfellow2016' on page 19 undefined on input line 86.
+LaTeX Warning: Citation `Goodfellow2016' on page 20 undefined on input line 86.
 
 
 
-LaTeX Warning: Citation `Ciresan2012' on page 19 undefined on input line 87.
+LaTeX Warning: Citation `Ciresan2012' on page 20 undefined on input line 87.
 
 
-LaTeX Warning: Citation `SMIRNOV201489' on page 19 undefined on input line 87.
+LaTeX Warning: Citation `SMIRNOV201489' on page 20 undefined on input line 87.
 
 
-LaTeX Warning: Citation `NBR6023:2000' on page 19 undefined on input line 88.
+LaTeX Warning: Citation `NBR6023:2000' on page 20 undefined on input line 88.
 
 
-LaTeX Warning: Citation `EHLINGER:2006:biblatex' on page 19 undefined on input 
+LaTeX Warning: Citation `EHLINGER:2006:biblatex' on page 20 undefined on input 
 line 88.
 
-[19]
+[20]
 (C:\Users\omega\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 110.
 
-(algoritmos/perceptron.py [20]))
+(algoritmos/perceptron.py [21]))
 No file main.bbl.
-(pos_textuais/apendice.tex [21]
+(pos_textuais/apendice.tex [22]
 AP\^ENDICE A.
-) (pos_textuais/anexo.tex [22
+) (pos_textuais/anexo.tex [23
 
 ]
 ANEXO A.
-) (pos_textuais/easyreview.tex [23
+) (pos_textuais/easyreview.tex [24
 
 ]
 ANEXO B.
@@ -1749,14 +1753,14 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
 
-[24
+[25
 
 ]
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
 ine 121.
 )
 No file main.ind.
-[25]
+[26]
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
@@ -1782,13 +1786,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 36841 strings out of 467691
- 662219 string characters out of 5414987
- 1497690 words of memory out of 5000000
- 64787 multiletter control sequences out of 15000+600000
- 690527 words of font info for 250 fonts, out of 8000000 for 9000
+ 36853 strings out of 467691
+ 662576 string characters out of 5414987
+ 1497741 words of memory out of 5000000
+ 64792 multiletter control sequences out of 15000+600000
+ 690590 words of font info for 251 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 119i,13n,127p,1003b,2432s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 119i,13n,127p,1003b,2434s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/omega/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmr10.pfb><C:/Users/omega/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
 onts/cm/cmsy10.pfb><C:/Users/omega/AppData/Local/Programs/MiKTeX/fonts/type1/ur
@@ -1798,9 +1802,9 @@ pe1/urw/helvetic/uhvro8a.pfb><C:/Users/omega/AppData/Local/Programs/MiKTeX/font
 s/type1/urw/symbol/usyr.pfb><C:/Users/omega/AppData/Local/Programs/MiKTeX/fonts
 /type1/urw/times/utmr8a.pfb><C:/Users/omega/AppData/Local/Programs/MiKTeX/fonts
 /type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (27 pages, 989873 bytes).
+Output written on main.pdf (28 pages, 991437 bytes).
 PDF statistics:
- 426 PDF objects out of 1000 (max. 8388607)
- 150 named destinations out of 1000 (max. 500000)
+ 433 PDF objects out of 1000 (max. 8388607)
+ 153 named destinations out of 1000 (max. 500000)
  73965 words of extra memory for PDF output out of 74296 (max. 10000000)
 
