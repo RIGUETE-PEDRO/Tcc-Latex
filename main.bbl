@@ -1,0 +1,18 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Dall'Oglio 2015]{DallOglio2015}
+\abntrefinfo{Dall'Oglio}{DALL'OGLIO}{2015}
+{DALL'OGLIO, P. \textbf{PHP Programando com Orientação a Objetos}. São
+  Paulo: NovatecEditora, 2015. 552~p.}
+
+\bibitem[Milani 2007]{milani2007}
+\abntrefinfo{Milani}{MILANI}{2007}
+{MILANI, A. \textbf{MySQL:Guia do Programador}. São Paulo: NovatecEditora,
+  2007. 400~p.}
+
+\end{thebibliography}

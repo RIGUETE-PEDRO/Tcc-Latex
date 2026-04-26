@@ -14,6 +14,10 @@
 \contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Introdução}}{15}{chapter.1}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Referencial Teórico}}{16}{chapter.2}%
+\contentsline {section}{\numberline {2.1}MySQL}{16}{section.2.1}%
+\contentsline {section}{\numberline {2.2}PHP}{16}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Laravel}{16}{section.2.3}%
+\contentsline {section}{\numberline {2.4}VsCode}{16}{section.2.4}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Conclusão}}{17}{chapter.3}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
@@ -23,19 +27,21 @@
 \contentsline {subsubsection}{\numberline {4.1.1.1}Teste com referências}{20}{subsubsection.4.1.1.1}%
 \contentsline {paragraph}{\numberline {4.1.1.1.1}Equações e Códigos}{21}{paragraph.4.1.1.1.1}%
 \vspace {\cftbeforechapterskip }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{23}{section*.24}%
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{{\normalfont Explicação}}}{23}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{{\normalfont Explicação}}}{24}{appendix.A}%
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{{\normalfont Explicação}}}{24}{appendix.anexochapback.1}%
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{{\normalfont Explicação}}}{25}{appendix.anexochapback.1}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{{\normalfont EasyReview}}}{25}{appendix.anexochapback.2}%
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{{\normalfont EasyReview}}}{26}{appendix.anexochapback.2}%
 \vspace {\cftbeforechapterskip }
