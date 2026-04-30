@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.23)  28 APR 2026 22:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.23)  29 APR 2026 22:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1332,51 +1332,81 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 
 ]) (main.toc
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 33.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 38.
 ) [14
 
 ] (textuais/introducao.tex
 Cap\'{\i }tulo 1.
-) (textuais/ref_teorico.tex [15
+) (textuais/objetivos.tex [15
 
 
 ]
 Cap\'{\i }tulo 2.
-[16
-
-]) (textuais/modelagem_de_sofware.tex [17]
-Cap\'{\i }tulo 3.
-) (textuais/conclusao.tex [18
+) (textuais/ref_teorico.tex [16
 
 ]
+Cap\'{\i }tulo 3.
+
+LaTeX Warning: Citation `milani2007' on page 17 undefined on input line 5.
+
+
+LaTeX Warning: Citation `milani2007' on page 17 undefined on input line 7.
+
+
+LaTeX Warning: Citation `DallOglio2015' on page 17 undefined on input line 10.
+
+
+LaTeX Warning: Citation `Laravel2025' on page 17 undefined on input line 13.
+
+
+LaTeX Warning: Citation `Ferreira2014' on page 17 undefined on input line 16.
+
+[17
+
+]
+
+LaTeX Warning: Citation `Ferreira2014' on page 18 undefined on input line 23.
+
+
+LaTeX Warning: Citation `blade2016' on page 18 undefined on input line 31.
+
+[18]
+
+LaTeX Warning: Citation `vscode2026' on page 19 undefined on input line 36.
+
+) (textuais/modelagem_de_sofware.tex [19]
 Cap\'{\i }tulo 4.
-) (textuais/testes.tex [19
+) (textuais/conclusao.tex [20
 
 ]
 Cap\'{\i }tulo 5.
-<figuras/graduation.png, id=199, 752.8125pt x 401.5pt>
+) (textuais/testes.tex [21
+
+]
+Cap\'{\i }tulo 6.
+<figuras/graduation.png, id=200, 752.8125pt x 401.5pt>
 File: figuras/graduation.png Graphic file (type png)
 <use figuras/graduation.png>
 Package pdftex.def Info: figuras/graduation.png  used on input line 14.
 (pdftex.def)             Requested size: 318.66948pt x 169.95827pt.
-<figuras/overleaf.png, id=200, 192.72pt x 192.72pt>
+<figuras/overleaf.png, id=201, 192.72pt x 192.72pt>
 File: figuras/overleaf.png Graphic file (type png)
 <use figuras/overleaf.png>
 Package pdftex.def Info: figuras/overleaf.png  used on input line 23.
 (pdftex.def)             Requested size: 136.57462pt x 136.57336pt.
-<figuras/latex.png, id=202, 696.6025pt x 293.095pt>
+<figuras/latex.png, id=203, 696.6025pt x 293.095pt>
 File: figuras/latex.png Graphic file (type png)
 <use figuras/latex.png>
 Package pdftex.def Info: figuras/latex.png  used on input line 25.
 (pdftex.def)             Requested size: 136.57462pt x 57.46411pt.
-<figuras/github.png, id=203, 1204.5pt x 1204.5pt>
+<figuras/github.png, id=204, 1204.5pt x 1204.5pt>
 File: figuras/github.png Graphic file (type png)
 <use figuras/github.png>
 Package pdftex.def Info: figuras/github.png  used on input line 27.
 (pdftex.def)             Requested size: 136.57462pt x 136.57558pt.
-[20
+[22
 
- <./figuras/graduation.png (PNG copy)>] [21 <./figuras/overleaf.png> <./figuras/latex.png> <./figuras/github.png>]
+ <./figuras/graduation.png (PNG copy)>] [23 <./figuras/overleaf.png> <./figuras/latex.png> <./figuras/github.png>]
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 86.
  (C:\Program Files\MiKTeX\tex/latex/psnfss\ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
@@ -1387,39 +1417,31 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 
 
-LaTeX Warning: Citation `Goodfellow2016' on page 22 undefined on input line 86.
+LaTeX Warning: Citation `Goodfellow2016' on page 24 undefined on input line 86.
 
 
-LaTeX Warning: Citation `Ciresan2012' on page 22 undefined on input line 87.
+LaTeX Warning: Citation `Ciresan2012' on page 24 undefined on input line 87.
 
 
-LaTeX Warning: Citation `SMIRNOV201489' on page 22 undefined on input line 87.
+LaTeX Warning: Citation `SMIRNOV201489' on page 24 undefined on input line 87.
 
 
-LaTeX Warning: Citation `NBR6023:2000' on page 22 undefined on input line 88.
+LaTeX Warning: Citation `NBR6023:2000' on page 24 undefined on input line 88.
 
 
-LaTeX Warning: Citation `EHLINGER:2006:biblatex' on page 22 undefined on input line 88.
+LaTeX Warning: Citation `EHLINGER:2006:biblatex' on page 24 undefined on input line 88.
 
-[22] (C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
+[24] (C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 110.
- (algoritmos/perceptron.py [23])) (main.bbl (main.brf)
-\tf@brf=\write6
-\openout6 = `main.brf'.
-
- [24]
-bibitemlist
-) (pos_textuais/apendice.tex [25
-
-]
+ (algoritmos/perceptron.py [25])) (main.bbl) (pos_textuais/apendice.tex [26]
 AP\^ENDICE A.
-) (pos_textuais/anexo.tex [26
+) (pos_textuais/anexo.tex [27
 
 ]
 ANEXO A.
-) (pos_textuais/easyreview.tex [27
+) (pos_textuais/easyreview.tex [28
 
 ]
 ANEXO B.
@@ -1448,24 +1470,24 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
- [28
+ [29
 
 ]
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 121.
 )
 No file main.ind.
-[29]
-\tf@lof=\write7
-\openout7 = `main.lof'.
+[30]
+\tf@lof=\write6
+\openout6 = `main.lof'.
 
-\tf@lot=\write8
-\openout8 = `main.lot'.
+\tf@lot=\write7
+\openout7 = `main.lot'.
 
-\tf@loq=\write9
-\openout9 = `main.loq'.
+\tf@loq=\write8
+\openout8 = `main.loq'.
 
-\tf@toc=\write10
-\openout10 = `main.toc'.
+\tf@toc=\write9
+\openout9 = `main.toc'.
 
  
 enddocument/afterlastpage (AED): lastpage setting LastPage.
@@ -1478,21 +1500,19 @@ L3 programming layer <2020/03/25>
 
 LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: 1969CD03F909F9DF95925262DEDBEA79;631.
  ) 
 Here is how much of TeX's memory you used:
- 36983 strings out of 467691
- 654698 string characters out of 5425054
- 1499589 words of memory out of 5000000
- 64869 multiletter control sequences out of 15000+600000
- 691554 words of font info for 268 fonts, out of 8000000 for 9000
+ 36935 strings out of 467691
+ 653915 string characters out of 5425054
+ 1497864 words of memory out of 5000000
+ 64828 multiletter control sequences out of 15000+600000
+ 691304 words of font info for 264 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  119i,13n,127p,1039b,2432s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (31 pages, 1005187 bytes).
+Output written on main.pdf (32 pages, 1006415 bytes).
 PDF statistics:
- 509 PDF objects out of 1000 (max. 8388607)
- 170 named destinations out of 1000 (max. 500000)
- 74037 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 513 PDF objects out of 1000 (max. 8388607)
+ 169 named destinations out of 1000 (max. 500000)
+ 74061 words of extra memory for PDF output out of 74296 (max. 10000000)
 

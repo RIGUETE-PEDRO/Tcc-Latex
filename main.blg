@@ -1,74 +1,47 @@
 This is BibTeX, Version 0.99e
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
-Reallocating 'name_of_file' (item size: 1) to 12 items.
-The style file: abntex2-alf.bst
-Reallocating 'name_of_file' (item size: 1) to 16 items.
-Reallocating 'name_of_file' (item size: 1) to 13 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'wiz_functions' (item size: 4) to 6000 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'wiz_functions' (item size: 4) to 9000 items.
-Database file #1: abntex2-options.bib
-Database file #2: bibliografia.bib
-Warning--I didn't find a database entry for "Goodfellow2016"
-Warning--I didn't find a database entry for "Ciresan2012"
-Warning--I didn't find a database entry for "SMIRNOV201489"
-Warning--I didn't find a database entry for "NBR6023:2000"
-Warning--I didn't find a database entry for "EHLINGER:2006:biblatex"
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'glb_str_end' (item size: 4) to 20 items.
-Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
-Reallocating 'global_strs' (item size: 1) to 4000000 items.
-+---------------------------------------------------------+
-| Estilo bibliográfico abntex2-alf.bst versão v-1.9.7           |
-| Em caso de dúvidas ou problemas com este estilo procure |
-| http://www.abntex.net.br/                               |
-+---------------------------------------------------------+
-You've used 8 entries,
-            6714 wiz_defined-function locations,
-            1233 strings with 9829 characters,
-and the built_in function-call counts, 3769 in all, are:
-= -- 381
-> -- 46
-< -- 1
-+ -- 65
-- -- 16
-* -- 189
-:= -- 525
-add.period$ -- 12
-call.type$ -- 9
-change.case$ -- 33
-chr.to.int$ -- 8
-cite$ -- 3
-duplicate$ -- 135
-empty$ -- 414
-format.name$ -- 69
-if$ -- 964
-int.to.chr$ -- 4
-int.to.str$ -- 1
-missing$ -- 108
-newline$ -- 20
-num.names$ -- 15
-pop$ -- 110
-preamble$ -- 1
-purify$ -- 24
+I found no \bibdata command---while reading file main.aux
+I found no \bibstyle command---while reading file main.aux
+You've used 5 entries,
+            0 wiz_defined-function locations,
+            88 strings with 573 characters,
+and the built_in function-call counts, 0 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 0
+:= -- 0
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 0
+format.name$ -- 0
+if$ -- 0
+int.to.chr$ -- 0
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 0
+num.names$ -- 0
+pop$ -- 0
+preamble$ -- 0
+purify$ -- 0
 quote$ -- 0
-skip$ -- 376
-stack$ -- 1
-substring$ -- 120
-swap$ -- 46
+skip$ -- 0
+stack$ -- 0
+substring$ -- 0
+swap$ -- 0
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 20
+while$ -- 0
 width$ -- 0
-write$ -- 53
-(There were 5 warnings)
+write$ -- 0
+(There were 2 error messages)
