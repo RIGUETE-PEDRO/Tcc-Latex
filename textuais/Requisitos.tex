@@ -1,0 +1,39 @@
+\chapter{Requisitos do Software}  
+
+\section{Requisitos Funcionais}
+Os requisitos funcionais de um sistema descrevem o que ele deve fazer, ou seja, os serviços e funcionalidades que o sistema deve fornecer aos usuários. Esses requisitos podem variar de descrições mais gerais até especificações detalhadas, incluindo entradas, saídas e comportamentos esperados do sistema.
+
+Quando expressos como requisitos de usuário, são apresentados de forma mais abstrata para facilitar o entendimento. Já em nível de sistema, tornam-se mais detalhados e técnicos. A imprecisão na definição desses requisitos pode gerar interpretações diferentes pelos desenvolvedores, causando problemas, retrabalho e aumento de custos.
+
+Em sistemas complexos, é difícil garantir que os requisitos funcionais sejam totalmente completos e consistentes, devido à grande quantidade de stakeholders e possíveis conflitos entre necessidades. Por isso, falhas ou omissões podem aparecer durante o desenvolvimento ou após a entrega do sistema \cite{Sommerville2011}.
+
+/*devo colocar os requisitos funcinais e minimos*/
+
+
+\section{Requisitos Não Funcionais}
+Os requisitos não funcionais não estão diretamente relacionados às funções específicas do sistema, mas às características de qualidade e restrições globais, como desempenho, confiabilidade, segurança, tempo de resposta e disponibilidade. Esses requisitos podem também envolver limitações de implementação, como tipos de dispositivos de entrada e saída e formas de representação de dados em interfaces com outros sistemas.
+
+Diferente dos requisitos funcionais, os requisitos não funcionais são críticos para o funcionamento adequado do sistema como um todo, pois sua falha pode comprometer toda a aplicação. Em alguns casos, sistemas podem até se tornar inviáveis, como em sistemas de aeronaves que dependem fortemente de confiabilidade e segurança.
+
+Além disso, esses requisitos são mais difíceis de serem associados a componentes específicos do sistema, pois sua implementação geralmente está distribuída em várias partes do software \cite{Sommerville2011}.
+
+\begin{table}[h]
+\centering
+\caption{Requisitos Não Funcionais do Sistema}
+\begin{tabular}{c p{12cm}}
+\hline
+\textbf{ID} & \textbf{Descrição} \\
+\hline
+
+RNF01 & O sistema deve suportar múltiplos usuários simultâneos. \\
+RNF02 & As senhas devem ser armazenadas de forma criptografada. \\
+RNF03 & O sistema deve funcionar 24 horas por dia, 7 dias por semana. \\
+RNF04 & O sistema deve funcionar em navegadores como Chrome, Firefox e Edge. \\
+RNF05 & O código do sistema deve ser organizado de forma a permitir atualizações sem impactar outras funcionalidades. \\
+RNF06 & O sistema deve permitir diferentes níveis de acesso (admin, atendente, entregador). \\
+RNF07 & O sistema deve registrar logs de todas as ações importantes realizadas pelos usuários. \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Requisitos Mínimos}

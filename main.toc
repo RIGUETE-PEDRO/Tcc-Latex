@@ -25,31 +25,39 @@
 \contentsline {section}{\numberline {3.5}GitHub}{18}{section.3.5}%
 \contentsline {section}{\numberline {3.6}Blade (Sistema de Templates)}{18}{section.3.6}%
 \contentsline {section}{\numberline {3.7}MICROSOFT VISUAL STUDIO CODE}{19}{section.3.7}%
-\contentsline {section}{\numberline {3.8}MVC(Model-View-Controller)}{19}{section.3.8}%
+\contentsline {section}{\numberline {3.8}Controle de Acesso Baseado em Funções (RBAC)}{19}{section.3.8}%
+\contentsline {section}{\numberline {3.9}MVC(Model-View-Controller)}{20}{section.3.9}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Modelagem de software}}{20}{chapter.4}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Requisitos do Software}}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Requisitos Funcionais}{21}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Requisitos Não Funcionais}{21}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Requisitos Mínimos}{22}{section.4.3}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Conclusão}}{21}{chapter.5}%
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Modelagem de software}}{23}{chapter.5}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Testes}}{22}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Dummy text com figuras}{22}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Tabelas e Quadros}{23}{subsection.6.1.1}%
-\contentsline {subsubsection}{\numberline {6.1.1.1}Teste com referências}{24}{subsubsection.6.1.1.1}%
-\contentsline {paragraph}{\numberline {6.1.1.1.1}Equações e Códigos}{25}{paragraph.6.1.1.1.1}%
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Conclusão}}{25}{chapter.6}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase []{Testes}}{26}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Dummy text com figuras}{26}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Tabelas e Quadros}{27}{subsection.7.1.1}%
+\contentsline {subsubsection}{\numberline {7.1.1.1}Teste com referências}{28}{subsubsection.7.1.1.1}%
+\contentsline {paragraph}{\numberline {7.1.1.1.1}Equações e Códigos}{29}{paragraph.7.1.1.1.1}%
 \vspace {\cftbeforechapterskip }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{31}{section*.24}%
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{{\normalfont Explicação}}}{27}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{{\normalfont Explicação}}}{32}{appendix.A}%
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{{\normalfont Explicação}}}{28}{appendix.anexochapback.1}%
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{{\normalfont Explicação}}}{33}{appendix.anexochapback.1}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{{\normalfont EasyReview}}}{29}{appendix.anexochapback.2}%
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{{\normalfont EasyReview}}}{34}{appendix.anexochapback.2}%
 \vspace {\cftbeforechapterskip }

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.23)  29 APR 2026 22:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.23)  4 MAY 2026 23:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -917,7 +917,15 @@ Package babel Info: 'brazil' activates 'portuges' shorthands.
 (babel)             Reported on input line 38.
  (C:\Program Files\MiKTeX\tex/latex/psnfss\helvet.sty
 Package: helvet 2020/03/25 PSNFSS-v9.3 (WaS) 
-) (easyReview.sty
+) (C:\Program Files\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+ (C:\Program Files\MiKTeX\tex/latex/pdflscape\pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
+ (C:\Program Files\MiKTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)) (easyReview.sty
 Package: easyReview 2014/06/27 Package for Easy Review on LaTeX documents
  (C:\Program Files\MiKTeX\tex/generic/soul\soul.sty
 Package: soul 2026-03-06 v3.2 Permit use of UTF-8 characters in soul (HO)
@@ -1210,15 +1218,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
- (C:\Program Files\MiKTeX\tex/latex/pdflscape\pdflscape.sty
-Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
- (C:\Program Files\MiKTeX\tex/latex/pdflscape\pdflscape-nometadata.sty
-Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
- (C:\Program Files\MiKTeX\tex/latex/graphics\lscape.sty
-Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
-)
-Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-))
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1332,7 +1332,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 
 ]) (main.toc
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 38.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 44.
 ) [14
 
 ] (textuais/introducao.tex
@@ -1342,106 +1342,112 @@ Cap\'{\i }tulo 1.
 
 ]
 Cap\'{\i }tulo 2.
-) (textuais/ref_teorico.tex [16
-
-]
-Cap\'{\i }tulo 3.
-
-LaTeX Warning: Citation `milani2007' on page 17 undefined on input line 5.
-
-
-LaTeX Warning: Citation `milani2007' on page 17 undefined on input line 7.
-
-
-LaTeX Warning: Citation `DallOglio2015' on page 17 undefined on input line 10.
-
-
-LaTeX Warning: Citation `Laravel2025' on page 17 undefined on input line 13.
-
-
-LaTeX Warning: Citation `Ferreira2014' on page 17 undefined on input line 16.
-
-[17
-
-]
-
-LaTeX Warning: Citation `Ferreira2014' on page 18 undefined on input line 23.
-
-
-LaTeX Warning: Citation `blade2016' on page 18 undefined on input line 31.
-
-[18]
-
-LaTeX Warning: Citation `vscode2026' on page 19 undefined on input line 36.
-
-) (textuais/modelagem_de_sofware.tex [19]
-Cap\'{\i }tulo 4.
-) (textuais/conclusao.tex [20
-
-]
-Cap\'{\i }tulo 5.
-) (textuais/testes.tex [21
-
-]
-Cap\'{\i }tulo 6.
-<figuras/graduation.png, id=200, 752.8125pt x 401.5pt>
-File: figuras/graduation.png Graphic file (type png)
-<use figuras/graduation.png>
-Package pdftex.def Info: figuras/graduation.png  used on input line 14.
-(pdftex.def)             Requested size: 318.66948pt x 169.95827pt.
-<figuras/overleaf.png, id=201, 192.72pt x 192.72pt>
-File: figuras/overleaf.png Graphic file (type png)
-<use figuras/overleaf.png>
-Package pdftex.def Info: figuras/overleaf.png  used on input line 23.
-(pdftex.def)             Requested size: 136.57462pt x 136.57336pt.
-<figuras/latex.png, id=203, 696.6025pt x 293.095pt>
-File: figuras/latex.png Graphic file (type png)
-<use figuras/latex.png>
-Package pdftex.def Info: figuras/latex.png  used on input line 25.
-(pdftex.def)             Requested size: 136.57462pt x 57.46411pt.
-<figuras/github.png, id=204, 1204.5pt x 1204.5pt>
-File: figuras/github.png Graphic file (type png)
-<use figuras/github.png>
-Package pdftex.def Info: figuras/github.png  used on input line 27.
-(pdftex.def)             Requested size: 136.57462pt x 136.57558pt.
-[22
-
- <./figuras/graduation.png (PNG copy)>] [23 <./figuras/overleaf.png> <./figuras/latex.png> <./figuras/github.png>]
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 86.
- (C:\Program Files\MiKTeX\tex/latex/psnfss\ts1phv.fd
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 9.
+(C:\Program Files\MiKTeX\tex/latex/psnfss\ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `phv' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+) (textuais/ref_teorico.tex [16
+
+]
+Cap\'{\i }tulo 3.
+[17
+
+] [18]
+
+Package hyperref Warning: Suppressing empty link on input line 42.
 
 
-LaTeX Warning: Citation `Goodfellow2016' on page 24 undefined on input line 86.
+Package hyperref Warning: Suppressing empty link on input line 46.
+
+[19]) (textuais/Requisitos.tex [20]
+Cap\'{\i }tulo 4.
+[21
+
+]) (textuais/modelagem_de_sofware.tex [22]
+Cap\'{\i }tulo 5.
+[23
+
+]
+<flashfood fisico.png, id=255, 1594.95876pt x 1272.755pt>
+File: flashfood fisico.png Graphic file (type png)
+<use flashfood fisico.png>
+Package pdftex.def Info: flashfood fisico.png  used on input line 7.
+(pdftex.def)             Requested size: 667.64177pt x 532.76677pt.
 
 
-LaTeX Warning: Citation `Ciresan2012' on page 24 undefined on input line 87.
+LaTeX Warning: Float too large for page by 109.19263pt on input line 9.
+
+[24 <./flashfood fisico.png>]) (textuais/conclusao.tex
+Cap\'{\i }tulo 6.
+) (textuais/testes.tex [25
 
 
-LaTeX Warning: Citation `SMIRNOV201489' on page 24 undefined on input line 87.
 
 
-LaTeX Warning: Citation `NBR6023:2000' on page 24 undefined on input line 88.
+
+]
+Cap\'{\i }tulo 7.
+<figuras/graduation.png, id=264, 752.8125pt x 401.5pt>
+File: figuras/graduation.png Graphic file (type png)
+<use figuras/graduation.png>
+Package pdftex.def Info: figuras/graduation.png  used on input line 14.
+(pdftex.def)             Requested size: 318.66948pt x 169.95827pt.
+<figuras/overleaf.png, id=265, 192.72pt x 192.72pt>
+File: figuras/overleaf.png Graphic file (type png)
+<use figuras/overleaf.png>
+Package pdftex.def Info: figuras/overleaf.png  used on input line 23.
+(pdftex.def)             Requested size: 136.57462pt x 136.57336pt.
+<figuras/latex.png, id=267, 696.6025pt x 293.095pt>
+File: figuras/latex.png Graphic file (type png)
+<use figuras/latex.png>
+Package pdftex.def Info: figuras/latex.png  used on input line 25.
+(pdftex.def)             Requested size: 136.57462pt x 57.46411pt.
+<figuras/github.png, id=268, 1204.5pt x 1204.5pt>
+File: figuras/github.png Graphic file (type png)
+<use figuras/github.png>
+Package pdftex.def Info: figuras/github.png  used on input line 27.
+(pdftex.def)             Requested size: 136.57462pt x 136.57558pt.
+[26
+
+ <./figuras/graduation.png (PNG copy)>] [27 <./figuras/overleaf.png> <./figuras/latex.png> <./figuras/github.png>]
+
+LaTeX Warning: Citation `Goodfellow2016' on page 28 undefined on input line 86.
 
 
-LaTeX Warning: Citation `EHLINGER:2006:biblatex' on page 24 undefined on input line 88.
+LaTeX Warning: Citation `Ciresan2012' on page 28 undefined on input line 87.
 
-[24] (C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
+
+LaTeX Warning: Citation `SMIRNOV201489' on page 28 undefined on input line 87.
+
+
+LaTeX Warning: Citation `NBR6023:2000' on page 28 undefined on input line 88.
+
+
+LaTeX Warning: Citation `EHLINGER:2006:biblatex' on page 28 undefined on input line 88.
+
+[28] (C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 110.
- (algoritmos/perceptron.py [25])) (main.bbl) (pos_textuais/apendice.tex [26]
+ (algoritmos/perceptron.py [29])) (main.bbl (main.brf)
+\tf@brf=\write6
+\openout6 = `main.brf'.
+
+ [30]
+bibitemlist
+) (pos_textuais/apendice.tex [31
+
+]
 AP\^ENDICE A.
-) (pos_textuais/anexo.tex [27
+) (pos_textuais/anexo.tex [32
 
 ]
 ANEXO A.
-) (pos_textuais/easyreview.tex [28
+) (pos_textuais/easyreview.tex [33
 
 ]
 ANEXO B.
@@ -1470,24 +1476,24 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
- [29
+ [34
 
 ]
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 121.
 )
 No file main.ind.
-[30]
-\tf@lof=\write6
-\openout6 = `main.lof'.
+[35]
+\tf@lof=\write7
+\openout7 = `main.lof'.
 
-\tf@lot=\write7
-\openout7 = `main.lot'.
+\tf@lot=\write8
+\openout8 = `main.lot'.
 
-\tf@loq=\write8
-\openout8 = `main.loq'.
+\tf@loq=\write9
+\openout9 = `main.loq'.
 
-\tf@toc=\write9
-\openout9 = `main.toc'.
+\tf@toc=\write10
+\openout10 = `main.toc'.
 
  
 enddocument/afterlastpage (AED): lastpage setting LastPage.
@@ -1500,19 +1506,21 @@ L3 programming layer <2020/03/25>
 
 LaTeX Warning: There were undefined references.
 
+Package rerunfilecheck Info: File `main.brf' has not changed.
+(rerunfilecheck)             Checksum: F9E1214FFAAA7DF22B6504FFEDEC0FAD;966.
  ) 
 Here is how much of TeX's memory you used:
- 36935 strings out of 467691
- 653915 string characters out of 5425054
- 1497864 words of memory out of 5000000
- 64828 multiletter control sequences out of 15000+600000
- 691304 words of font info for 264 fonts, out of 8000000 for 9000
+ 37109 strings out of 467691
+ 656677 string characters out of 5425054
+ 1501008 words of memory out of 5000000
+ 64943 multiletter control sequences out of 15000+600000
+ 692568 words of font info for 284 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  119i,13n,127p,1039b,2432s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (32 pages, 1006415 bytes).
+Output written on main.pdf (37 pages, 1134753 bytes).
 PDF statistics:
- 513 PDF objects out of 1000 (max. 8388607)
- 169 named destinations out of 1000 (max. 500000)
- 74061 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 613 PDF objects out of 1000 (max. 8388607)
+ 192 named destinations out of 1000 (max. 500000)
+ 74114 words of extra memory for PDF output out of 74296 (max. 10000000)
 

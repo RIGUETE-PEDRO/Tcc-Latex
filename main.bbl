@@ -1,0 +1,55 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Dall'Oglio 2015]{DallOglio2015}
+\abntrefinfo{Dall'Oglio}{DALL'OGLIO}{2015}
+{DALL'OGLIO, P. \textbf{PHP Programando com Orientação a Objetos}. São
+  Paulo: NovatecEditora, 2015. 552~p.}
+
+\bibitem[Ferreira 2014]{Ferreira2014}
+\abntrefinfo{Ferreira}{FERREIRA}{2014}
+{FERREIRA, R. \textbf{Controlando Versões com Git e GitHub}. [S.l.]: Casa do
+  Codigo, 2014. 199~p.}
+
+\bibitem[{IBM}]{ibm_rbac}
+\abntrefinfo{{IBM}}{{IBM}}{}
+{{IBM}. \textbf{O que é controle de acesso baseado em função (RBAC)?}
+Acesso em: 30 abr. 2026.
+Dispon{\'\i}vel em: \url{https://www.ibm.com/}.}
+
+\bibitem[Luciano 2016]{blade2016}
+\abntrefinfo{Luciano}{LUCIANO}{2016}
+{LUCIANO. \textbf{Blade Engine: Utilizando templates no Laravel}. 2016.
+Acesso em: 29 abr. 2026.
+Dispon{\'\i}vel em:
+  \url{https://www.devmedia.com.br/blade-engine-utilizando-templates-no-laravel/36749}.}
+
+\bibitem[Milani 2007]{milani2007}
+\abntrefinfo{Milani}{MILANI}{2007}
+{MILANI, A. \textbf{MySQL:Guia do Programador}. São Paulo: NovatecEditora,
+  2007. 400~p.}
+
+\bibitem[N.Ricardo 2025]{Laravel2025}
+\abntrefinfo{N.Ricardo}{N.RICARDO}{2025}
+{N.RICARDO. \textbf{O que é Laravel: principais recursos, onde usar e
+  vantagens do framework PHP}. 2025.
+Acesso em: 29 abr. 2026.
+Dispon{\'\i}vel em:
+  \url{https://www.hostinger.com/br/tutoriais/o-que-e-laravel}.}
+
+\bibitem[Sommerville 2011]{Sommerville2011}
+\abntrefinfo{Sommerville}{SOMMERVILLE}{2011}
+{SOMMERVILLE, I. \textbf{Engenharia de Software}. 9. ed. São Paulo: [s.n.],
+  2011. Revisão técnica de Kechi Hirama.}
+
+\bibitem[{Wikipédia} 2026]{vscode2026}
+\abntrefinfo{{Wikipédia}}{{Wikipédia}}{2026}
+{{Wikipédia}. \textbf{Visual Studio Code}. 2026.
+Acesso em: 29 abr. 2026.
+Dispon{\'\i}vel em: \url{https://pt.wikipedia.org/wiki/Visual\_Studio\_Code}.}
+
+\end{thebibliography}
