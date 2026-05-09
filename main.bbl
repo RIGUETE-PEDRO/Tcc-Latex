@@ -46,6 +46,12 @@ Dispon{\'\i}vel em:
 {SOMMERVILLE, I. \textbf{Engenharia de Software}. 9. ed. São Paulo: [s.n.],
   2011. Revisão técnica de Kechi Hirama.}
 
+\bibitem[Vitalino e Castro 2018]{vitalino2018docker}
+\abntrefinfo{Vitalino e Castro}{VITALINO; CASTRO}{2018}
+{VITALINO, J. F.~N.; CASTRO, M. A.~N. \textbf{Descomplicando o Docker}. 2ª
+  edição. ed. Rio de Janeiro: Brasport, 2018.
+ISBN 978-85-7452-902-8.}
+
 \bibitem[{Wikipédia} 2026]{vscode2026}
 \abntrefinfo{{Wikipédia}}{{Wikipédia}}{2026}
 {{Wikipédia}. \textbf{Visual Studio Code}. 2026.

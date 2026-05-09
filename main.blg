@@ -37,45 +37,45 @@ Warning--campo year vazio ou faltando em ibm_rbac
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 13 entries,
+You've used 14 entries,
             6714 wiz_defined-function locations,
-            1261 strings with 10468 characters,
-and the built_in function-call counts, 10706 in all, are:
-= -- 1228
-> -- 122
-< -- 206
-+ -- 294
-- -- 41
-* -- 572
-:= -- 1378
-add.period$ -- 36
-call.type$ -- 14
-change.case$ -- 69
-chr.to.int$ -- 16
-cite$ -- 9
-duplicate$ -- 896
-empty$ -- 704
-format.name$ -- 184
-if$ -- 2324
+            1269 strings with 10629 characters,
+and the built_in function-call counts, 11550 in all, are:
+= -- 1298
+> -- 155
+< -- 207
++ -- 306
+- -- 51
+* -- 631
+:= -- 1488
+add.period$ -- 41
+call.type$ -- 15
+change.case$ -- 80
+chr.to.int$ -- 20
+cite$ -- 10
+duplicate$ -- 941
+empty$ -- 769
+format.name$ -- 231
+if$ -- 2529
 int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 196
-newline$ -- 48
-num.names$ -- 40
-pop$ -- 226
+missing$ -- 217
+newline$ -- 53
+num.names$ -- 45
+pop$ -- 254
 preamble$ -- 1
-purify$ -- 39
+purify$ -- 43
 quote$ -- 0
-skip$ -- 1149
+skip$ -- 1190
 stack$ -- 1
-substring$ -- 412
-swap$ -- 310
+substring$ -- 430
+swap$ -- 331
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 53
+while$ -- 59
 width$ -- 0
-write$ -- 128
+write$ -- 144
 (There were 9 warnings)
