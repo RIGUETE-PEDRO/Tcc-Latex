@@ -11,54 +11,58 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Introdução}}{15}{chapter.1}%
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Introdução}}{16}{chapter.1}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{objetivos}}{16}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Objetivo Geral}{16}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Objetivos Específico}{16}{section.2.2}%
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Problema de Pesquisa}}{17}{chapter.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Referencial Teórico}}{17}{chapter.3}%
-\contentsline {section}{\numberline {3.1}MySQL}{17}{section.3.1}%
-\contentsline {section}{\numberline {3.2}PHP}{17}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Laravel}{17}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Git}{18}{section.3.4}%
-\contentsline {section}{\numberline {3.5}GitHub}{18}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Blade (Sistema de Templates)}{18}{section.3.6}%
-\contentsline {section}{\numberline {3.7}MICROSOFT VISUAL STUDIO CODE}{19}{section.3.7}%
-\contentsline {section}{\numberline {3.8}Controle de Acesso Baseado em Funções (RBAC)}{19}{section.3.8}%
-\contentsline {section}{\numberline {3.9}MVC(Model-View-Controller)}{20}{section.3.9}%
-\contentsline {section}{\numberline {3.10}docker}{20}{section.3.10}%
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{objetivos}}{19}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Objetivo Geral}{19}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Objetivos Específico}{19}{section.3.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Requisitos do Software}}{21}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Requisitos Funcionais}{21}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Requisitos Não Funcionais}{21}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Requisitos Mínimos}{22}{section.4.3}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Referencial Teórico}}{20}{chapter.4}%
+\contentsline {section}{\numberline {4.1}MySQL}{20}{section.4.1}%
+\contentsline {section}{\numberline {4.2}PHP}{20}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Laravel}{20}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Git}{21}{section.4.4}%
+\contentsline {section}{\numberline {4.5}GitHub}{21}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Blade (Sistema de Templates)}{21}{section.4.6}%
+\contentsline {section}{\numberline {4.7}MICROSOFT VISUAL STUDIO CODE}{22}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Controle de Acesso Baseado em Funções (RBAC)}{22}{section.4.8}%
+\contentsline {section}{\numberline {4.9}MVC(Model-View-Controller)}{23}{section.4.9}%
+\contentsline {section}{\numberline {4.10}docker}{23}{section.4.10}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Modelagem de software}}{23}{chapter.5}%
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Requisitos do Software}}{24}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Requisitos Funcionais}{24}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Requisitos Não Funcionais}{24}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Requisitos Mínimos}{25}{section.5.3}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Conclusão}}{25}{chapter.6}%
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Modelagem de software}}{26}{chapter.6}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase []{Testes}}{26}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Dummy text com figuras}{26}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Tabelas e Quadros}{27}{subsection.7.1.1}%
-\contentsline {subsubsection}{\numberline {7.1.1.1}Teste com referências}{28}{subsubsection.7.1.1.1}%
-\contentsline {paragraph}{\numberline {7.1.1.1.1}Equações e Códigos}{29}{paragraph.7.1.1.1.1}%
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase []{Justificativa}}{28}{chapter.7}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {8}\MakeTextUppercase []{Conclusão}}{30}{chapter.8}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {9}\MakeTextUppercase []{Testes}}{31}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Dummy text com figuras}{31}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}Tabelas e Quadros}{32}{subsection.9.1.1}%
+\contentsline {subsubsection}{\numberline {9.1.1.1}Teste com referências}{33}{subsubsection.9.1.1.1}%
+\contentsline {paragraph}{\numberline {9.1.1.1.1}Equações e Códigos}{34}{paragraph.9.1.1.1.1}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{31}{section*.24}%
+\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{36}{section*.19}%
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{{\normalfont Explicação}}}{32}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{{\normalfont Explicação}}}{37}{appendix.A}%
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{{\normalfont Explicação}}}{33}{appendix.anexochapback.1}%
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{{\normalfont Explicação}}}{38}{appendix.anexochapback.1}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{{\normalfont EasyReview}}}{34}{appendix.anexochapback.2}%
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{{\normalfont EasyReview}}}{39}{appendix.anexochapback.2}%
 \vspace {\cftbeforechapterskip }
