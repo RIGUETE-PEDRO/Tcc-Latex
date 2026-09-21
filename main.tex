@@ -51,7 +51,7 @@
   \imprimirlistatabelas
   \imprimirlistaquadros
   \imprimirlistasiglas
-  \imprimirlistasimbolos
+  %\imprimirlistasimbolos
   \imprimirsumario
 
   % --------------------------------------------------- %
@@ -61,13 +61,13 @@
   \graphicspath{{figuras/}}   
   \input{textuais/introducao}
   \input{textuais/problema_de_pesquisa}
+  \input{textuais/justificativa}
   \input{textuais/objetivos}
   \input{textuais/ref_teorico}
   \input{textuais/Requisitos}
   \input{textuais/modelagem_de_sofware}
-  \input{textuais/justificativa}
   \input{textuais/conclusao}
-  \input{textuais/testes} % Deletar arquivo textuais/testes.tex
+
     
   % --------------------------------------------------- %
   % ELEMENTOS POS-TEXTUAIS %
@@ -78,17 +78,9 @@
   \bibliographystyle{abntex2-alf} % Autor-Data
   \bibliography{bibliografia}
     
-  % Apêndices
-  \begin{apendicesenv}
-    \input{pos_textuais/apendice.tex}
-  \end{apendicesenv}
 
-  % Anexos
-  \begin{anexosenv}
-    \input{pos_textuais/anexo.tex}
-    \input{pos_textuais/easyreview.tex}
-  \end{anexosenv}
 
+  
   % Índice Remissivo
   \phantompart
   \printindex

@@ -1,26 +1,27 @@
 \chapter[Referencial Teórico]{Referencial Teórico}
+Nesta seção, são apresentados os principais conceitos e fundamentos teóricos utilizados no desenvolvimento deste trabalho, abordando os conhecimentos necessários para a compreensão das tecnologias e metodologias empregadas no sistema.
 
 \section{MySQL}
 
 De acordo com \citeonline{milani2007}, o cenário de globalização e o avanço da automação, impulsionados pela popularização da internet, tornaram o armazenamento de dados um passo primordial para a migração de negócios para o ambiente digital. Nesse contexto, o MySQL surge para suprir essa demanda de organização de informações.
 
-O MySQL é definido como um Sistema Gerenciador de Banco de Dados (SGBD) relacional de licença dupla, incluindo uma versão de código aberto (open source). Embora tenha sido projetado inicialmente para aplicações de pequeno e médio porte, a ferramenta evoluiu para suportar projetos de grande escala. Segundo \cite{milani2007}, o MySQL é reconhecido por sua robustez, apresentando um nível de \textbf{paridade} técnica (ou nivelamento) com softwares proprietários de mercado, tais como o SQL Server e o Oracle.
+O MySQL é um Sistema Gerenciador de Banco de Dados (SGBD) relacional distribuído sob um modelo de licenciamento duplo, que inclui uma versão de código aberto. Embora tenha sido projetado inicialmente para aplicações de pequeno e médio porte, a ferramenta evoluiu para atender também a projetos de maior escala. Segundo \citeonline{milani2007}, o MySQL apresenta robustez e recursos comparáveis aos de sistemas proprietários, como SQL Server e Oracle.
 
 \section{PHP}
 Conforme afirma \citeonline{DallOglio2015}, o PHP — que originalmente significava Personal Home Page — é uma linguagem de programação criada por Rasmus Lerdorf no outono de 1994. Inicialmente, a ferramenta consistia em um conjunto de scripts escritos em linguagem C, destinados à criação de páginas dinâmicas para que o autor monitorasse o acesso ao seu currículo na internet. Com o aumento da popularidade entre outros usuários, Lerdorf adicionou novos recursos, como a interação com bancos de dados. Em 1995, o código-fonte foi liberado, permitindo a colaboração de novos desenvolvedores. Vale ressaltar que, durante um curto período, a linguagem também foi denominada FI (Forms Interpreter).
 \section{Laravel}
 
-Alinhado com \citeonline{Laravel2025}, o Laravel é um framework web completo e robusto, com baixa curva de aprendizado. É voltado para o desenvolvimento back-end, mas também pode ser utilizado em aplicações full-stack em PHP.
+De acordo com \citeonline{Laravel2025}, o Laravel é um \textit{framework} para o desenvolvimento de aplicações web em PHP. A ferramenta oferece recursos para tarefas recorrentes, como roteamento, acesso a bancos de dados, autenticação e organização da aplicação, podendo ser utilizada tanto no desenvolvimento do \textit{back-end} quanto em aplicações completas.
 
 \section{Git}
-Segundo \cite{Ferreira2014}, Git é um sistema de controle de versão, comparado até mesmo pelo autor como uma máquina do tempo, já que é extremamente rápido e com integração competente.
+Segundo \citeonline{Ferreira2014}, o Git é um sistema de controle de versão que permite registrar e acompanhar as alterações realizadas no código-fonte ao longo do desenvolvimento.
 
 Seu fundador, Linus Torvalds, criador do sistema operacional Linux, estava descontente com o BitKeeper, o sistema para controle de versão no desenvolvimento do kernel Linux. O Git também é bastante utilizado em empresas em todo o mundo, inclusive no Brasil.
 
-Atualmente, dominar essa tecnologia se torna algo muito valorizado pela indústria de desenvolvimento.
+O uso dessa tecnologia favorece a rastreabilidade das modificações e a colaboração entre desenvolvedores.
 
 \section{GitHub}
-Conforme afirma \cite{Ferreira2014}, em 2008 foi criado o GitHub, uma aplicação Web que possibilita a hospedagem de repositórios Git, além de servir como uma rede social para programadores.
+Conforme afirma \citeonline{Ferreira2014}, o GitHub foi criado em 2008 como uma aplicação web para hospedagem de repositórios Git e colaboração entre desenvolvedores.
 
 Diversos projetos de código aberto importantes são hospedados no GitHub, como jQuery, Node.js, Ruby on Rails, Jenkins, Spring, JUnit e muitos outros.
 
@@ -32,33 +33,86 @@ Conforme \citeonline{blade2016}, grande parte dos frameworks web utiliza sistema
 
 Com esse objetivo, o Laravel utiliza o Blade, um sistema de templates que se diferencia de outras soluções em PHP por não restringir o uso da linguagem PHP em suas páginas. Além disso, no Blade, cada view é compilada e armazenada em cache até sofrer alguma alteração, o que torna a aplicação mais eficiente e leve.
 
-\section{MICROSOFT VISUAL STUDIO CODE}
+\section{Visual Studio Code}
 O Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft, amplamente utilizado no desenvolvimento de software. Ele oferece suporte a múltiplas linguagens de programação, integração com Git e extensões que aumentam sua funcionalidade \citeonline{vscode2026}.
 
 Devido à sua leveza e flexibilidade, tornou-se uma das ferramentas mais populares entre desenvolvedores web e back-end.
 
 \section{Controle de Acesso Baseado em Funções (RBAC)}
 
-O modelo de Controle de Acesso Baseado em Funções, amplamente conhecido pela sigla RBAC (\textit{Role-Based Access Control}), é um método de autorização que gerencia o acesso de usuários finais a sistemas, aplicações e dados com base em funções predefinidas. Segundo a \citeonline{ibm_rbac}, neste modelo, o acesso não é atribuído diretamente ao indivíduo, mas sim ao papel que ele desempenha na organização.
+O modelo de Controle de Acesso Baseado em Funções, conhecido pela sigla RBAC (\textit{Role-Based Access Control}), é um método de autorização que gerencia o acesso de usuários a sistemas, aplicações e dados com base em funções predefinidas. Segundo \citeonline{ibm_rbac}, nesse modelo, o acesso não é atribuído diretamente ao indivíduo, mas ao papel que ele desempenha na organização.
 
 
 
-Em um sistema que utiliza RBAC, um administrador atribui a cada usuário uma ou mais funções, onde cada nova função representa um conjunto específico de permissões ou privilégios. De acordo com a \citeonline{ibm_rbac}, este modelo oferece diversas vantagens estruturais:
+Em um sistema que utiliza RBAC, um administrador atribui a cada usuário uma ou mais funções, em que cada função representa um conjunto específico de permissões ou privilégios. De acordo com \citeonline{ibm_rbac}, esse modelo oferece diversas vantagens:
 \begin{itemize}
-    \item \textbf{Simplificação da Gestão:} Facilita o gerenciamento de acesso em organizações com muitos funcionários;
-    \item \textbf{Segurança da Informação:} Auxilia na defesa contra agentes internos maliciosos ou negligentes e ameaças externas;
-    \item \textbf{Princípio do Menor Privilégio:} Garante que o usuário possua apenas os recursos necessários para sua função específica (por exemplo, um representante de vendas pode visualizar contas de clientes, mas não configurar firewalls).
+    \item \textbf{Simplificação da gestão:} facilita o gerenciamento de acesso em organizações com muitos funcionários;
+    \item \textbf{Segurança da informação:} auxilia na proteção contra ações internas indevidas e ameaças externas;
+    \item \textbf{Princípio do menor privilégio:} garante que o usuário tenha acesso apenas aos recursos necessários ao exercício de sua função.
 \end{itemize}
 
 A aplicação do RBAC é fundamental para manter a integridade dos dados e a organização dos fluxos operacionais, permitindo que o sistema escale de forma segura à medida que novos perfis e permissões sejam necessários.
 
-\section{MVC(Model-View-Controller)}
+% \section{MVC (Model--View--Controller)}
 
-\section {docker}
-Segundo \cite{vitalino2018docker}, o Docker surgiu em 2013 a partir da empresa dotCloud, fundada por Solomon Hykes. Inicialmente, a empresa atuava com soluções PaaS (Platform-as-a-Service), permitindo suporte a diferentes linguagens de programação, diferentemente de outras plataformas da época.
+% O padrão arquitetural MVC divide a aplicação em três componentes com responsabilidades distintas. O modelo representa os dados e as regras de negócio; a visão é responsável pela apresentação das informações e pela interação com o usuário; e o controlador recebe as requisições, coordena o processamento e seleciona a resposta adequada.
 
-Os autores destacam que o Docker nasceu como uma tecnologia open source baseada inicialmente em LXC e Union Filesystem, possibilitando a criação de containers leves e eficientes. Seu crescimento ocorreu rapidamente, tornando-se amplamente utilizado por empresas de grande porte, como Spotify, além de receber suporte de plataformas como AWS e Google.
+% No sistema proposto, essa separação é apoiada pela estrutura do Laravel. Os modelos realizam o mapeamento das entidades persistidas, os controladores organizam os fluxos da aplicação e as páginas construídas com Blade compõem a camada de visão. Essa organização reduz o acoplamento entre interface, regras de negócio e acesso aos dados, facilitando a manutenção e a evolução do software.
+
+\section{Docker}
+Segundo \citeonline{vitalino2018docker}, o Docker surgiu em 2013 a partir da empresa dotCloud, fundada por Solomon Hykes. Inicialmente, a empresa atuava com soluções PaaS (\textit{Platform as a Service}), permitindo suporte a diferentes linguagens de programação, diferentemente de outras plataformas da época.
+
+Os autores destacam que o Docker nasceu como uma tecnologia open source baseada inicialmente em LXC (Linux Containers) e Union Filesystem, possibilitando a criação de containers leves e eficientes. Seu crescimento ocorreu rapidamente, tornando-se amplamente utilizado por empresas de grande porte, como Spotify, além de receber suporte de plataformas como AWS e Google.
 
 De acordo com Vitalino e Castro (2018), o Docker trouxe maior facilidade na criação, distribuição e execução de aplicações em containers, garantindo mais portabilidade e consistência entre ambientes de desenvolvimento e produção. Além disso, por utilizar o mesmo kernel do sistema operacional hospedeiro, a tecnologia apresenta maior eficiência no consumo de recursos quando comparada às máquinas virtuais tradicionais.
 
 Os autores também ressaltam que o Docker possui melhor desempenho em sistemas Linux, embora atualmente também possa ser executado em ambientes Windows e macOS. Dessa forma, o Docker tornou-se uma das principais ferramentas utilizadas em processos modernos de desenvolvimento e implantação de software.
+
+
+\section{Redis}
+
+O Redis (\textit{Remote Dictionary Server}) é um banco de dados NoSQL em memória amplamente utilizado como sistema de cache, armazenamento de sessões, filas de mensagens e banco de dados chave-valor. Diferentemente de outras soluções de cache, o Redis oferece suporte a diversas estruturas de dados, como listas, conjuntos, hashes e conjuntos ordenados, além de permitir persistência opcional dos dados em disco.
+
+Segundo \citeonline{redis2025}, o armazenamento dos dados diretamente na memória RAM reduz o tempo de acesso em comparação com sistemas que dependem de operações em disco, tornando o Redis adequado a aplicações que exigem alto desempenho.
+
+Além disso, o Redis oferece mecanismos de expiração automática de chaves (\textit{Time To Live -- TTL}), permitindo que os dados armazenados sejam removidos automaticamente após determinado período, evitando inconsistências e desperdício de memória.
+
+\subsection{Cache em Aplicações Web}
+
+O cache é uma técnica utilizada para reduzir o tempo de resposta das aplicações, armazenando temporariamente informações frequentemente acessadas em uma camada de memória de alta velocidade. Dessa forma, evita-se a execução repetitiva de consultas ao banco de dados e outros processos computacionalmente custosos, contribuindo para a melhoria do desempenho e da escalabilidade dos sistemas.
+
+Em aplicações web modernas, o uso de mecanismos de cache torna-se essencial principalmente em cenários com elevado número de acessos simultâneos. A utilização dessa estratégia reduz a carga sobre o banco de dados, diminui a latência das requisições e melhora a experiência do usuário.
+
+
+
+\subsection{Redis como Camada de Cache}
+
+O Redis é frequentemente utilizado como uma camada intermediária entre a aplicação e o banco de dados. Quando uma informação é solicitada, a aplicação verifica inicialmente se ela está armazenada no cache. Caso esteja disponível, o dado é retornado imediatamente. Caso contrário, a informação é recuperada do banco de dados, armazenada no Redis e posteriormente enviada ao usuário.
+
+O fluxo de consulta ao cache e ao banco de dados adotado no sistema Flashfood é apresentado na \autoref{fig:fluxo-cache-redis}.
+
+\begin{figure}[htbp]
+    \centering
+    \caption{Fluxo de consulta ao Redis no sistema Flashfood}
+    \label{fig:fluxo-cache-redis}
+    \includegraphics[width=0.95\textwidth]{imagenRedis.png}
+    \legend{ Elaborado pelo autor (2026).}
+\end{figure}
+
+Esse processo reduz significativamente a quantidade de consultas ao banco de dados, especialmente em informações acessadas repetidamente, como listas de produtos, categorias, configurações do sistema e dados estatísticos.
+
+De acordo com \citeonline{almeida2023}, o Redis apresenta desempenho superior em operações de leitura quando comparado a bancos relacionais tradicionais, tornando-se uma alternativa para aplicações com alta demanda de acesso.
+
+\subsection{Escalabilidade Horizontal}
+
+A escalabilidade horizontal consiste na ampliação da capacidade de processamento de uma aplicação por meio da adição de novos servidores, em vez do aumento da capacidade de um único equipamento. Nesse cenário, soluções de cache como o Redis desempenham papel fundamental, reduzindo o número de acessos simultâneos ao banco de dados e distribuindo de forma mais eficiente a carga entre os servidores.
+
+Segundo \citeonline{sabbag2025}, arquiteturas que utilizam cache podem responder mais rapidamente às requisições dos usuários, proporcionando maior disponibilidade e desempenho.
+
+\subsection{Aplicação do Redis no Sistema Desenvolvido}
+
+Neste trabalho, o Redis foi utilizado como mecanismo de cache da aplicação desenvolvida em Laravel. Informações frequentemente consultadas, como listas de funcionários, categorias e outros registros de baixa frequência de alteração, foram armazenadas temporariamente no Redis utilizando o mecanismo \texttt{Cache::remember()} disponibilizado pelo framework.
+
+Quando ocorre alteração nos dados, como inclusão, edição ou exclusão de registros, o cache correspondente é invalidado por meio do método \texttt{Cache::forget()}, garantindo que as informações apresentadas aos usuários permaneçam consistentes.
+
+Essa estratégia reduz a quantidade de consultas ao banco de dados MySQL, melhora o tempo de resposta da aplicação e aumenta sua capacidade de atender múltiplos usuários simultaneamente.   

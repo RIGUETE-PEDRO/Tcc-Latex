@@ -1,3 +1,9 @@
 \chapter[Conclusão]{Conclusão}
 
-É a constatação da pesquisa, elucidando se foi ou não alcançado o objetivo proposto. Sugere-se que sejam feitas recomendações finais para implementação do assunto enfocado e, também, a realização de pesquisas adicionais. 
+Este trabalho apresentou a proposta e o desenvolvimento de uma aplicação web para apoiar a gestão operacional de uma lanchonete. A solução foi concebida para centralizar informações de usuários, produtos e pedidos, reduzindo a dependência de registros manuais e favorecendo a organização das rotinas do estabelecimento.
+
+A adoção do Laravel e do padrão MVC contribuiu para separar as responsabilidades da aplicação. O MySQL foi utilizado para a persistência dos dados, enquanto o Redis foi incorporado como camada de cache para informações consultadas com frequência. O controle de acesso baseado em funções permitiu relacionar as permissões às atribuições dos diferentes usuários. Docker, Git e GitHub complementaram o ambiente de desenvolvimento ao apoiar, respectivamente, a padronização da execução e o controle de versões.
+
+Os requisitos levantados abrangem o cadastro e a autenticação de usuários, o gerenciamento e a exibição de produtos, o carrinho de compras e o acompanhamento dos pedidos. Esses recursos atendem às necessidades centrais identificadas no contexto analisado. Entretanto, a comprovação dos ganhos de desempenho, usabilidade e eficiência operacional depende da execução e da documentação de testes em ambiente representativo da lanchonete.
+
+Como trabalhos futuros, recomenda-se avaliar o sistema com usuários reais, mensurar o tempo das operações antes e depois de sua implantação e ampliar as funcionalidades de estoque, comandas, pagamentos e relatórios gerenciais. Também podem ser investigadas integrações com meios de pagamento e serviços de entrega, desde que compatíveis com as necessidades do estabelecimento.
