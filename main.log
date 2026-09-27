@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.7.7)  20 SEP 2026 14:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.7.7)  27 SEP 2026 16:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1647,20 +1647,20 @@ Package rerunfilecheck Info: File `main.brf' has not changed.
 (rerunfilecheck)             Checksum: E42EB871DC6F05B511D599CF2E26CCA5;786.
  ) 
 Here is how much of TeX's memory you used:
- 35428 strings out of 467691
- 633487 string characters out of 5425055
+ 35451 strings out of 467691
+ 633732 string characters out of 5425055
  1106492 words of memory out of 5000000
- 63389 multiletter control sequences out of 15000+600000
- 678998 words of font info for 276 fonts, out of 8000000 for 9000
+ 63392 multiletter control sequences out of 15000+600000
+ 682764 words of font info for 288 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  119i,13n,125p,1312b,631s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\omega\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
 1200.pk><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX/fon
 ts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (34 pages, 954141 bytes).
+Output written on main.pdf (34 pages, 954269 bytes).
 PDF statistics:
  484 PDF objects out of 1000 (max. 8388607)
  110 named destinations out of 1000 (max. 500000)
- 59227 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 63323 words of extra memory for PDF output out of 74296 (max. 10000000)
 

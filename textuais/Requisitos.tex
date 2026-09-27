@@ -1,7 +1,9 @@
 \chapter{Requisitos de Software}
+
 Nesta seção são apresentados os requisitos de software definidos para o sistema, considerando as funcionalidades que devem ser disponibilizadas aos usuários e as características necessárias para seu funcionamento. Os requisitos são divididos em funcionais e não funcionais.
 
 \section{Requisitos Funcionais}
+
 Os requisitos funcionais de um sistema descrevem o que ele deve fazer, ou seja, os serviços e funcionalidades que o sistema deve fornecer aos usuários. Esses requisitos podem variar de descrições mais gerais até especificações detalhadas, incluindo entradas, saídas e comportamentos esperados do sistema.
 
 Quando expressos como requisitos de usuário, são apresentados de forma mais abstrata para facilitar o entendimento. Já em nível de sistema, tornam-se mais detalhados e técnicos. A imprecisão na definição desses requisitos pode gerar interpretações diferentes pelos desenvolvedores, causando problemas, retrabalho e aumento de custos.
@@ -15,28 +17,41 @@ Com base nas necessidades identificadas e nos objetivos definidos para o sistema
 \caption{Requisitos funcionais do sistema}
 \label{tab:requisitos-funcionais}
 \small
+
 \begin{tabularx}{\textwidth}{c X}
 \hline
 \textbf{ID} & \textbf{Descrição} \\
 \hline
 RF01 & O sistema deve permitir o cadastro de usuários, incluindo funcionários e clientes. \\
+\hline
 RF02 & O sistema deve permitir que os usuários realizem autenticação e encerramento de sessão. \\
+\hline
 RF03 & O sistema deve controlar o acesso às funcionalidades de acordo com o perfil atribuído ao usuário. \\
-RF04 & O sistema deve permitir que usuários gerenciar pedidos \\
+\hline
+RF04 & O sistema deve permitir que usuários gerenciem pedidos. \\
+\hline
 RF05 & O sistema deve exibir os produtos disponíveis na área do cliente. \\
+\hline
 RF06 & O sistema deve permitir gerenciar o carrinho de compras. \\
+\hline
 RF07 & O sistema deve permitir a confirmação e o registro de pedidos. \\
+\hline
 RF08 & O sistema deve permitir que funcionários autorizados consultem os pedidos registrados. \\
+\hline
 RF09 & O sistema deve permitir a localização e o acompanhamento dos pedidos em andamento. \\
+\hline
 RF10 & O sistema deve permitir a atualização do status do pedido para pendente, em preparo ou finalizado. \\
+\hline
 RF11 & O sistema deve armazenar e recuperar os dados de usuários, produtos e pedidos. \\
 \hline
 \end{tabularx}
+
 \legend{Fonte: Elaborado pelo autor (2026).}
 \end{table}
 
 
 \section{Requisitos Não Funcionais}
+
 Os requisitos não funcionais não estão diretamente relacionados às funções específicas do sistema, mas às características de qualidade e restrições globais, como desempenho, confiabilidade, segurança, tempo de resposta e disponibilidade. Esses requisitos podem também envolver limitações de implementação, como tipos de dispositivos de entrada e saída e formas de representação de dados em interfaces com outros sistemas.
 
 Diferentemente dos requisitos funcionais, os requisitos não funcionais são importantes para o funcionamento adequado do sistema como um todo. Falhas relacionadas à segurança, à disponibilidade ou ao desempenho podem comprometer o atendimento, a integridade dos dados e a continuidade das operações da lanchonete.
@@ -49,19 +64,27 @@ Os requisitos não funcionais definidos para o sistema são apresentados na \aut
 \centering
 \caption{Requisitos não funcionais do sistema}
 \label{tab:requisitos-nao-funcionais}
+\small
+
 \begin{tabularx}{\textwidth}{c X}
 \hline
 \textbf{ID} & \textbf{Descrição} \\
 \hline
-
 RNF01 & O sistema deve suportar múltiplos usuários simultâneos. \\
+\hline
 RNF02 & As senhas devem ser armazenadas exclusivamente na forma de resumo criptográfico seguro (\textit{hash}), conforme os mecanismos disponibilizados pelo Laravel. \\
+\hline
 RNF03 & O sistema deve funcionar 24 horas por dia, 7 dias por semana. \\
+\hline
 RNF04 & O sistema deve funcionar em navegadores como Chrome, Firefox e Edge. \\
+\hline
 RNF05 & O código-fonte deve seguir a organização do padrão MVC, de modo a separar apresentação, regras de negócio e acesso aos dados. \\
+\hline
 RNF06 & O sistema deve proteger as rotas e operações restritas por meio de autenticação e autorização baseada no perfil do usuário. \\
+\hline
 RNF07 & O sistema deve registrar logs de autenticação e das operações de inclusão, alteração e exclusão de registros. \\
 \hline
 \end{tabularx}
+
 \legend{Fonte: Elaborado pelo autor (2026).}
 \end{table}
