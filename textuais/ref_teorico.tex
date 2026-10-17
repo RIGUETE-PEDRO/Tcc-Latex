@@ -1,6 +1,73 @@
 \chapter[Referencial Teórico]{Referencial Teórico}
 Nesta seção, são apresentados os principais conceitos e fundamentos teóricos utilizados no desenvolvimento deste trabalho, abordando os conhecimentos necessários para a compreensão das tecnologias e metodologias empregadas no sistema.
 
+\subsection{Trabalhos correlatos}
+
+Os trabalhos correlatos permitem observar como problemas semelhantes foram tratados em outros contextos e quais lacunas permanecem em relação à proposta deste pré-projeto.
+
+\subsubsection{Sistema de Point of Sale em cafeteria}
+
+\citeonline{hidayat2023} desenvolveram um sistema de informação POS para uma cafeteria, utilizando Laravel, PHP, MySQL e o padrão MVC. O estudo informa que registros manuais de relatórios e estoque podiam gerar demora, perda de documentos e erros de cadastro. A solução foi projetada com método waterfall e diagramas como atividade, contexto, caso de uso e fluxograma.
+
+A proximidade com este trabalho está no uso de Laravel, MySQL e no foco em ambiente de venda de alimentos e bebidas. A diferença principal está na proposta deste pré-projeto de enfatizar também comandas, RBAC e organização operacional integrada.
+
+\subsubsection{Restaurant Management System}
+
+\citeonline{jingga2014} propuseram um modelo de Restaurant Management System desenvolvido com PHP e MySQL. O sistema buscava apoiar a comunicação entre garçom, chef e caixa em tempo real, além de contemplar processos ligados a pedidos e pagamentos.
+
+Esse trabalho é relevante por tratar diretamente de restaurantes e por reconhecer a importância da integração entre atendimento e preparação. Contudo, a proposta aqui apresentada adota Laravel, Docker e controle de acesso baseado em papéis, além de direcionar a solução para lanchonetes de pequeno porte.
+
+\subsubsection{POS web com Laravel para Meetup Station}
+
+\citeonline{khairunnisa2022} desenvolveram um sistema POS web para a UMKM Meetup Station, negócio do setor de alimentos e bebidas. Segundo o estudo, a empresa realizava registros de transações em livro físico e cálculos manuais, o que causava erros. A solução utilizou Laravel, PHP, PostgreSQL e metodologia waterfall.
+
+Os testes indicaram validação funcional completa e funcionamento responsivo em diferentes navegadores e resoluções. A principal contribuição para este pré-projeto é a demonstração de viabilidade de uma solução web para pequenos negócios alimentícios. Como diferença, o sistema proposto neste trabalho utilizará MySQL e dará maior ênfase a estoque, comandas e RBAC.
+
+\subsubsection{POS multipagamento para UMKM Mr. Boba}
+
+\citeonline{lathief2023} apresentaram um sistema POS multipagamento baseado em Laravel para a UMKM Mr. Boba. O estudo relata dificuldades com vendas manuais, ausência de alternativas de pagamento não presencial e demora no fechamento de relatórios. O desenvolvimento adotou o método RAD e testes black-box.
+
+Esse trabalho contribui por evidenciar a importância de relatórios computadorizados e de maior agilidade no atendimento. A proposta deste pré-projeto, entretanto, não se concentra em múltiplos meios de pagamento, mas na gestão operacional integrada da lanchonete.
+
+\subsubsection{Sistema de caixa web para Natta Coffee}
+
+\citeonline{rusmara2025} desenvolveu um sistema de caixa web para a Natta Coffee com framework Laravel, visando melhorar transações de venda, controle de estoque e relatórios financeiros. O estudo adotou RAD e indicou ganhos na precisão de registros, velocidade de pagamento e emissão de relatórios.
+
+A relação com este trabalho é direta, pois ambos tratam de estabelecimentos de alimentação e de sistemas web com Laravel. A diferença está na ampliação proposta para controle de comandas, perfis de usuário e estrutura de permissões.
+
+\subsection{Comparação entre trabalhos correlatos e sistema proposto}
+
+O Quadro 1 sintetiza as principais características dos trabalhos analisados e as compara com o sistema proposto.
+
+\begin{table}[htbp]
+\centering
+\caption{Comparativo entre trabalhos correlatos e sistema proposto}
+\label{tab:trabalhos-correlatos}
+\scriptsize
+\begin{tabularx}{\textwidth}{p{2.1cm}p{2.3cm}p{2.4cm}p{3.1cm}X}
+\hline
+\textbf{Trabalho} & \textbf{Domínio} & \textbf{Tecnologias} & \textbf{Funcionalidades centrais} & \textbf{Relação com o sistema proposto} \\
+\hline
+Hidayat e Farell (2023) & Cafeteria & Laravel, PHP, MySQL, MVC & POS, vendas, relatórios e estoque & Similar no domínio e nas tecnologias; menor ênfase em RBAC e comandas. \\
+\hline
+Jingga e Limantara (2014) & Restaurante & PHP, MySQL & Pedido, comunicação garçom-chef-caixa e pagamento & Similar na integração operacional; não utiliza Laravel nem Docker. \\
+\hline
+Khairunnisa, Arwani e Hanggara (2022) & Alimentos e bebidas & Laravel, PHP, PostgreSQL & POS, transações e relatórios & Similar em POS web; usa PostgreSQL e não prioriza RBAC. \\
+\hline
+Lathief, Hasdiana e Lubis (2023) & Bebidas/UMKM & Laravel & POS multipagamento e relatórios & Similar na automação de vendas; foco maior em pagamento. \\
+\hline
+Rusmara (2025) & Cafeteria & Laravel & Caixa web, estoque e relatórios financeiros & Próximo ao tema; proposta atual amplia perfis, comandas e controle operacional. \\
+\hline
+Sistema proposto & Lanchonete & Laravel, PHP, MySQL, Docker, Git/GitHub & Produtos, pedidos, comandas, estoque, usuários, RBAC e relatórios & Integra gestão operacional, controle de acesso e ambiente padronizado para pequeno negócio. \\
+\hline
+\end{tabularx}
+\legend{Fonte: Elaborado pelo autor (2026).}
+\end{table}
+
+A análise dos trabalhos correlatos indica que há soluções voltadas a POS, caixa e gestão de restaurantes, mas a proposta deste pré-projeto se diferencia pela combinação de gestão operacional de lanchonete, comandas, estoque, Laravel, MySQL, Docker, versionamento e controle de acesso baseado em papéis.
+
+Essa integração busca atender a uma necessidade prática: organizar a rotina do estabelecimento sem impor complexidade excessiva ao usuário final.
+
 \section{MySQL}
 
 De acordo com \citeonline{milani2007}, o cenário de globalização e o avanço da automação, impulsionados pela popularização da internet, tornaram o armazenamento de dados um passo primordial para a migração de negócios para o ambiente digital. Nesse contexto, o MySQL surge para suprir essa demanda de organização de informações.
@@ -67,6 +134,35 @@ Os autores destacam que o Docker nasceu como uma tecnologia open source baseada 
 De acordo com Vitalino e Castro (2018), o Docker trouxe maior facilidade na criação, distribuição e execução de aplicações em containers, garantindo mais portabilidade e consistência entre ambientes de desenvolvimento e produção. Além disso, por utilizar o mesmo kernel do sistema operacional hospedeiro, a tecnologia apresenta maior eficiência no consumo de recursos quando comparada às máquinas virtuais tradicionais.
 
 Os autores também ressaltam que o Docker possui melhor desempenho em sistemas Linux, embora atualmente também possa ser executado em ambientes Windows e macOS. Dessa forma, o Docker tornou-se uma das principais ferramentas utilizadas em processos modernos de desenvolvimento e implantação de software.
+
+\subsection{Testes automatizados de software}
+
+O teste de software é uma atividade importante no processo de desenvolvimento, pois permite identificar falhas e avaliar se o sistema apresenta o comportamento esperado. Conforme discutido por \citeonline{sousa2023}, os testes podem ser realizados com o apoio de ferramentas de automação, que permitem executar verificações de maneira repetível e analisar o funcionamento de aplicações web.
+
+A automação de testes utiliza scripts e ferramentas para reproduzir ações e verificar resultados previamente definidos. Essa prática pode contribuir para reduzir o esforço associado à repetição manual de testes, especialmente quando o sistema passa por alterações durante o desenvolvimento. Entretanto, os resultados obtidos dependem dos cenários definidos e não garantem, isoladamente, a inexistência de defeitos na aplicação.
+
+\subsection{Testes de ponta a ponta (E2E)}
+
+Os testes de ponta a ponta, conhecidos como E2E (\textit{End-to-End}), verificam o comportamento de uma aplicação a partir de fluxos completos de utilização. Em aplicações web, esses testes podem reproduzir ações realizadas pelo usuário no navegador e verificar se a aplicação responde conforme o esperado.
+
+No estudo comparativo realizado por \citeonline{sousa2023}, o Cypress e o Selenium são analisados como ferramentas para automatização de testes em aplicações web. O trabalho aborda características como configuração, escrita dos scripts, recursos disponíveis e execução dos testes. Essa abordagem demonstra a importância de considerar tanto as funcionalidades das ferramentas quanto as necessidades específicas do sistema que será testado.
+
+\subsection{Cypress}
+
+O Cypress é uma ferramenta voltada à automação de testes de aplicações web. Segundo \citeonline{sousa2023}, a ferramenta utiliza JavaScript para a criação dos scripts de teste e foi projetada para trabalhar diretamente com a aplicação executada no navegador. Essa característica permite que os testes realizem ações na interface e verifiquem elementos e comportamentos apresentados durante a execução.
+
+Entre as operações que podem compor um teste estão acessar uma página, localizar elementos, preencher campos, clicar em botões e verificar se o resultado esperado foi apresentado. A documentação oficial do Cypress também descreve recursos voltados à criação e execução de testes automatizados \cite{cypress2023}.
+
+Outro aspecto discutido por \citeonline{sousa2023} é o mecanismo de espera automática do Cypress. A ferramenta pode aguardar que determinados elementos ou condições estejam disponíveis antes de concluir uma verificação, reduzindo a necessidade de configurar manualmente esperas em diversos cenários. Ainda assim, os testes devem ser planejados e implementados de acordo com o comportamento esperado da aplicação.
+
+O estudo de Sousa (2023) também aponta que a escolha de uma ferramenta de automação deve considerar o contexto de uso. Embora o Cypress apresente facilidades na escrita e depuração dos testes, existem limitações em comparação com outras ferramentas, incluindo diferenças no suporte a linguagens, ambientes e determinados cenários de navegação. Portanto, sua adequação deve ser avaliada conforme os requisitos do projeto.
+
+\subsection{Uso do Cypress no sistema FlashFood}
+
+No sistema FlashFood, o Cypress pode ser utilizado para automatizar testes de ponta a ponta que verifiquem os fluxos implementados na aplicação. Entre os exemplos de cenários que podem ser avaliados estão a autenticação de usuários, a navegação pelas telas e as operações de gerenciamento de produtos, vendas e pedidos, desde que esses fluxos estejam implementados e façam parte dos testes desenvolvidos.
+
+Em cada cenário, o teste deve executar as ações previstas e verificar se os resultados correspondem ao comportamento esperado. A execução repetida desses cenários após alterações no código pode auxiliar na identificação de regressões. Contudo, as conclusões sobre a qualidade do sistema devem se limitar às funcionalidades e condições efetivamente verificadas pelos testes.
+
 
 
 \section{Redis}

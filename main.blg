@@ -17,13 +17,15 @@ Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Database file #1: abntex2-options.bib
 Database file #2: bibliografia.bib
 Warning--entry type for "Laravel2025" isn't style-file defined
---line 47 of file bibliografia.bib
+--line 53 of file bibliografia.bib
 Warning--entry type for "blade2016" isn't style-file defined
---line 63 of file bibliografia.bib
+--line 69 of file bibliografia.bib
 Warning--entry type for "vscode2026" isn't style-file defined
---line 79 of file bibliografia.bib
+--line 85 of file bibliografia.bib
 Warning--entry type for "redis2025" isn't style-file defined
---line 140 of file bibliografia.bib
+--line 157 of file bibliografia.bib
+Warning--entry type for "cypress2023" isn't style-file defined
+--line 337 of file bibliografia.bib
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'glb_str_end' (item size: 4) to 20 items.
 Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
@@ -33,45 +35,45 @@ Reallocating 'global_strs' (item size: 1) to 4000000 items.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 17 entries,
+You've used 24 entries,
             6714 wiz_defined-function locations,
-            1275 strings with 10934 characters,
-and the built_in function-call counts, 14281 in all, are:
-= -- 1549
-> -- 218
-< -- 242
-+ -- 359
-- -- 71
-* -- 811
-:= -- 1846
-add.period$ -- 54
-call.type$ -- 18
-change.case$ -- 104
-chr.to.int$ -- 26
-cite$ -- 12
-duplicate$ -- 1139
-empty$ -- 957
-format.name$ -- 324
-if$ -- 3136
+            1316 strings with 12497 characters,
+and the built_in function-call counts, 28275 in all, are:
+= -- 3298
+> -- 434
+< -- 696
++ -- 872
+- -- 136
+* -- 1690
+:= -- 3499
+add.period$ -- 84
+call.type$ -- 25
+change.case$ -- 175
+chr.to.int$ -- 48
+cite$ -- 19
+duplicate$ -- 2707
+empty$ -- 1351
+format.name$ -- 627
+if$ -- 5791
 int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 268
-newline$ -- 67
-num.names$ -- 60
-pop$ -- 315
+missing$ -- 389
+newline$ -- 109
+num.names$ -- 95
+pop$ -- 465
 preamble$ -- 1
-purify$ -- 53
+purify$ -- 80
 quote$ -- 0
-skip$ -- 1393
+skip$ -- 2961
 stack$ -- 1
-substring$ -- 558
-swap$ -- 412
-text.length$ -- 8
+substring$ -- 1245
+swap$ -- 987
+text.length$ -- 28
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1
+type$ -- 5
 warning$ -- 0
-while$ -- 82
+while$ -- 140
 width$ -- 0
-write$ -- 191
-(There were 4 warnings)
+write$ -- 312
+(There were 5 warnings)

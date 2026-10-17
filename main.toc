@@ -10,40 +10,54 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Introdução}}{14}{chapter.1}%
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Introdução}}{15}{chapter.1}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Problema de Pesquisa}}{15}{chapter.2}%
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Justificativa}}{16}{chapter.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Justificativa}}{16}{chapter.3}%
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Referencial Teórico}}{18}{chapter.3}%
+\contentsline {subsection}{\numberline {3.0.1}Trabalhos correlatos}{18}{subsection.3.0.1}%
+\contentsline {subsubsection}{\numberline {3.0.1.1}Sistema de Point of Sale em cafeteria}{18}{subsubsection.3.0.1.1}%
+\contentsline {subsubsection}{\numberline {3.0.1.2}Restaurant Management System}{18}{subsubsection.3.0.1.2}%
+\contentsline {subsubsection}{\numberline {3.0.1.3}POS web com Laravel para Meetup Station}{19}{subsubsection.3.0.1.3}%
+\contentsline {subsubsection}{\numberline {3.0.1.4}POS multipagamento para UMKM Mr. Boba}{19}{subsubsection.3.0.1.4}%
+\contentsline {subsubsection}{\numberline {3.0.1.5}Sistema de caixa web para Natta Coffee}{19}{subsubsection.3.0.1.5}%
+\contentsline {subsection}{\numberline {3.0.2}Comparação entre trabalhos correlatos e sistema proposto}{20}{subsection.3.0.2}%
+\contentsline {section}{\numberline {3.1}MySQL}{20}{section.3.1}%
+\contentsline {section}{\numberline {3.2}PHP}{21}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Laravel}{21}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Git}{21}{section.3.4}%
+\contentsline {section}{\numberline {3.5}GitHub}{22}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Blade (Sistema de Templates)}{22}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Visual Studio Code}{22}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Controle de Acesso Baseado em Funções (RBAC)}{23}{section.3.8}%
+\contentsline {section}{\numberline {3.9}Docker}{23}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Testes automatizados de software}{24}{subsection.3.9.1}%
+\contentsline {subsection}{\numberline {3.9.2}Testes de ponta a ponta (E2E)}{25}{subsection.3.9.2}%
+\contentsline {subsection}{\numberline {3.9.3}Cypress}{25}{subsection.3.9.3}%
+\contentsline {subsection}{\numberline {3.9.4}Uso do Cypress no sistema FlashFood}{26}{subsection.3.9.4}%
+\contentsline {section}{\numberline {3.10}Redis}{26}{section.3.10}%
+\contentsline {subsection}{\numberline {3.10.1}Cache em Aplicações Web}{27}{subsection.3.10.1}%
+\contentsline {subsection}{\numberline {3.10.2}Redis como Camada de Cache}{27}{subsection.3.10.2}%
+\contentsline {subsection}{\numberline {3.10.3}Escalabilidade Horizontal}{28}{subsection.3.10.3}%
+\contentsline {subsection}{\numberline {3.10.4}Aplicação do Redis no Sistema Desenvolvido}{28}{subsection.3.10.4}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Objetivos}}{18}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Objetivo Geral}{18}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Objetivos Específicos}{18}{section.4.2}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Requisitos de Software}}{30}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Requisitos Funcionais}{30}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Requisitos Não Funcionais}{30}{section.4.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Referencial Teórico}}{19}{chapter.5}%
-\contentsline {section}{\numberline {5.1}MySQL}{19}{section.5.1}%
-\contentsline {section}{\numberline {5.2}PHP}{19}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Laravel}{20}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Git}{20}{section.5.4}%
-\contentsline {section}{\numberline {5.5}GitHub}{20}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Blade (Sistema de Templates)}{21}{section.5.6}%
-\contentsline {section}{\numberline {5.7}Visual Studio Code}{21}{section.5.7}%
-\contentsline {section}{\numberline {5.8}Controle de Acesso Baseado em Funções (RBAC)}{21}{section.5.8}%
-\contentsline {section}{\numberline {5.9}Docker}{22}{section.5.9}%
-\contentsline {section}{\numberline {5.10}Redis}{23}{section.5.10}%
-\contentsline {subsection}{\numberline {5.10.1}Cache em Aplicações Web}{23}{subsection.5.10.1}%
-\contentsline {subsection}{\numberline {5.10.2}Redis como Camada de Cache}{23}{subsection.5.10.2}%
-\contentsline {subsection}{\numberline {5.10.3}Escalabilidade Horizontal}{25}{subsection.5.10.3}%
-\contentsline {subsection}{\numberline {5.10.4}Aplicação do Redis no Sistema Desenvolvido}{25}{subsection.5.10.4}%
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Modelagem de software}}{33}{chapter.5}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Requisitos de Software}}{26}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Requisitos Funcionais}{26}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Requisitos Não Funcionais}{26}{section.6.2}%
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Testes e validação}}{35}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Objetivo e escopo dos testes}{35}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Arquivos e cenários de teste}{35}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Cadastro, autenticação e controle de acesso}{35}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Produtos, cardápio, carrinho e pedidos}{35}{subsection.6.2.2}%
+\contentsline {section}{\numberline {6.3}Ambiente e execução}{35}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Resultados}{35}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Evidências}{35}{section.6.5}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase []{Modelagem de software}}{29}{chapter.7}%
-\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {8}\MakeTextUppercase []{Conclusão}}{31}{chapter.8}%
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase []{Conclusão}}{39}{chapter.7}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{32}{section*.21}%
+\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{40}{section*.21}%
 \vspace {\cftbeforechapterskip }

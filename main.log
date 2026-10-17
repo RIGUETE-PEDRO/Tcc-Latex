@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.7.7)  27 SEP 2026 16:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.7.7)  17 OCT 2026 16:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1546,83 +1546,148 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 ] (pre_textuais/siglas.tex [12
 
 
-]) (main.toc) [13
+]) (main.toc [13
 
-] (textuais/introducao.tex
+]) [14]
+(textuais/introducao.tex
 Cap\'{\i }tulo 1.
-) (textuais/problema_de_pesquisa.tex [14
+) (textuais/justificativa.tex [15
 
 
 ]
 Cap\'{\i }tulo 2.
-) (textuais/justificativa.tex [15
-
-]
-Cap\'{\i }tulo 3.
 [16
 
-]) (textuais/objetivos.tex [17]
-Cap\'{\i }tulo 4.
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 9
-.
-(C:\Program Files\MiKTeX\tex/latex/psnfss\ts1phv.fd
+]) (textuais/ref_teorico.tex [17]
+Cap\'{\i }tulo 3.
+[18
+
+] [19] [20]
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 81.
+ [21] [22]
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
+16.
+ (C:\Program Files\MiKTeX\tex/latex/psnfss\ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `phv' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-) (textuais/ref_teorico.tex [18
 
-]
-Cap\'{\i }tulo 5.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 14.
-[19
-
-] [20] [21] [22] [23]
-<figuras/imagenRedis.png, id=245, 845.26315pt x 597.60106pt>
+[23] [24] [25] [26]
+<figuras/imagenRedis.png, id=320, 845.26315pt x 597.60106pt>
 File: figuras/imagenRedis.png Graphic file (type png)
 <use figuras/imagenRedis.png>
-Package pdftex.def Info: figuras/imagenRedis.png  used on input line 98.
+Package pdftex.def Info: figuras/imagenRedis.png  used on input line 194.
 (pdftex.def)             Requested size: 432.48051pt x 305.76643pt.
- [24 <./figuras/imagenRedis.png>]
+ [27]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-)
-(textuais/Requisitos.tex [25]
-Cap\'{\i }tulo 6.
-[26
+ [28 <./figuras/imagenRedis.png>])
+(textuais/Requisitos.tex [29]
+Cap\'{\i }tulo 4.
+[30
 
-]) (textuais/modelagem_de_sofware.tex [27] [28]
-Cap\'{\i }tulo 7.
-[29
+]) (textuais/modelagem_de_sofware.tex [31] [32]
+Cap\'{\i }tulo 5.
+[33
 
 ]
-<figuras/flashfood fisico.png, id=287, 1996.45876pt x 1406.25375pt>
+<figuras/flashfood fisico.png, id=366, 1996.45876pt x 1406.25375pt>
 File: figuras/flashfood fisico.png Graphic file (type png)
 <use figuras/flashfood fisico.png>
 Package pdftex.def Info: figuras/flashfood fisico.png  used on input line 7.
 (pdftex.def)             Requested size: 517.02599pt x 364.17969pt.
- [30 <./figuras/flashfood fisico.png>]) (textuais/conclusao.tex
-Cap\'{\i }tulo 8.
+ [34 <./figuras/flashfood fisico.png>]) (textuais/testes.tex
+Cap\'{\i }tulo 6.
+
+Overfull \hbox (1.96922pt too wide) in paragraph at lines 46--46
+[]|\T1/phv/b/n/10 (-20) Requisito| 
+ []
+
+
+Overfull \hbox (4.94798pt too wide) in paragraph at lines 46--46
+[]|\T1/cmtt/m/n/10 AcessoProtegido.cy.js| 
+ []
+
+
+Overfull \hbox (10.1967pt too wide) in paragraph at lines 46--46
+[]|\T1/cmtt/m/n/10 CriarFuncionario.cy.js| 
+ []
+
+
+Overfull \hbox (20.69414pt too wide) in paragraph at lines 46--46
+[]|\T1/cmtt/m/n/10 DeletarFuncionario.cy.js| 
+ []
+
+
+Overfull \hbox (4.94798pt too wide) in paragraph at lines 46--46
+[]|[]| 
+ []
+
+
+Overfull \hbox (31.19157pt too wide) in paragraph at lines 46--46
+[]|\T1/cmtt/m/n/10 ValidacaoFormularios.cy.js| 
+ []
+
+
+Overfull \hbox (1.96922pt too wide) in paragraph at lines 81--81
+[]|\T1/phv/b/n/10 (-20) Requisito| 
+ []
+
+
+Overfull \hbox (10.1967pt too wide) in paragraph at lines 81--81
+[]|\T1/cmtt/m/n/10 AtualizarProduto.cy.js| 
+ []
+
+
+Overfull \hbox (10.1967pt too wide) in paragraph at lines 81--81
+[]|\T1/cmtt/m/n/10 CatalogoProdutos.cy.js| 
+ []
+
+
+Overfull \hbox (10.1967pt too wide) in paragraph at lines 81--81
+[]|\T1/cmtt/m/n/10 DeletandoProduto.cy.js| 
+ []
+
+
+Overfull \hbox (15.44542pt too wide) in paragraph at lines 81--81
+[]|\T1/cmtt/m/n/10 NavegacaoCardapio.cy.js| 
+ []
+
+
+Overfull \hbox (25.94286pt too wide) in paragraph at lines 81--81
+[]|\T1/cmtt/m/n/10 PersonalizacaoPizza.cy.js| 
+ []
+
+
+Overfull \hbox (20.69414pt too wide) in paragraph at lines 81--81
+[]|\T1/cmtt/m/n/10 FluxoCompraEntrega.cy.js| 
+ []
+
+) (textuais/conclusao.tex [35
+
+
+
+
+
+] [36] [37] [38]
+Cap\'{\i }tulo 7.
 ) (main.bbl (main.brf)
 \tf@brf=\write6
 \openout6 = `main.brf'.
 
- [31
-
-
-
-
+ [39
 
 ]
 bibitemlist
-) (main.ind) [32
+[40
 
-]
+]) (main.ind) [41]
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
@@ -1644,23 +1709,24 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: E42EB871DC6F05B511D599CF2E26CCA5;786.
+(rerunfilecheck)             Checksum: A744E02AAD8BE57F99FDFA541FF6E257;1366.
  ) 
 Here is how much of TeX's memory you used:
- 35451 strings out of 467691
- 633732 string characters out of 5425055
- 1106492 words of memory out of 5000000
- 63392 multiletter control sequences out of 15000+600000
- 682764 words of font info for 288 fonts, out of 8000000 for 9000
+ 35733 strings out of 467691
+ 638156 string characters out of 5425055
+ 1116492 words of memory out of 5000000
+ 63513 multiletter control sequences out of 15000+600000
+ 700289 words of font info for 374 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 119i,13n,125p,1312b,631s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 119i,14n,125p,1312b,768s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\omega\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
-1200.pk><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Progra
-m Files/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX/fon
-ts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (34 pages, 954269 bytes).
+1000.pk> <C:\Users\omega\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\ectt1200.pk><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/
+Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKT
+eX/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on main.pdf (43 pages, 1012326 bytes).
 PDF statistics:
- 484 PDF objects out of 1000 (max. 8388607)
- 110 named destinations out of 1000 (max. 500000)
- 63323 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 708 PDF objects out of 1000 (max. 8388607)
+ 144 named destinations out of 1000 (max. 500000)
+ 85971 words of extra memory for PDF output out of 89155 (max. 10000000)
 

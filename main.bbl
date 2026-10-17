@@ -12,6 +12,12 @@
   \textbf{Second International Conference on Smart Technologies for Smart
   Nation}. [S.l.: s.n.], 2023. p. 902--907.}
 
+\bibitem[{Cypress} 2023]{cypress2023}
+\abntrefinfo{{Cypress}}{{Cypress}}{2023}
+{{Cypress}. \textbf{Why Cypress?} 2023.
+Dispon{\'\i}vel em: \url{https://docs.cypress.io/guides/overview/why-cypress}.
+  Acesso em: 17 out. 2026.}
+
 \bibitem[Dall'Oglio 2015]{DallOglio2015}
 \abntrefinfo{Dall'Oglio}{DALL'OGLIO}{2015}
 {DALL'OGLIO, P. \textbf{PHP: programando com orientação a objetos}. São
@@ -28,11 +34,45 @@
   microservices in .net applications.
 \textbf{Leaders Tec}, v.~2, n.~13, 2025.}
 
+\bibitem[Hidayat e Farell 2023]{hidayat2023}
+\abntrefinfo{Hidayat e Farell}{HIDAYAT; FARELL}{2023}
+{HIDAYAT, T.; FARELL, G.~R. Rancang bangun sistem informasi point of sale di
+  kedai kopi.
+\textbf{Jurnal Pendidikan Tambusai}, v.~7, n.~2, p. 18372--18381, 2023.
+Dispon{\'\i}vel em: \url{https://jptam.org/index.php/jptam/article/view/9273}.}
+
 \bibitem[{IBM} s.d.]{ibm_rbac}
 \abntrefinfo{{IBM}}{{IBM}}{s.d.}
 {{IBM}. \textbf{O que é controle de acesso baseado em função (RBAC)?} s.d.
 Acesso em: 30 abr. 2026.
 Dispon{\'\i}vel em: \url{https://www.ibm.com/}.}
+
+\bibitem[Jingga e Limantara 2014]{jingga2014}
+\abntrefinfo{Jingga e Limantara}{JINGGA; LIMANTARA}{2014}
+{JINGGA, F.; LIMANTARA, N. Pembangunan model restaurant management system.
+\textbf{ComTech: Computer, Mathematics and Engineering Applications}, v.~5,
+  n.~2, p. 973--982, 2014.
+Dispon{\'\i}vel em:
+  \url{https://journal.binus.ac.id/index.php/comtech/article/view/2348}.}
+
+\bibitem[Khairunnisa, Arwani e Hanggara 2022]{khairunnisa2022}
+\abntrefinfo{Khairunnisa, Arwani e Hanggara}{KHAIRUNNISA; ARWANI;
+  HANGGARA}{2022}
+{KHAIRUNNISA, G.~W.; ARWANI, I.; HANGGARA, B.~T. Pengembangan sistem informasi
+  point of sales berbasis web menggunakan framework laravel: Studi kasus meetup
+  station.
+\textbf{Jurnal Pengembangan Teknologi Informasi dan Ilmu Komputer}, v.~6, n.~4,
+  p. 1858--1864, 2022.
+Dispon{\'\i}vel em:
+  \url{https://j-ptiik.ub.ac.id/index.php/j-ptiik/article/view/10937}.}
+
+\bibitem[Lathief, Hasdiana e Lubis 2023]{lathief2023}
+\abntrefinfo{Lathief, Hasdiana e Lubis}{LATHIEF; HASDIANA; LUBIS}{2023}
+{LATHIEF, F.~M.; HASDIANA; LUBIS, H. Perancangan sistema point of sales multi
+  payment berbasis web menggunakan framework laravel pada umkm mr. boba.
+\textbf{Jurnal Ilmu Komputer dan Sistem Informasi}, v.~2, n.~3, 2023.
+Dispon{\'\i}vel em:
+  \url{https://jurnal.unity-academy.sch.id/index.php/jirsi/article/view/72}.}
 
 \bibitem[Luciano 2016]{blade2016}
 \abntrefinfo{Luciano}{LUCIANO}{2016}
@@ -59,10 +99,29 @@ Dispon{\'\i}vel em:
 {{Redis Ltd.} \textbf{Redis Documentation}. 2025.
 Dispon{\'\i}vel em: \url{https://redis.io/documentation}.}
 
+\bibitem[Rusmara 2025]{rusmara2025}
+\abntrefinfo{Rusmara}{RUSMARA}{2025}
+{RUSMARA, R.~H. Pengembangan sistem kasir berbasis web di natta coffee: Studi
+  implementasi framework laravel.
+\textbf{Jurnal Informatika dan Teknik Elektro Terapan}, v.~13, n.~2, 2025.
+Dispon{\'\i}vel em:
+  \url{https://journal.eng.unila.ac.id/index.php/jitet/article/view/6414}.}
+
 \bibitem[Sommerville 2011]{Sommerville2011}
 \abntrefinfo{Sommerville}{SOMMERVILLE}{2011}
 {SOMMERVILLE, I. \textbf{Engenharia de Software}. 9. ed. São Paulo: Pearson
   Prentice Hall, 2011. Revisão técnica de Kechi Hirama.}
+
+\bibitem[Sousa 2023]{sousa2023}
+\abntrefinfo{Sousa}{SOUSA}{2023}
+{SOUSA, R. E.~d.
+\textbf{Um estudo comparativo entre ferramentas de automação de testes:
+  Selenium e Cypress}.
+Monografia (Trabalho de Conclusão de Curso) --- Universidade Federal do
+  Ceará, Sobral, 2023.
+Dispon{\'\i}vel em:
+  \url{https://repositorio.ufc.br/bitstream/riufc/76304/1/2023\_tcc\_resousa.pdf}.
+  Acesso em: 17 out. 2026.}
 
 \bibitem[Vitalino e Castro 2018]{vitalino2018docker}
 \abntrefinfo{Vitalino e Castro}{VITALINO; CASTRO}{2018}
