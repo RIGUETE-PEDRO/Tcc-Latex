@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.7.7)  17 OCT 2026 17:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.7.7)  25 OCT 2026 16:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1577,7 +1577,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 
 [23] [24] [25] [26]
-<figuras/imagenRedis.png, id=320, 845.26315pt x 597.60106pt>
+<figuras/imagenRedis.png, id=330, 845.26315pt x 597.60106pt>
 File: figuras/imagenRedis.png Graphic file (type png)
 <use figuras/imagenRedis.png>
 Package pdftex.def Info: figuras/imagenRedis.png  used on input line 194.
@@ -1597,97 +1597,70 @@ Cap\'{\i }tulo 5.
 [33
 
 ]
-<figuras/flashfood fisico.png, id=366, 1996.45876pt x 1406.25375pt>
-File: figuras/flashfood fisico.png Graphic file (type png)
-<use figuras/flashfood fisico.png>
-Package pdftex.def Info: figuras/flashfood fisico.png  used on input line 7.
-(pdftex.def)             Requested size: 517.02599pt x 364.17969pt.
- [34 <./figuras/flashfood fisico.png>]) (textuais/testes.tex
+<figuras/modelo-banco-organizado.pdf, id=379, 845.07718pt x 592.13219pt>
+File: figuras/modelo-banco-organizado.pdf Graphic file (type pdf)
+<use figuras/modelo-banco-organizado.pdf>
+Package pdftex.def Info: figuras/modelo-banco-organizado.pdf  used on input lin
+e 12.
+(pdftex.def)             Requested size: 541.14597pt x 379.17111pt.
+ [34 <./figuras/modelo-banco-organizado.pdf>]
+File: figuras/modelo-banco-organizado.pdf Graphic file (type pdf)
+<use figuras/modelo-banco-organizado.pdf>
+Package pdftex.def Info: figuras/modelo-banco-organizado.pdf  used on input lin
+e 25.
+(pdftex.def)             Requested size: 498.9807pt x 376.85014pt.
+ [35]
+File: figuras/modelo-banco-organizado.pdf Graphic file (type pdf)
+<use figuras/modelo-banco-organizado.pdf>
+Package pdftex.def Info: figuras/modelo-banco-organizado.pdf  used on input lin
+e 38.
+(pdftex.def)             Requested size: 555.19391pt x 376.95786pt.
+ [36]
+File: figuras/modelo-banco-organizado.pdf Graphic file (type pdf)
+<use figuras/modelo-banco-organizado.pdf>
+Package pdftex.def Info: figuras/modelo-banco-organizado.pdf  used on input lin
+e 51.
+(pdftex.def)             Requested size: 477.88734pt x 374.87825pt.
+ [37]
+File: figuras/modelo-banco-organizado.pdf Graphic file (type pdf)
+<use figuras/modelo-banco-organizado.pdf>
+Package pdftex.def Info: figuras/modelo-banco-organizado.pdf  used on input lin
+e 64.
+(pdftex.def)             Requested size: 534.11127pt x 376.66823pt.
+ [38])
+(textuais/testes.tex
 Cap\'{\i }tulo 6.
-
-Overfull \hbox (1.96922pt too wide) in paragraph at lines 46--46
-[]|\T1/phv/b/n/10 (-20) Requisito| 
- []
-
-
-Overfull \hbox (4.94798pt too wide) in paragraph at lines 46--46
-[]|\T1/cmtt/m/n/10 AcessoProtegido.cy.js| 
- []
-
-
-Overfull \hbox (10.1967pt too wide) in paragraph at lines 46--46
-[]|\T1/cmtt/m/n/10 CriarFuncionario.cy.js| 
- []
-
-
-Overfull \hbox (20.69414pt too wide) in paragraph at lines 46--46
-[]|\T1/cmtt/m/n/10 DeletarFuncionario.cy.js| 
- []
-
-
-Overfull \hbox (4.94798pt too wide) in paragraph at lines 46--46
-[]|[]| 
- []
-
-
-Overfull \hbox (31.19157pt too wide) in paragraph at lines 46--46
-[]|\T1/cmtt/m/n/10 ValidacaoFormularios.cy.js| 
- []
-
-
-Overfull \hbox (1.96922pt too wide) in paragraph at lines 81--81
-[]|\T1/phv/b/n/10 (-20) Requisito| 
- []
-
-
-Overfull \hbox (10.1967pt too wide) in paragraph at lines 81--81
-[]|\T1/cmtt/m/n/10 AtualizarProduto.cy.js| 
- []
-
-
-Overfull \hbox (10.1967pt too wide) in paragraph at lines 81--81
-[]|\T1/cmtt/m/n/10 CatalogoProdutos.cy.js| 
- []
-
-
-Overfull \hbox (10.1967pt too wide) in paragraph at lines 81--81
-[]|\T1/cmtt/m/n/10 DeletandoProduto.cy.js| 
- []
-
-
-Overfull \hbox (15.44542pt too wide) in paragraph at lines 81--81
-[]|\T1/cmtt/m/n/10 NavegacaoCardapio.cy.js| 
- []
-
-
-Overfull \hbox (25.94286pt too wide) in paragraph at lines 81--81
-[]|\T1/cmtt/m/n/10 PersonalizacaoPizza.cy.js| 
- []
-
-
-Overfull \hbox (20.69414pt too wide) in paragraph at lines 81--81
-[]|\T1/cmtt/m/n/10 FluxoCompraEntrega.cy.js| 
- []
-
-) (textuais/conclusao.tex [35
+) (textuais/conclusao.tex [39
 
 
 
 
 
-] [36] [37] [38]
+
+
+
+
+
+
+
+
+
+
+
+
+] [40] [41] [42]
 Cap\'{\i }tulo 7.
-) (main.bbl (main.brf)
+) [43
+
+] (main.bbl (main.brf)
 \tf@brf=\write6
 \openout6 = `main.brf'.
 
- [39
-
-]
+ [44]
 bibitemlist
-[40
+[45
 
-]) (main.ind) [41]
+]) (main.ind) [46]
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
@@ -1712,21 +1685,21 @@ Package rerunfilecheck Info: File `main.brf' has not changed.
 (rerunfilecheck)             Checksum: A744E02AAD8BE57F99FDFA541FF6E257;1366.
  ) 
 Here is how much of TeX's memory you used:
- 35733 strings out of 467691
- 638156 string characters out of 5425055
- 1116492 words of memory out of 5000000
- 63513 multiletter control sequences out of 15000+600000
- 700289 words of font info for 374 fonts, out of 8000000 for 9000
+ 35741 strings out of 467691
+ 638379 string characters out of 5425055
+ 1117492 words of memory out of 5000000
+ 63518 multiletter control sequences out of 15000+600000
+ 699991 words of font info for 369 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 119i,14n,125p,1312b,768s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 119i,14n,125p,1312b,764s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\omega\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
 1000.pk> <C:\Users\omega\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\ectt1200.pk><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/
 Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKT
 eX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (43 pages, 1014959 bytes).
+Output written on main.pdf (48 pages, 1349499 bytes).
 PDF statistics:
- 715 PDF objects out of 1000 (max. 8388607)
- 144 named destinations out of 1000 (max. 500000)
- 85971 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 775 PDF objects out of 1000 (max. 8388607)
+ 154 named destinations out of 1000 (max. 500000)
+ 86003 words of extra memory for PDF output out of 89155 (max. 10000000)
 

@@ -6,4 +6,8 @@ A adoção do Laravel e do padrão MVC contribuiu para separar as responsabilida
 
 Os requisitos levantados abrangem o cadastro e a autenticação de usuários, o gerenciamento e a exibição de produtos, o carrinho de compras e o acompanhamento dos pedidos. Esses recursos atendem às necessidades centrais identificadas no contexto analisado. Entretanto, a comprovação dos ganhos de desempenho, usabilidade e eficiência operacional depende da execução e da documentação de testes em ambiente representativo da lanchonete.
 
-Como trabalhos futuros, recomenda-se avaliar o sistema com usuários reais, mensurar o tempo das operações antes e depois de sua implantação e ampliar as funcionalidades de estoque, comandas, pagamentos e relatórios gerenciais. Também podem ser investigadas integrações com meios de pagamento e serviços de entrega, desde que compatíveis com as necessidades do estabelecimento.
+\section{Trabalhos futuros}
+
+Como trabalhos futuros, propõe-se implementar a autenticação por meio de contas Google. Essa funcionalidade permitiria que o usuário acessasse o sistema usando uma conta existente, sem precisar criar uma senha específica para a aplicação. A implementação deverá associar a conta Google ao perfil correspondente no sistema e manter as permissões de acesso definidas para cada tipo de usuário.
+
+Também se propõe integrar o sistema ao Google Maps para auxiliar no planejamento das entregas. A partir dos endereços cadastrados nos pedidos, a aplicação poderia calcular automaticamente rotas, estimar distâncias e tempos de deslocamento e, quando houver várias entregas, sugerir uma sequência de atendimento. A viabilidade dessa integração deverá considerar a validação dos endereços, a proteção dos dados dos clientes e os custos de uso do serviço.

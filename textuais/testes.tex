@@ -1,4 +1,4 @@
-% !TEX root = ../main.tex
+﻿% !TEX root = ../main.tex
 \chapter[Testes e validação]{Testes e validação do sistema}
 \label{chap:testes}
 
@@ -17,31 +17,32 @@ As tabelas a seguir apresentam os arquivos Cypress e a finalidade de cada teste.
 \caption{Testes de cadastro, autenticação e controle de acesso}
 \label{tab:testes-acesso}
 \footnotesize
-\begin{tabularx}{\textwidth}{c p{3.7cm} p{1.5cm} c X}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{c p{4.2cm} p{1.8cm} c X}
 \hline
 \textbf{ID} & \textbf{Arquivo} & \textbf{Requisito} & \textbf{Aprovados} & \textbf{O que o teste faz} \\
 \hline
-T01 & \texttt{AcessoAdmin.cy.js} & RF03 & 1 & Tenta abrir o painel administrativo sem autenticação e verifica se o sistema redireciona o visitante para a tela de login. \\
+T01 & \texttt{AcessoAdmin\allowbreak.cy.js} & RF03 & 1 & Tenta abrir o painel administrativo sem autenticação e verifica se o sistema redireciona o visitante para a tela de login. \\
 \hline
-T02 & \texttt{AcessoPerfil.cy.js} & RF03 & 2 & Verifica que um cliente não consegue abrir o gerenciamento de produtos e que um administrador autorizado consegue acessar essa funcionalidade. \\
+T02 & \texttt{AcessoPerfil\allowbreak.cy.js} & RF03 & 2 & Verifica que um cliente não consegue abrir o gerenciamento de produtos e que um administrador autorizado consegue acessar essa funcionalidade. \\
 \hline
-T03 & \texttt{AcessoProtegido.cy.js} & RF03 & 8 & Acessa oito páginas protegidas, incluindo perfil, pedidos, carrinho, mesas e entregas, sem uma sessão ativa e verifica o redirecionamento para o login. \\
+T03 & \texttt{AcessoProtegido\allowbreak.cy.js} & RF03 & 8 & Acessa oito páginas protegidas, incluindo perfil, pedidos, carrinho, mesas e entregas, sem uma sessão ativa e verifica o redirecionamento para o login. \\
 \hline
-T04 & \texttt{Cadastro.cy.js} & RF01 & 1 & Cadastra um cliente pela página de registro e, em seguida, confirma que ele consegue entrar no sistema. \\
+T04 & \texttt{Cadastro\allowbreak.cy.js} & RF01 & 1 & Cadastra um cliente pela página de registro e, em seguida, confirma que ele consegue entrar no sistema. \\
 \hline
-T05 & \texttt{CriarFuncionario.cy.js} & RF01 & 1 & Verifica o cadastro de um funcionário por meio do painel administrativo. \\
+T05 & \texttt{CriarFuncionario\allowbreak.cy.js} & RF01 & 1 & Verifica o cadastro de um funcionário por meio do painel administrativo. \\
 \hline
-T06 & \texttt{DeletarFuncionario.cy.js} & -- & 1 & Verifica a remoção de um funcionário pelo painel administrativo. \\
+T06 & \texttt{DeletarFuncionario\allowbreak.cy.js} & -- & 1 & Verifica a remoção de um funcionário pelo painel administrativo. \\
 \hline
-T07 & \shortstack[l]{\texttt{LogandoComFuncionario}\\\texttt{Criado.cy.js}} & RF01, RF02 & 2 & Cadastra um funcionário autorizado e verifica se ele consegue se autenticar no sistema. \\
+T07 & \shortstack[l]{\texttt{LogandoComFuncionario}\\\texttt{Criado\allowbreak.cy.js}} & RF01, RF02 & 2 & Cadastra um funcionário autorizado e verifica se ele consegue se autenticar no sistema. \\
 \hline
-T08 & \texttt{Logout.cy.js} & RF02 & 1 & Encerra a sessão pelo menu e verifica se uma página protegida volta a exigir autenticação. \\
+T08 & \texttt{Logout\allowbreak.cy.js} & RF02 & 1 & Encerra a sessão pelo menu e verifica se uma página protegida volta a exigir autenticação. \\
 \hline
-T09 & \texttt{ValidacaoFormularios.cy.js} & -- & 4 & Verifica campos obrigatórios nas telas de login, cadastro e redefinição de senha, além do link para voltar ao login. \\
+T09 & \texttt{ValidacaoFormularios\allowbreak.cy.js} & -- & 4 & Verifica campos obrigatórios nas telas de login, cadastro e redefinição de senha, além do link para voltar ao login. \\
 \hline
-T10 & \texttt{loginAdmin.cy.js} & RF02 & 1 & Autentica um administrador e verifica se o painel administrativo é aberto. \\
+T10 & \texttt{loginAdmin\allowbreak.cy.js} & RF02 & 1 & Autentica um administrador e verifica se o painel administrativo é aberto. \\
 \hline
-T11 & \texttt{LoginInvalido.cy.js} & RF02 & 1 & Tenta entrar com credenciais inválidas e verifica se o sistema permanece na tela de login. \\
+T11 & \texttt{LoginInvalido\allowbreak.cy.js} & RF02 & 1 & Tenta entrar com credenciais inválidas e verifica se o sistema permanece na tela de login. \\
 \hline
 \end{tabularx}
 \legend{Elaborado pelo autor (2026).}
@@ -54,29 +55,30 @@ T11 & \texttt{LoginInvalido.cy.js} & RF02 & 1 & Tenta entrar com credenciais inv
 \caption{Testes de produtos, cardápio, carrinho e pedidos}
 \label{tab:testes-produtos-pedidos}
 \footnotesize
-\begin{tabularx}{\textwidth}{c p{3.7cm} p{1.5cm} c X}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{c p{4.2cm} p{1.8cm} c X}
 \hline
 \textbf{ID} & \textbf{Arquivo} & \textbf{Requisito} & \textbf{Aprovados} & \textbf{O que o teste faz} \\
 \hline
-T12 & \texttt{AtualizarProduto.cy.js} & -- & 1 & Abre a edição de um produto no painel administrativo, altera seus dados e verifica se a atualização foi realizada. \\
+T12 & \texttt{AtualizarProduto\allowbreak.cy.js} & -- & 1 & Abre a edição de um produto no painel administrativo, altera seus dados e verifica se a atualização foi realizada. \\
 \hline
-T13 & \texttt{BuscaProduto.cy.js} & -- & 1 & Pesquisa produtos pelo nome na tabela administrativa e verifica se os resultados são filtrados. \\
+T13 & \texttt{BuscaProduto\allowbreak.cy.js} & -- & 1 & Pesquisa produtos pelo nome na tabela administrativa e verifica se os resultados são filtrados. \\
 \hline
-T14 & \texttt{Carrinho.cy.js} & RF06 & 1 & Adiciona um produto ao carrinho, altera a quantidade, confere o subtotal e remove o produto. \\
+T14 & \texttt{Carrinho\allowbreak.cy.js} & RF06 & 1 & Adiciona um produto ao carrinho, altera a quantidade, confere o subtotal e remove o produto. \\
 \hline
-T15 & \texttt{CatalogoProdutos.cy.js} & RF05 & 1 & Cadastra um produto disponível e verifica se ele aparece no catálogo de bebidas do cliente com preço e descrição. \\
+T15 & \texttt{CatalogoProdutos\allowbreak.cy.js} & RF05 & 1 & Cadastra um produto disponível e verifica se ele aparece no catálogo de bebidas do cliente com preço e descrição. \\
 \hline
-T16 & \texttt{CriandoProduto.cy.js} & RF11 & 1 & Cria um produto pelo painel administrativo e verifica se seus dados aparecem na listagem. \\
+T16 & \texttt{CriandoProduto\allowbreak.cy.js} & RF11 & 1 & Cria um produto pelo painel administrativo e verifica se seus dados aparecem na listagem. \\
 \hline
-T17 & \texttt{DeletandoProduto.cy.js} & -- & 1 & Verifica a remoção de um produto pelo painel administrativo. \\
+T17 & \texttt{DeletandoProduto\allowbreak.cy.js} & -- & 1 & Verifica a remoção de um produto pelo painel administrativo. \\
 \hline
-T18 & \texttt{NavegacaoCardapio.cy.js} & RF05 & 7 & Verifica as páginas do cardápio, a navegação até a seção de bebidas e a exibição do controle do menu em uma tela pequena. \\
+T18 & \texttt{NavegacaoCardapio\allowbreak.cy.js} & RF05 & 7 & Verifica as páginas do cardápio, a navegação até a seção de bebidas e a exibição do controle do menu em uma tela pequena. \\
 \hline
-T19 & \texttt{PersonalizacaoPizza.cy.js} & -- & 3 & Verifica o formulário de preços por tamanho, o salvamento e a edição desses preços e a disponibilidade das bordas ativas para pizzas. \\
+T19 & \texttt{PersonalizacaoPizza\allowbreak.cy.js} & -- & 3 & Verifica o formulário de preços por tamanho, o salvamento e a edição desses preços e a disponibilidade das bordas ativas para pizzas. \\
 \hline
-T20 & \texttt{FluxoCompraEntrega.cy.js} & RF04, RF07--RF11 & 1 & Percorre o fluxo de compra: registra o cliente e o pedido, confere os dados salvos, consulta e atualiza o pedido no painel administrativo, acompanha o status como cliente e verifica as etapas da entrega. \\
+T20 & \texttt{FluxoCompraEntrega\allowbreak.cy.js} & RF04, RF07--RF11 & 1 & Percorre o fluxo de compra: registra o cliente e o pedido, confere os dados salvos, consulta e atualiza o pedido no painel administrativo, acompanha o status como cliente e verifica as etapas da entrega. \\
 \hline
-T21 & \texttt{MesasHistorico.cy.js} & -- & 2 & Verifica os resumos e filtros do histórico de mesas e confirma a aplicação do filtro por datas. \\
+T21 & \texttt{MesasHistorico\allowbreak.cy.js} & -- & 2 & Verifica os resumos e filtros do histórico de mesas e confirma a aplicação do filtro por datas. \\
 \hline
 \end{tabularx}
 \legend{Elaborado pelo autor (2026).}
