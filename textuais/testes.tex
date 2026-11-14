@@ -2,17 +2,20 @@
 \chapter[Testes e validação]{Testes e validação do sistema}
 \label{chap:testes}
 
+Este capítulo apresenta os testes de ponta a ponta usados para verificar os principais fluxos do FlashFood e as evidências obtidas durante sua execução.
+
 \section{Objetivo e escopo dos testes}
 
 Os testes de ponta a ponta foram desenvolvidos com Cypress para verificar os principais fluxos do FlashFood pela interface da aplicação. Os cenários abrangem cadastro e autenticação de usuários, controle de acesso, catálogo de produtos, carrinho de compras, pedidos, histórico de mesas e entrega. Os arquivos estão organizados no diretório \texttt{cypress/e2e/}.
 
 \section{Arquivos e cenários de teste}
 
-As tabelas a seguir apresentam os arquivos Cypress e a finalidade de cada teste. A coluna de requisitos registra apenas as associações indicadas para os cenários; o símbolo -- indica que não foi informado um requisito específico.
+As tabelas a seguir apresentam os arquivos Cypress e a finalidade de cada teste. A coluna de requisitos registra apenas as associações indicadas para os cenários; o símbolo “—” indica que não foi informado um requisito específico.
 
+\Needspace{0.8\textheight}
 \subsection{Cadastro, autenticação e controle de acesso}
 
-\begin{table}[htbp]
+\begin{table}[H]
 \centering
 \caption{Testes de cadastro, autenticação e controle de acesso}
 \label{tab:testes-acesso}
@@ -22,11 +25,11 @@ As tabelas a seguir apresentam os arquivos Cypress e a finalidade de cada teste.
 \hline
 \textbf{ID} & \textbf{Arquivo} & \textbf{Requisito} & \textbf{Aprovados} & \textbf{O que o teste faz} \\
 \hline
-T01 & \texttt{AcessoAdmin\allowbreak.cy.js} & RF03 & 1 & Tenta abrir o painel administrativo sem autenticação e verifica se o sistema redireciona o visitante para a tela de login. \\
+T01 & \texttt{AcessoAdmin\allowbreak.cy.js} & RF03 & 1 & Tenta abrir o painel administrativo sem autenticação e verifica se o sistema redireciona o visitante para a tela de \textit{login}. \\
 \hline
 T02 & \texttt{AcessoPerfil\allowbreak.cy.js} & RF03 & 2 & Verifica que um cliente não consegue abrir o gerenciamento de produtos e que um administrador autorizado consegue acessar essa funcionalidade. \\
 \hline
-T03 & \texttt{AcessoProtegido\allowbreak.cy.js} & RF03 & 8 & Acessa oito páginas protegidas, incluindo perfil, pedidos, carrinho, mesas e entregas, sem uma sessão ativa e verifica o redirecionamento para o login. \\
+T03 & \texttt{AcessoProtegido\allowbreak.cy.js} & RF03 & 8 & Acessa oito páginas protegidas, incluindo perfil, pedidos, carrinho, mesas e entregas, sem uma sessão ativa e verifica o redirecionamento para o \textit{login}. \\
 \hline
 T04 & \texttt{Cadastro\allowbreak.cy.js} & RF01 & 1 & Cadastra um cliente pela página de registro e, em seguida, confirma que ele consegue entrar no sistema. \\
 \hline
@@ -38,19 +41,20 @@ T07 & \shortstack[l]{\texttt{LogandoComFuncionario}\\\texttt{Criado\allowbreak.c
 \hline
 T08 & \texttt{Logout\allowbreak.cy.js} & RF02 & 1 & Encerra a sessão pelo menu e verifica se uma página protegida volta a exigir autenticação. \\
 \hline
-T09 & \texttt{ValidacaoFormularios\allowbreak.cy.js} & -- & 4 & Verifica campos obrigatórios nas telas de login, cadastro e redefinição de senha, além do link para voltar ao login. \\
+T09 & \texttt{ValidacaoFormularios\allowbreak.cy.js} & -- & 4 & Verifica campos obrigatórios nas telas de \textit{login}, cadastro e redefinição de senha, além do link para voltar ao \textit{login}. \\
 \hline
 T10 & \texttt{loginAdmin\allowbreak.cy.js} & RF02 & 1 & Autentica um administrador e verifica se o painel administrativo é aberto. \\
 \hline
-T11 & \texttt{LoginInvalido\allowbreak.cy.js} & RF02 & 1 & Tenta entrar com credenciais inválidas e verifica se o sistema permanece na tela de login. \\
+T11 & \texttt{LoginInvalido\allowbreak.cy.js} & RF02 & 1 & Tenta entrar com credenciais inválidas e verifica se o sistema permanece na tela de \textit{login}. \\
 \hline
 \end{tabularx}
-\legend{Elaborado pelo autor (2026).}
+\legend{Elaborado pelo autor (2026)}
 \end{table}
 
+\Needspace{0.8\textheight}
 \subsection{Produtos, cardápio, carrinho e pedidos}
 
-\begin{table}[htbp]
+\begin{table}[H]
 \centering
 \caption{Testes de produtos, cardápio, carrinho e pedidos}
 \label{tab:testes-produtos-pedidos}
@@ -81,7 +85,7 @@ T20 & \texttt{FluxoCompraEntrega\allowbreak.cy.js} & RF04, RF07--RF11 & 1 & Perc
 T21 & \texttt{MesasHistorico\allowbreak.cy.js} & -- & 2 & Verifica os resumos e filtros do histórico de mesas e confirma a aplicação do filtro por datas. \\
 \hline
 \end{tabularx}
-\legend{Elaborado pelo autor (2026).}
+\legend{Elaborado pelo autor (2026)}
 \end{table}
 
 \section{Ambiente e execução}

@@ -26,6 +26,8 @@ Warning--entry type for "redis2025" isn't style-file defined
 --line 157 of file bibliografia.bib
 Warning--entry type for "cypress2023" isn't style-file defined
 --line 337 of file bibliografia.bib
+Warning--entry type for "ojk2024tkbi" isn't style-file defined
+--line 457 of file bibliografia.bib
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'glb_str_end' (item size: 4) to 20 items.
 Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
@@ -35,45 +37,45 @@ Reallocating 'global_strs' (item size: 1) to 4000000 items.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 24 entries,
+You've used 30 entries,
             6714 wiz_defined-function locations,
-            1316 strings with 12497 characters,
-and the built_in function-call counts, 28275 in all, are:
-= -- 3298
-> -- 434
-< -- 696
-+ -- 872
-- -- 136
-* -- 1690
-:= -- 3499
-add.period$ -- 84
-call.type$ -- 25
-change.case$ -- 175
-chr.to.int$ -- 48
-cite$ -- 19
-duplicate$ -- 2707
-empty$ -- 1351
-format.name$ -- 627
-if$ -- 5791
+            1359 strings with 13898 characters,
+and the built_in function-call counts, 40789 in all, are:
+= -- 4963
+> -- 532
+< -- 1149
++ -- 1351
+- -- 166
+* -- 2418
+:= -- 4911
+add.period$ -- 113
+call.type$ -- 31
+change.case$ -- 221
+chr.to.int$ -- 60
+cite$ -- 25
+duplicate$ -- 4237
+empty$ -- 1727
+format.name$ -- 766
+if$ -- 8155
 int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 389
-newline$ -- 109
-num.names$ -- 95
-pop$ -- 465
+missing$ -- 488
+newline$ -- 140
+num.names$ -- 115
+pop$ -- 591
 preamble$ -- 1
-purify$ -- 80
+purify$ -- 100
 quote$ -- 0
-skip$ -- 2961
+skip$ -- 4491
 stack$ -- 1
-substring$ -- 1245
-swap$ -- 987
-text.length$ -- 28
+substring$ -- 1869
+swap$ -- 1528
+text.length$ -- 40
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 5
+type$ -- 6
 warning$ -- 0
-while$ -- 140
+while$ -- 178
 width$ -- 0
-write$ -- 312
-(There were 5 warnings)
+write$ -- 411
+(There were 6 warnings)

@@ -4,7 +4,6 @@
   oneside,			  % para impressão em recto e verso. Oposto a oneside
   a4paper,			  % tamanho do papel. 
   chapter=TITLE,  % títulos de capítulos convertidos em letras maiúsculas
-  section=TITLE,  % títulos de seções convertidos em letras maiúsculas
   english,			  % idioma adicional para hifenização
   french,				  % idioma adicional para hifenização
   spanish,			  % idioma adicional para hifenização
@@ -13,6 +12,8 @@
 
 % Importa as macros do projeto
 \input{macros.tex}
+\usepackage{float}
+\usepackage{needspace}
 
 % Novos comandos
 \newcommand{\ie}{\textit{i.e. }}
@@ -49,7 +50,6 @@
   % LISTAS E SUMÁRIO
   \imprimirlistafiguras
   \imprimirlistatabelas
-  \imprimirlistaquadros
   \imprimirlistasiglas
   %\imprimirlistasimbolos
   \imprimirsumario
@@ -60,10 +60,14 @@
   \textual
   \graphicspath{{figuras/}}   
   \input{textuais/introducao}
+  \input{textuais/problema_de_pesquisa}
   \input{textuais/justificativa}
+  \input{textuais/objetivos}
   \input{textuais/ref_teorico}
   \input{textuais/Requisitos}
   \input{textuais/modelagem_de_sofware}
+  \input{textuais/implementacao_sistema}
+  \input{textuais/implantacao}
   \input{textuais/testes}
   \input{textuais/usabilidade}
   \input{textuais/conclusao}

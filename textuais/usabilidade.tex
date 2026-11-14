@@ -1,0 +1,143 @@
+% !TEX root = ../main.tex
+\chapter[Teste de usabilidade]{Avaliação de usabilidade do sistema}
+\label{chap:usabilidade}
+
+Este capítulo apresenta o método e os resultados da avaliação exploratória de usabilidade do FlashFood.
+
+\section{Objetivo e escopo}
+
+A avaliação exploratória de usabilidade e aceitação do FlashFood foi realizada com pessoas dos perfis de cliente, funcionário autorizado, administrador e garçom. Ela complementa os testes automatizados descritos no \autoref{chap:testes}: enquanto aqueles verificam comportamentos especificados da aplicação, o questionário pós-tarefa reúne percepções e comentários dos usuários sobre as atividades propostas.
+
+A usabilidade é considerada em relação aos usuários, objetivos e contexto de uso definidos para o sistema. Conforme a ISO 9241-11, ela envolve a eficácia na realização dos objetivos, a eficiência dos recursos utilizados e a satisfação obtida durante o uso \cite{ISO9241_11_2018}. Para investigar a aceitação da tecnologia, utiliza-se o \textit{Technology Acceptance Model} (TAM), ou Modelo de Aceitação de Tecnologia, que considera a utilidade percebida e a facilidade de uso percebida como fatores relacionados à aceitação de sistemas de informação \cite{Davis1989TAM}. Nesta avaliação, o questionário pós-tarefa reuniu itens em escala Likert e perguntas abertas. Como não houve registro estruturado da execução de cada tarefa, os resultados permitem descrever percepções, mas não medir eficácia ou eficiência por tarefa.
+
+\section{Método de avaliação}
+
+Os participantes foram abordados no ambiente de trabalho. Como não havia tempo disponível para realizar as tarefas durante o expediente, as instruções foram encaminhadas pelo WhatsApp para que fossem executadas em casa. O roteiro orientava a realização de uma tarefa por vez, somente das tarefas correspondentes ao perfil do participante e sem demonstração do caminho de navegação. Após as tarefas, os participantes responderam ao questionário pós-tarefa.
+
+A execução ocorreu remotamente e não foi cronometrada. O arquivo recebido contém as respostas ao questionário, mas não possui registros padronizados de conclusão, pedidos de ajuda, erros, duração, dispositivo ou navegador por tarefa. As atividades que envolviam pedidos utilizaram dados fictícios, conforme indicado nas próprias tarefas.
+
+\subsection{Participantes}
+
+O arquivo analisado reúne dez respostas. Os perfis declarados foram cliente, funcionário, administrador e garçom; a distribuição detalhada é apresentada na seção de resultados. Os participantes foram contatados no ambiente de trabalho e convidados, pelo WhatsApp, a realizar as tarefas em casa. O formulário também perguntou a frequência de uso anterior de aplicativos ou sistemas para pedidos de alimentos, com as opções raramente, mensalmente, semanalmente e diariamente. Os resultados são apresentados de forma agregada, sem nomes ou dados de contato.
+
+\subsection{Tarefas enviadas aos participantes}
+
+As tarefas foram derivadas das funcionalidades implementadas e dos fluxos cobertos pelos testes de ponta a ponta. Cada participante recebeu as tarefas correspondentes ao perfil informado e às permissões da conta utilizada.
+
+\begin{table}[htbp]
+\centering
+\caption{Tarefas enviadas aos participantes no teste de usabilidade}
+\label{tab:tarefas-usabilidade}
+\footnotesize
+\begin{tabularx}{\textwidth}{c p{2.5cm} X X}
+\hline
+\textbf{ID} & \textbf{Perfil} & \textbf{Tarefa apresentada ao participante} & \textbf{Critério de conclusão} \\
+\hline
+U01 & Cliente & Localize uma bebida no catálogo e adicione duas unidades ao carrinho. & O produto correto aparece no carrinho com a quantidade solicitada e o subtotal correspondente. \\
+\hline
+U02 & Cliente & Com os dados fictícios fornecidos, conclua um pedido para entrega. & O sistema confirma o pedido e apresenta os dados essenciais da solicitação. \\
+\hline
+U03 & Cliente & Encontre o pedido recém-criado e verifique em que etapa ele se encontra. & O participante localiza o pedido e identifica corretamente o status exibido. \\
+\hline
+U04 & Funcionário autorizado & Localize o pedido de teste e atualize seu status para \textit{em preparo}. & O pedido correto é atualizado e o novo status fica visível na interface. \\
+\hline
+U05 & Administrador & Localize um produto de teste, altere uma informação indicada e confirme a atualização. & A alteração é salva e os dados atualizados aparecem na listagem do painel. \\
+\hline
+U06 & Administrador & Cadastre um funcionário. & O funcionário é cadastrado e aparece na listagem do painel. \\
+\hline
+U07 & Garçom & Abra uma mesa nova. & A mesa é aberta e fica disponível para lançamento do pedido. \\
+\hline
+U08 & Garçom & Adicione produtos à mesa aberta. & Os produtos selecionados aparecem no pedido associado à mesa correta. \\
+\hline
+U09 & Garçom & Feche o pedido da mesa. & O pedido é fechado e o sistema apresenta a situação atualizada. \\
+\hline
+\end{tabularx}
+\legend{Elaborado pelo autor (2026)}
+\end{table}
+
+As tarefas foram redigidas como objetivos, sem indicar botões, menus ou caminhos específicos. O roteiro orientava o moderador a registrar uma dificuldade antes de oferecer ajuda. Como as atividades foram realizadas em casa, sem observação presencial padronizada, o arquivo disponível não permite classificar cada tarefa como concluída sem ajuda, concluída com ajuda ou não concluída.
+
+\subsection{Registro e análise dos dados}
+
+Para a análise, foram consideradas as respostas aos itens Likert por construto e as respostas às perguntas abertas. Os comentários foram agrupados por tema, sem atribuição a pessoas identificadas. Como o formulário não registrou conclusão, tempo, ajuda, erros ou desvios por tarefa, não foram calculadas medidas de desempenho. A interpretação é descritiva e não deve ser generalizada para todos os usuários a partir desta amostra.
+
+\section{Questionário pós-tarefa baseado no TAM}
+
+O TAM fundamenta a avaliação da aceitação da tecnologia a partir de crenças do usuário, entre elas a utilidade percebida e a facilidade de uso percebida \cite{Davis1989TAM}. Nesta avaliação, também se observa a intenção de uso, relacionada à aceitação comportamental da tecnologia \cite{DavisBagozziWarshaw1989}. Os itens apresentados na Tabela~\ref{tab:questionario-tam} foram redigidos para o contexto do FlashFood e foram respondidos após a realização das tarefas.
+
+Para cada afirmação, utiliza-se uma escala Likert de cinco pontos: 1 -- discordo totalmente; 2 -- discordo; 3 -- nem discordo nem concordo; 4 -- concordo; e 5 -- concordo totalmente. Os itens são agrupados em três construtos: facilidade de uso percebida, utilidade percebida e intenção de uso.
+
+\begin{table}[htbp]
+\centering
+\caption{Questionário de aceitação do FlashFood baseado no TAM}
+\label{tab:questionario-tam}
+\footnotesize
+\begin{tabularx}{\textwidth}{c p{3.2cm} X}
+\hline
+\textbf{ID} & \textbf{Construto} & \textbf{Afirmação} \\
+\hline
+Q01 & Facilidade de uso percebida & Aprender a utilizar o FlashFood para realizar as tarefas do meu perfil seria fácil. \\
+\hline
+Q02 & Facilidade de uso percebida & Considero fácil encontrar no FlashFood as funcionalidades necessárias para minhas tarefas. \\
+\hline
+Q03 & Facilidade de uso percebida & A interação com o FlashFood é clara e compreensível. \\
+\hline
+Q04 & Utilidade percebida & O FlashFood é útil para realizar as tarefas relacionadas ao meu perfil. \\
+\hline
+Q05 & Utilidade percebida & O FlashFood ajuda a organizar as informações necessárias para minhas tarefas. \\
+\hline
+Q06 & Utilidade percebida & As funcionalidades do FlashFood atendem às necessidades das tarefas que realizei. \\
+\hline
+Q07 & Intenção de uso & Pretendo utilizar o FlashFood quando precisar realizar essas tarefas. \\
+\hline
+Q08 & Intenção de uso & Eu escolheria o FlashFood para realizar tarefas semelhantes no meu contexto de uso. \\
+\hline
+\end{tabularx}
+\legend{Elaborado pelo autor (2026), com base nos construtos do TAM}
+\end{table}
+
+Os itens foram formulados para este estudo e não correspondem à aplicação de uma escala psicométrica validada para o FlashFood. Por esse motivo, os resultados devem ser tratados como uma avaliação exploratória das percepções dos participantes, sem afirmar validação estatística do instrumento. Para a análise, apresentam-se a distribuição das respostas por item e as medianas por construto. As medianas também são descritas por perfil, sem comparação inferencial devido ao pequeno número de respostas. Os resultados devem ser interpretados em conjunto com as respostas abertas, sem estabelecer um limite universal de aprovação.
+
+Além dos itens em escala, o formulário apresentou três perguntas abertas: “O que foi mais fácil de realizar?”, “Em qual tarefa você encontrou mais dificuldade? O que dificultou?” e “O que você mudaria ou melhoraria no sistema?”. As respostas complementam as avaliações em escala ao registrar percepções e sugestões dos participantes.
+
+\section{Resultados da avaliação}
+
+O arquivo do questionário pós-tarefa reúne 10 respostas registradas em 8 de novembro de 2026. Os perfis informados foram: cinco clientes, dois funcionários, dois garçons e um administrador. Sobre a frequência de uso anterior de aplicativos ou sistemas para pedidos de alimentos, três respostas indicaram “raramente”, quatro “mensalmente”, duas “semanalmente” e uma “diariamente”. Como há poucos registros em alguns perfis, especialmente apenas um de administrador, os resultados são apresentados de forma descritiva e não permitem generalizações para todos os usuários do sistema.
+
+\begin{table}[htbp]
+\centering
+\caption{Distribuição das respostas aos itens do questionário pós-tarefa}
+\label{tab:resultados-tam}
+\small
+\begin{tabular}{c|c|c|c|c|c|c}
+\hline
+\textbf{Item} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{Mediana} \\
+\hline
+Q01 & 0 & 0 & 0 & 0 & 10 & 5 \\
+\hline
+Q02 & 0 & 0 & 0 & 1 & 9 & 5 \\
+\hline
+Q03 & 0 & 0 & 1 & 0 & 9 & 5 \\
+\hline
+Q04 & 0 & 0 & 0 & 1 & 9 & 5 \\
+\hline
+Q05 & 0 & 0 & 0 & 0 & 10 & 5 \\
+\hline
+Q06 & 0 & 0 & 0 & 0 & 10 & 5 \\
+\hline
+Q07 & 0 & 0 & 0 & 1 & 9 & 5 \\
+\hline
+Q08 & 0 & 0 & 0 & 0 & 10 & 5 \\
+\hline
+\end{tabular}
+\normalsize
+\legend{Elaborado pelo autor (2026)}
+\end{table}
+
+Considerando os itens Q01 a Q03, referentes à facilidade de uso percebida, a mediana foi 5; entre as 30 respostas desse grupo, 28 foram 5, uma foi 4 e uma foi 3. Nos itens Q04 a Q06, relacionados à utilidade percebida, a mediana também foi 5, com 29 respostas 5 e uma resposta 4. Para os itens Q07 e Q08, relativos à intenção de uso, a mediana foi 5, com 19 respostas 5 e uma resposta 4. No conjunto das 80 avaliações dos oito itens, 76 foram 5, três foram 4 e uma foi 3. As medianas dos três construtos também foram 5 quando calculadas separadamente para cada perfil. Assim, as respostas registradas foram predominantemente positivas; a única avaliação neutra ocorreu no item sobre clareza e compreensão da interação. Como os grupos têm de uma a cinco respostas, esses resultados por perfil são descritivos e não sustentam comparações entre os grupos.
+
+Nas perguntas abertas, os participantes citaram como aspectos mais fáceis a realização e o acompanhamento de pedidos, a edição de produtos, o atendimento de pedidos para entrega e as operações com mesas. Também foram mencionadas a criação de perfis de funcionários e a consulta ao painel administrativo. Três participantes relataram dificuldades: um apontou dúvidas no enunciado da pergunta, outro descreveu problemas de interação no celular, especialmente com os pedidos exibidos no cabeçalho, e um garçom relatou dificuldade inicial para localizar o fluxo de inclusão de produtos na mesa. Seis respostas indicaram que não houve dificuldade e uma não trouxe comentário nessa pergunta.
+
+Entre as sugestões de melhoria apareceram ajustes na experiência em dispositivos móveis e na clareza do fluxo de inclusão de produtos em mesas, além de ideias de funcionalidades, como programa de fidelidade, cupons de desconto, atendimento com inteligência artificial pelo WhatsApp e priorização de rotas de entrega. Também houve uma observação sobre a forma de apresentar perguntas aos clientes. Dois participantes responderam que não mudariam o sistema e uma resposta não continha comentário. Essas sugestões são percepções individuais e devem ser consideradas junto às prioridades e aos requisitos do projeto.
+
+Os participantes foram orientados a realizar as tarefas remotamente, em seus ambientes domésticos. Nessa aplicação, não foi adotado um procedimento padronizado de cronometragem, portanto o tempo de execução não foi registrado. O arquivo disponibilizado contém as respostas ao questionário pós-tarefa, mas não inclui registros por tarefa de conclusão com ou sem ajuda, erros ou desvios observados pelo moderador. O carimbo de data e hora do CSV corresponde ao envio do formulário e não permite calcular a duração das tarefas. Por isso, não foi possível calcular taxas de conclusão nem comparar o desempenho entre U01 e U09. Os resultados apresentados descrevem a percepção dos respondentes e complementam os testes automatizados, mas não demonstram, por si só, ganhos de produtividade ou satisfação no contexto real da lanchonete.

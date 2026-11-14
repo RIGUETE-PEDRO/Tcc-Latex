@@ -1,0 +1,2005 @@
+              INSTITUTO FEDERAL DO ESPÍRITO SANTO
+        CURSO DE ANÁLISE E DESENVOLVIMENTO DE SISTEMAS
+
+
+
+
+         PEDRO HENRIQUE RIGUETE DE OLIVEIRA MARTINS
+
+
+
+
+GESTÃO OPERACIONAL E CONTROLE DE LANCHONETES: DESENVOLVIMENTO
+  DE UM SISTEMA INFORMATIZADO PARA AUTOMAÇÃO DE PROCESSOS
+
+
+
+
+                            ALEGRE
+                             2026
+          PEDRO HENRIQUE RIGUETE DE OLIVEIRA MARTINS
+
+
+
+
+GESTÃO OPERACIONAL E CONTROLE DE LANCHONETES: DESENVOLVIMENTO
+  DE UM SISTEMA INFORMATIZADO PARA AUTOMAÇÃO DE PROCESSOS
+
+
+
+
+                              Trabalho de Conclusão de Curso apresentado à
+                              Coordenadoria do Curso de Análise e Desenvolvimento
+                              de Sistemas do Instituto Federal de Educação, Ciência e
+                              Tecnologia do Espírito Santo, como requisito parcial para
+                              a obtenção do título de Analista em Desenvolvimento de
+                              Sistemas.
+
+                              Orientador: Prof. D.Sc Carlos Alexandre Siqueira da Silva
+
+
+
+
+                           ALEGRE
+                             2026
+             Dados Internacionais de Catalogação-na-Publicação (CIP)
+          (Biblioteca Nilo Peçanha do Instituto Federal do Espírito Santo)
+
+
+X999y
+
+        Gestão Operacional e Controle de Lanchonetes: Desenvolvimento de um
+    Sistema Informatizado para Automação de Processos/ PEDRO HENRIQUE
+    RIGUETE DE OLIVEIRA MARTINS. – 2026.
+
+        62 f: il; 30 cm.
+
+        Orientador: Carlos Alexandre Siqueira da Silva
+
+        Trabalho de Graduação – Instituto Federal do Espírito Santo, Curso de
+    Análise e Desenvolvimento de Sistemas, 2026.
+
+        1. Sistemas de informação – Desenvolvimento. 2. Aplicações web –
+    Desenvolvimento. 3. Lanchonetes – Administração. 4. Pedidos de alimentos
+    – Processamento de dados. 5. Software – Testes. 6. Usabilidade de sistemas.
+    I. Martins, Pedro Henrique Riguete de Oliveira. II. Instituto Federal do Espírito
+    Santo. III. Título.
+
+
+                                                                       CDD 000.00
+
+
+
+        Elaborada por XXXXXXXXXXXXXXXXXXXXX – CRB-X/ES - XXX
+         PEDRO HENRIQUE RIGUETE DE OLIVEIRA MARTINS
+
+
+
+
+GESTÃO OPERACIONAL E CONTROLE DE LANCHONETES: DESENVOLVIMENTO
+  DE UM SISTEMA INFORMATIZADO PARA AUTOMAÇÃO DE PROCESSOS
+
+
+
+
+                                  Trabalho de Conclusão de Curso apresentado à
+                                  Coordenadoria do Curso de Análise e Desenvolvimento
+                                  de Sistemas do Instituto Federal de Educação, Ciência e
+                                  Tecnologia do Espírito Santo, como requisito parcial para
+                                  a obtenção do título de Analista em Desenvolvimento de
+                                  Sistemas.
+
+
+
+
+                  Aprovado em 01 de Agosto de 2026
+
+
+
+
+                    COMISSÃO EXAMINADORA
+
+
+
+
+            Prof. D.Sc Carlos Alexandre Siqueira da Silva
+                   Instituto Federal do Espírito Santo
+                               Orientador
+
+
+
+                      Profa. Dra. Fulana de Tal
+                  Instituto Federal do Espírito Santo
+                             Examinadora
+
+
+
+                        Prof. Dr. Cicrano de Tal
+                  Instituto Federal do Espírito Santo
+                              Examinador
+A dedicatória é um elemento opcional. Con-
+tém o oferecimento do trabalho adetermi-
+nada pessoa ou a pessoas (ASSOCIA-
+ÇÃO BRASILEIRA DE NORMAS TÉCNI-
+CAS, 2011b).
+                              DECLARAÇÃO DO AUTOR
+
+
+Eu, PEDRO HENRIQUE RIGUETE DE OLIVEIRA MARTINS, declaro que este trabalho
+foi desenvolvido com base em meus próprios estudos e que não houve uso de material
+de terceiros, exceto o que foi citado.
+
+
+
+
+Declaro para fins de pesquisa acadêmica, didática e técnico-científica, que este Tra-
+balho de Conclusão de Curso pode ser parcialmente utilizado, desde que seja feita a
+devida referência à fonte e ao autor.
+
+
+
+                              Alegre, 22 de abril de 2026
+
+
+
+
+               PEDRO HENRIQUE RIGUETE DE OLIVEIRA MARTINS
+                                AGRADECIMENTOS
+
+
+test elemento opcional. Localiza-se após a folha de aprovação e deve ser dirigido àque-
+les que realmente contribuíram, de maneira relevante,para a elaboração do trabalho.
+Deve-se utilizar uma linguagem simples (ASSOCIAÇÃO BRASILEIRA DE NORMAS
+TÉCNICAS, 2011b).
+                                      RESUMO
+
+
+Este trabalho desenvolveu uma aplicação web para apoiar a gestão operacional de
+uma lanchonete. O FlashFood foi implementado com Laravel e PHP, MySQL para
+persistência dos dados e Redis como mecanismo de cache, com controle de acesso
+baseado em papéis. Entre as funcionalidades implementadas estão o cadastro e
+a autenticação de usuários, o gerenciamento de produtos, a consulta ao catálogo,
+o carrinho de compras, o acompanhamento de pedidos e as operações de mesas.
+A verificação funcional foi realizada com testes de ponta a ponta em Cypress: na
+execução registrada, 21 arquivos reuniram 42 casos, todos aprovados. A avaliação
+exploratória de usabilidade encaminhou tarefas pelo WhatsApp para realização remota
+em casa e coletou dez respostas a um questionário pós-tarefa, de clientes, funcionários,
+garçons e administrador. A mediana das respostas sobre facilidade de uso, utilidade
+percebida e intenção de uso foi 5, em escala Likert de cinco pontos. Os comentários
+indicaram aspectos valorizados nos fluxos de pedidos e administração e oportunidades
+de melhoria na experiência móvel e na inclusão de produtos em mesas. Como não
+foram registrados tempos nem resultados estruturados por tarefa, a avaliação descreve
+percepções e não mede eficiência ou taxas de conclusão.
+
+
+Palavras-chave: Gestão operacional. Sistemas web. Lanchonetes. Laravel. Automa-
+ção de processos.
+                                      ABSTRACT
+
+
+This study developed a web application to support the operational management of
+a snack bar. FlashFood was implemented with Laravel and PHP, MySQL for data
+persistence, Redis as a cache, and role-based access control. Its features include user
+registration and authentication, product management, catalog browsing, a shopping cart,
+order tracking, and table-service operations. Functional verification used Cypress end-
+to-end tests: the recorded run included 21 test files and 42 cases, all of which passed.
+For an exploratory usability evaluation, task instructions were sent through WhatsApp
+for participants to complete remotely at home, followed by a post-task questionnaire
+with ten responses from customers, employees, waiters, and an administrator. Median
+ratings for perceived ease of use, usefulness, and intention to use were 5 on a five-point
+Likert scale. Open responses highlighted valued order and administration flows, as well
+as opportunities to improve the mobile experience and the process of adding products
+to tables. Since task durations and structured task outcomes were not recorded, the
+evaluation describes reported perceptions and does not measure efficiency or task-
+completion rates.
+
+
+Keywords: Operational management. Web systems. Snack bars. Laravel. Process
+automation.
+                              LISTA DE ILUSTRAÇÕES
+
+
+Figura 1 – Fluxo de consulta ao Redis no sistema Flashfood . . . . . . . . . . .          29
+Figura 2 – Diagrama de casos de uso do sistema FlashFood . . . . . . . . . .              35
+Figura 3 – Visão resumida do modelo de classes do sistema FlashFood . . . .               37
+Figura 4 – Modelo físico do banco de dados do sistema Flashfood (visão geral)             39
+Figura 5 – Detalhe do modelo físico do banco de dados – região superior esquerda 40
+Figura 6 – Detalhe do modelo físico do banco de dados – região superior direita 41
+Figura 7 – Detalhe do modelo físico do banco de dados – região inferior esquerda 42
+Figura 8 – Detalhe do modelo físico do banco de dados – região inferior direita           43
+Figura 9 – Arquitetura de rede, hospedagem e serviços Docker do sistema
+            FlashFood . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   48
+                                 LISTA DE TABELAS
+
+
+Tabela 1 – Comparativo entre trabalhos correlatos e sistema proposto . . . . .        21
+Tabela 2 – Requisitos funcionais do sistema . . . . . . . . . . . . . . . . . . . .   32
+Tabela 3 – Requisitos não funcionais do sistema . . . . . . . . . . . . . . . . .     33
+Tabela 4 – Recursos utilizados na hospedagem do sistema . . . . . . . . . . .         45
+Tabela 5 – Serviços Docker utilizados na hospedagem . . . . . . . . . . . . . .       47
+Tabela 6 – Testes de cadastro, autenticação e controle de acesso . . . . . . . .      50
+Tabela 7 – Testes de produtos, cardápio, carrinho e pedidos . . . . . . . . . . .     51
+Tabela 8 – Tarefas enviadas aos participantes no teste de usabilidade . . . . .       55
+Tabela 9 – Questionário de aceitação do FlashFood baseado no TAM . . . . .            56
+Tabela 10 – Distribuição das respostas aos itens do questionário pós-tarefa . . .     57
+LISTA DE QUADROS
+                      LISTA DE SIGLAS
+
+
+Ifes   Instituto Federal do Espírito Santo
+
+MVC    Model–View–Controller
+
+ORM    Object–Relational Mapping (Mapeamento Objeto-Relacional)
+
+PHP    PHP: Hypertext Preprocessor
+
+RBAC   Role-Based Access Control (Controle de Acesso Baseado em Fun-
+       ções)
+
+RNF    Requisitos Não Funcionais
+
+RF     Requisitos Funcionais
+
+SQL    Structured Query Language (Linguagem de Consulta Estruturada)
+
+SGBD   Sistema de Gerenciamento de Banco de Dados
+                                     SUMÁRIO
+
+
+1        INTRODUÇÃO . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .           15
+1.1      Problema de pesquisa         . . . . . . . . . . . . . . . . . . . . . . . . .   15
+1.2      Justificativa . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    16
+1.3      Objetivos . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      18
+1.3.1    Objetivo geral . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     18
+1.3.2    Objetivos específicos . . . . . . . . . . . . . . . . . . . . . . . . . . .      18
+2        REFERENCIAL TEÓRICO . . . . . . . . . . . . . . . . . . . . . . . .              19
+2.1      Trabalhos correlatos . . . . . . . . . . . . . . . . . . . . . . . . . . .       19
+2.1.1    Sistema de Point of Sale em cafeteria . . . . . . . . . . . . . . . . . .        19
+2.1.2    Restaurant Management System . . . . . . . . . . . . . . . . . . . .             19
+2.1.3    POS web com Laravel para Meetup Station . . . . . . . . . . . . . .              20
+2.1.4    POS multipagamento para UMKM Mr. Boba . . . . . . . . . . . . . .                20
+2.1.5    Sistema de caixa web para Natta Coffee . . . . . . . . . . . . . . . .           20
+2.1.6    Comparação entre trabalhos correlatos e sistema proposto . . . . . .             21
+2.2      MySQL . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      21
+2.3      PHP . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      22
+2.4      Laravel . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    22
+2.5      Git . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    22
+2.6      GitHub . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     23
+2.7      Blade (sistema de templates) . . . . . . . . . . . . . . . . . . . . .           23
+2.8      Visual Studio Code . . . . . . . . . . . . . . . . . . . . . . . . . . .         23
+2.9      Controle de acesso baseado em funções (RBAC) . . . . . . . . .                   24
+2.10     Docker . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     24
+2.10.1   Testes automatizados de software . . . . . . . . . . . . . . . . . . . .         25
+2.10.2   Testes de ponta a ponta (E2E) . . . . . . . . . . . . . . . . . . . . . .        26
+2.10.3   Cypress . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      26
+2.10.4   Uso do Cypress no sistema FlashFood . . . . . . . . . . . . . . . . .            27
+2.11     Redis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    27
+2.11.1   Cache em aplicações web . . . . . . . . . . . . . . . . . . . . . . . .          28
+2.11.2   Redis como camada de cache . . . . . . . . . . . . . . . . . . . . . .           28
+2.11.3   Escalabilidade horizontal . . . . . . . . . . . . . . . . . . . . . . . . .      29
+2.11.4   Aplicação do Redis no sistema desenvolvido . . . . . . . . . . . . . .          29
+2.12     VPN e WireGuard . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       30
+2.13     Nginx como proxy reverso . . . . . . . . . . . . . . . . . . . . . . .          30
+3        REQUISITOS DE SOFTWARE . . . . . . . . . . . . . . . . . . . . .                31
+3.1      Requisitos funcionais . . . . . . . . . . . . . . . . . . . . . . . . . .       31
+3.2      Requisitos não funcionais . . . . . . . . . . . . . . . . . . . . . . .         32
+4        MODELAGEM DE SOFTWARE . . . . . . . . . . . . . . . . . . . . .                 34
+4.1      Diagrama de casos de uso . . . . . . . . . . . . . . . . . . . . . . .          34
+4.2      Diagrama de classes . . . . . . . . . . . . . . . . . . . . . . . . . .         36
+4.3      Modelo físico do banco de dados . . . . . . . . . . . . . . . . . . .           38
+5        IMPLANTAÇÃO E HOSPEDAGEM . . . . . . . . . . . . . . . . . . .                  44
+5.1      Infraestrutura de hospedagem . . . . . . . . . . . . . . . . . . . . .          44
+5.2      Recursos computacionais . . . . . . . . . . . . . . . . . . . . . . .           44
+5.3      Comunicação por meio do WireGuard . . . . . . . . . . . . . . . .               45
+5.4      Serviços em contêineres . . . . . . . . . . . . . . . . . . . . . . . .         46
+6        TESTES E VALIDAÇÃO . . . . . . . . . . . . . . . . . . . . . . . . .            49
+6.1      Objetivo e escopo dos testes . . . . . . . . . . . . . . . . . . . . .          49
+6.2      Arquivos e cenários de teste . . . . . . . . . . . . . . . . . . . . . .        49
+6.2.1    Cadastro, autenticação e controle de acesso . . . . . . . . . . . . . .         50
+6.2.2    Produtos, cardápio, carrinho e pedidos . . . . . . . . . . . . . . . . .        51
+6.3      Ambiente e execução . . . . . . . . . . . . . . . . . . . . . . . . . .         51
+6.4      Resultados . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      52
+6.5      Evidências . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      52
+7        TESTE DE USABILIDADE . . . . . . . . . . . . . . . . . . . . . . . .            53
+7.1      Objetivo e escopo . . . . . . . . . . . . . . . . . . . . . . . . . . . .       53
+7.2      Método de avaliação . . . . . . . . . . . . . . . . . . . . . . . . . . .       53
+7.2.1    Participantes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   54
+7.2.2    Tarefas enviadas aos participantes . . . . . . . . . . . . . . . . . . .        54
+7.2.3    Registro e análise dos dados . . . . . . . . . . . . . . . . . . . . . . .      54
+7.3      Questionário pós-tarefa baseado no TAM . . . . . . . . . . . . . .              55
+7.4      Resultados da avaliação . . . . . . . . . . . . . . . . . . . . . . . .         56
+8        CONCLUSÃO . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .         59
+8.1   Trabalhos futuros . . . . . . . . . . . . . . . . . . . . . . . . . . . .   59
+      REFERÊNCIAS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     61
+                                                                                     15
+
+
+1 INTRODUÇÃO
+
+
+Devido à convivência com o ambiente de trabalho de uma lanchonete, foram identifica-
+das diversas necessidades passíveis de automação, uma vez que o estabelecimento
+não opera com sua eficiência máxima. Isso ocorre principalmente pela ausência de um
+sistema informatizado para controle de estoque, gerenciamento de vendas, controle de
+pedidos e emissão de comandas, entre outras funcionalidades essenciais.
+
+
+A inexistência dessa ferramenta tem ocasionado erros operacionais, atrasos no atendi-
+mento e sobrecarga de trabalho para os funcionários. Esses fatores podem resultar
+na insatisfação dos clientes, perda de vendas e na criação de um ambiente de traba-
+lho estressante e ineficiente, afetando negativamente proprietários, colaboradores e
+consumidores.
+
+
+Diante desse cenário, surgiu a necessidade de desenvolver um sistema capaz de
+otimizar os processos internos e melhorar a eficiência operacional, sem a necessidade
+de aumento no quadro de funcionários. Além disso, busca-se elevar o volume de
+vendas por meio da melhoria na organização e execução das atividades da lanchonete.
+
+
+Com o desenvolvimento do sistema, espera-se promover uma melhoria significativa no
+funcionamento do estabelecimento, tornando o ambiente mais organizado, eficiente
+e agradável. Ademais, objetiva-se aumentar a satisfação de clientes, funcionários e
+gestores, contribuindo para a fidelização dos clientes, incremento nas vendas e melhoria
+na qualidade dos serviços prestados, constituindo assim um diferencial competitivo no
+mercado.
+
+
+1.1   Problema de pesquisa
+
+
+O setor de alimentação fora do lar exige rapidez, controle e organização. Em uma lan-
+chonete, o atendimento envolve atividades como recebimento de pedidos, preparação,
+controle de itens consumidos, atualização do estoque e pagamento. Quando essas
+etapas não são apoiadas por um sistema integrado, aumentam as possibilidades de
+erros humanos, informações desencontradas, atrasos no atendimento e dificuldades
+no controle das operações.
+                                                                                    16
+
+
+No estabelecimento tomado como referência para este trabalho, identificou-se a neces-
+sidade de organizar processos relacionados a produtos, pedidos, comandas, usuários
+e relatórios. A execução manual dessas atividades pode ocasionar erros de anotação,
+dificuldade para localizar pedidos, demora no fechamento de contas e baixa visibilidade
+sobre os produtos com maior saída. Além disso, a ausência de um controle formal
+de acesso dificulta a separação de responsabilidades entre os diferentes usuários do
+sistema. A falta de um banco de dados centralizado também pode comprometer a
+confiabilidade das informações e o acompanhamento do estoque e das vendas.
+
+
+Diante desse contexto, torna-se relevante investigar como uma aplicação web pode
+contribuir para a automação das rotinas internas de uma lanchonete. Para isso, este
+trabalho propõe o desenvolvimento de um sistema utilizando Laravel e MySQL, apoiado
+por tecnologias como PHP, Docker, MVC, RBAC e Git/GitHub, buscando oferecer uma
+solução adequada ao contexto de pequenos estabelecimentos.
+
+
+Diante disso, este trabalho busca responder à seguinte questão de pesquisa:
+
+
+      Como o desenvolvimento de um sistema informatizado utilizando Lara-
+      vel e MySQL pode contribuir para a automação de processos e para a
+      melhoria da gestão operacional de uma lanchonete?
+
+
+1.2   Justificativa
+
+
+A informatização de processos operacionais tem se tornado um fator relevante para a
+competitividade de pequenos negócios. Em lanchonetes, a agilidade no atendimento
+e a precisão das informações influenciam diretamente a satisfação dos clientes, o
+desempenho da equipe e a capacidade de controle do gestor. Quando pedidos,
+produtos e estoque são administrados sem integração, o estabelecimento fica mais
+exposto a perdas, atrasos, retrabalho e decisões baseadas em percepções incompletas.
+
+
+Este trabalho se justifica, inicialmente, pela necessidade prática de desenvolver uma
+solução capaz de apoiar a rotina de uma lanchonete real ou representativa desse
+tipo de negócio. A proposta busca reduzir a dependência de registros manuais e
+centralizar informações importantes em um sistema web, permitindo que diferentes
+                                                                                   17
+
+
+perfis de usuário acessem funcionalidades compatíveis com suas responsabilidades.
+Dessa forma, pretende-se tornar o atendimento mais organizado e oferecer ao gestor
+melhores condições para acompanhar a operação.
+
+
+Do ponto de vista acadêmico, o projeto favorece a aplicação integrada de conheci-
+mentos de análise e desenvolvimento de sistemas, banco de dados, engenharia de
+software, segurança da informação, arquitetura de software e documentação técnica. A
+construção de uma aplicação com Laravel e MySQL permite explorar conceitos como
+MVC, mapeamento objeto-relacional (Object–Relational Mapping – ORM), migrações,
+autenticação, autorização, regras de negócio e testes funcionais. Além disso, o uso de
+Docker e Git/GitHub aproxima o desenvolvimento das práticas adotadas em ambientes
+profissionais.
+
+
+Sob a perspectiva tecnológica, a escolha do Laravel se justifica pela maturidade do
+ecossistema PHP e pela existência de recursos que reduzem a complexidade de tarefas
+recorrentes em aplicações web. O MySQL é adequado por ser amplamente utilizado,
+possuir documentação consolidada e atender às necessidades de armazenamento
+relacional do sistema. O Docker contribui para evitar diferenças entre ambientes de
+desenvolvimento, enquanto o Git permite registrar a evolução do código-fonte e apoiar
+a rastreabilidade das alterações.
+
+
+Também há uma justificativa social e econômica. Pequenos empreendedores nem
+sempre dispõem de recursos para adquirir sistemas comerciais robustos ou excessi-
+vamente complexos para sua realidade. Uma solução acadêmica, construída a partir
+de requisitos bem definidos, pode demonstrar caminhos viáveis para modernização de
+rotinas e melhoria da organização interna. Ainda que o sistema proposto não substitua
+integralmente plataformas comerciais completas, ele pode atender a necessidades
+centrais e servir como base para futuras evoluções.
+
+
+Portanto, a relevância deste trabalho está em articular uma demanda operacional
+concreta com uma proposta técnica fundamentada. O estudo busca produzir um
+artefato de software útil, documentado e avaliável, contribuindo tanto para a formação
+acadêmica do autor quanto para a discussão sobre automação de processos em
+pequenos estabelecimentos alimentícios.
+                                                                                        18
+
+
+1.3     Objetivos
+
+
+1.3.1    Objetivo geral
+
+
+Desenvolver uma aplicação web com o framework Laravel para apoiar a gestão opera-
+cional de uma lanchonete, contemplando o cadastro e a autenticação de usuários, o
+gerenciamento de produtos, a exibição do catálogo para clientes e o processamento de
+pedidos, com persistência dos dados em MySQL.
+
+
+1.3.2    Objetivos específicos
+
+
+
+      • Levantar os requisitos funcionais e não funcionais do sistema de gestão de
+        lanchonete.
+
+      • Modelar o banco de dados MySQL para armazenar informações de usuários,
+        produtos e pedidos.
+
+      • Desenvolver um mecanismo de autenticação e controle de acesso para funcioná-
+        rios e clientes.
+
+      • Implementar o cadastro, edição, listagem e exclusão de produtos.
+
+      • Desenvolver a funcionalidade de exibição de produtos na área do cliente.
+
+      • Implementar o módulo de carrinho de compras e processamento de pedidos.
+
+      • Gerenciar pedidos e permitir a atualização de seus estados para pendente, em
+        preparo ou finalizado.
+
+      • Integrar a aplicação ao banco de dados MySQL, garantindo a persistência das
+        informações.
+
+      • Verificar os principais fluxos funcionais com testes automatizados de ponta a ponta
+        e analisar a percepção de usabilidade dos participantes por meio de questionário
+        pós-tarefa.
+                                                                                  19
+
+
+2 REFERENCIAL TEÓRICO
+
+
+Nesta seção, são apresentados os principais conceitos e fundamentos teóricos utili-
+zados no desenvolvimento deste trabalho, abordando os conhecimentos necessários
+para a compreensão das tecnologias e metodologias empregadas no sistema.
+
+
+2.1     Trabalhos correlatos
+
+
+Os trabalhos correlatos permitem observar como problemas semelhantes foram tratados
+em outros contextos e quais lacunas permanecem em relação à proposta deste projeto.
+
+
+2.1.1    Sistema de Point of Sale em cafeteria
+
+
+Hidayat e Farell (2023) desenvolveram um sistema de informação POS para uma
+cafeteria, utilizando Laravel, PHP, MySQL e o padrão MVC. O estudo informa que
+registros manuais de relatórios e estoque podiam gerar demora, perda de documentos
+e erros de cadastro. A solução foi projetada com método waterfall e diagramas como
+atividade, contexto, caso de uso e fluxograma.
+
+
+A proximidade com este trabalho está no uso de Laravel, MySQL e no foco em ambiente
+de venda de alimentos e bebidas. A diferença principal está na proposta deste projeto
+de enfatizar também comandas, RBAC e organização operacional integrada.
+
+
+2.1.2    Restaurant Management System
+
+
+Jingga e Limantara (2014) propuseram um modelo de Restaurant Management System
+desenvolvido com PHP e MySQL. O sistema buscava apoiar a comunicação entre
+garçom, chef e caixa em tempo real, além de contemplar processos ligados a pedidos
+e pagamentos.
+
+
+Esse trabalho é relevante por tratar diretamente de restaurantes e por reconhecer a
+importância da integração entre atendimento e preparação. Contudo, a proposta aqui
+apresentada adota Laravel, Docker e controle de acesso baseado em papéis, além de
+direcionar a solução para lanchonetes de pequeno porte.
+                                                                                   20
+
+
+2.1.3   POS web com Laravel para Meetup Station
+
+
+Khairunnisa, Arwani e Hanggara (2022) desenvolveram um sistema POS web para a
+UMKM Meetup Station, negócio do setor de alimentos e bebidas. Segundo o estudo, a
+empresa realizava registros de transações em livro físico e cálculos manuais, o que
+causava erros. A solução utilizou Laravel, PHP, PostgreSQL e metodologia waterfall.
+
+
+Os testes indicaram validação funcional completa e funcionamento responsivo em
+diferentes navegadores e resoluções. A principal contribuição para este projeto é a
+demonstração de viabilidade de uma solução web para pequenos negócios alimentícios.
+Como diferença, o sistema proposto neste trabalho utilizará MySQL e dará maior ênfase
+a estoque, comandas e RBAC.
+
+
+2.1.4   POS multipagamento para UMKM Mr. Boba
+
+
+Lathief, Hasdiana e Lubis (2023) apresentaram um sistema POS multipagamento
+baseado em Laravel para a UMKM Mr. Boba. O estudo relata dificuldades com
+vendas manuais, ausência de alternativas de pagamento não presencial e demora no
+fechamento de relatórios. O desenvolvimento adotou o método RAD e testes black-box.
+
+
+Esse trabalho contribui por evidenciar a importância de relatórios computadorizados
+e de maior agilidade no atendimento. A proposta deste projeto, entretanto, não se
+concentra em múltiplos meios de pagamento, mas na gestão operacional integrada da
+lanchonete.
+
+
+2.1.5   Sistema de caixa web para Natta Coffee
+
+
+Rusmara (2025) desenvolveu um sistema de caixa web para a Natta Coffee com
+framework Laravel, visando melhorar transações de venda, controle de estoque e
+relatórios financeiros. O estudo adotou RAD e indicou ganhos na precisão de registros,
+velocidade de pagamento e emissão de relatórios.
+
+
+A relação com este trabalho é direta, pois ambos tratam de estabelecimentos de
+alimentação e de sistemas web com Laravel. A diferença está na ampliação proposta
+para controle de comandas, perfis de usuário e estrutura de permissões.
+                                                                                                           21
+
+
+2.1.6    Comparação entre trabalhos correlatos e sistema proposto
+
+
+O Quadro 1 sintetiza as principais características dos trabalhos analisados e as compara
+com o sistema proposto.
+
+Tabela 1 – Comparativo entre trabalhos correlatos e sistema proposto
+ Trabalho          Domínio           Tecnologias       Funcionalidades cen-     Relação com o sistema pro-
+                                                       trais                    posto
+ Hidayat e Fa-     Cafeteria         Laravel, PHP,     POS, vendas, relató-     Similar no domínio e nas tec-
+ rell (2023)                         MySQL, MVC        rios e estoque           nologias; menor ênfase em
+                                                                                RBAC e comandas.
+ Jingga e Li-      Restaurante       PHP, MySQL        Pedido, comunicação      Similar na integração ope-
+ mantara (2014)                                        garçom-chef-caixa e      racional; não utiliza Laravel
+                                                       pagamento                nem Docker.
+ Khairunnisa,      Alimentos e be-   Laravel,   PHP,   POS, transações e re-    Similar em POS web; usa
+ Arwani e Hang-    bidas             PostgreSQL        latórios                 PostgreSQL e não prioriza
+ gara (2022)                                                                    RBAC.
+ Lathief, Hasdi-   Bebidas/UMKM      Laravel           POS multipagamento       Similar na automação de ven-
+ ana e Lubis                                           e relatórios             das; foco maior em paga-
+ (2023)                                                                         mento.
+ Rusmara           Cafeteria         Laravel           Caixa web, estoque e     Próximo ao tema; proposta
+ (2025)                                                relatórios financeiros   atual amplia perfis, coman-
+                                                                                das e controle operacional.
+ Sistema    pro-   Lanchonete        Laravel,   PHP,   Produtos, pedidos, co-   Integra gestão operacional,
+ posto                               MySQL, Docker,    mandas, estoque, usu-    controle de acesso e ambi-
+                                     Git/GitHub        ários, RBAC e relató-    ente padronizado para pe-
+                                                       rios                     queno negócio.
+
+Fonte: Elaborado pelo autor (2026).
+
+
+
+A análise dos trabalhos correlatos indica que há soluções voltadas a POS, caixa e
+gestão de restaurantes, mas a proposta deste projeto se diferencia pela combinação
+de gestão operacional de lanchonete, comandas, estoque, Laravel, MySQL, Docker,
+versionamento e controle de acesso baseado em papéis.
+
+
+Essa integração busca atender a uma necessidade prática: organizar a rotina do
+estabelecimento sem impor complexidade excessiva ao usuário final.
+
+
+2.2     MySQL
+
+
+De acordo com Milani (2007), o cenário de globalização e o avanço da automação,
+impulsionados pela popularização da internet, tornaram o armazenamento de dados
+um passo primordial para a migração de negócios para o ambiente digital. Nesse
+contexto, o MySQL surge para suprir essa demanda de organização de informações.
+                                                                                    22
+
+
+O MySQL é um Sistema Gerenciador de Banco de Dados (SGBD) relacional distribuído
+sob um modelo de licenciamento duplo, que inclui uma versão de código aberto.
+Embora tenha sido projetado inicialmente para aplicações de pequeno e médio porte,
+a ferramenta evoluiu para atender também a projetos de maior escala. Segundo
+Milani (2007), o MySQL apresenta robustez e recursos comparáveis aos de sistemas
+proprietários, como SQL Server e Oracle.
+
+
+2.3   PHP
+
+
+Conforme afirma Dall’Oglio (2015), o PHP — que originalmente significava Personal
+Home Page — é uma linguagem de programação criada por Rasmus Lerdorf no
+outono de 1994. Inicialmente, a ferramenta consistia em um conjunto de scripts
+escritos em linguagem C, destinados à criação de páginas dinâmicas para que o autor
+monitorasse o acesso ao seu currículo na internet. Com o aumento da popularidade
+entre outros usuários, Lerdorf adicionou novos recursos, como a interação com bancos
+de dados. Em 1995, o código-fonte foi liberado, permitindo a colaboração de novos
+desenvolvedores. Vale ressaltar que, durante um curto período, a linguagem também
+foi denominada FI (Forms Interpreter).
+
+
+2.4   Laravel
+
+
+De acordo com N.Ricardo (2025), o Laravel é um framework para o desenvolvimento
+de aplicações web em PHP. A ferramenta oferece recursos para tarefas recorrentes,
+como roteamento, acesso a bancos de dados, autenticação e organização da aplicação,
+podendo ser utilizada tanto no desenvolvimento do back-end quanto em aplicações
+completas.
+
+
+2.5   Git
+
+
+Segundo Ferreira (2014), o Git é um sistema de controle de versão que permite registrar
+e acompanhar as alterações realizadas no código-fonte ao longo do desenvolvimento.
+
+
+Seu fundador, Linus Torvalds, criador do sistema operacional Linux, estava descontente
+com o BitKeeper, o sistema para controle de versão no desenvolvimento do kernel
+                                                                                       23
+
+
+Linux. O Git também é bastante utilizado em empresas em todo o mundo, inclusive no
+Brasil.
+
+
+O uso dessa tecnologia favorece a rastreabilidade das modificações e a colaboração
+entre desenvolvedores.
+
+
+2.6   GitHub
+
+
+Conforme afirma Ferreira (2014), o GitHub foi criado em 2008 como uma aplicação
+web para hospedagem de repositórios Git e colaboração entre desenvolvedores.
+
+
+Diversos projetos de código aberto importantes são hospedados no GitHub, como
+jQuery, Node.js, Ruby on Rails, Jenkins, Spring, JUnit e muitos outros.
+
+
+Atualmente, o GitHub se tornou uma das principais plataformas utilizadas por de-
+senvolvedores e empresas para compartilhamento de código, controle de versões e
+colaboração em projetos de software.
+
+
+2.7   Blade (sistema de templates)
+
+
+Conforme Luciano (2016), grande parte dos frameworks web utiliza sistemas de templa-
+tes para padronizar a interface visual das aplicações. Esse recurso otimiza a construção
+do projeto, facilitando o reuso de código e centralizando partes fixas da interface.
+
+
+Com esse objetivo, o Laravel utiliza o Blade, um sistema de templates que se diferencia
+de outras soluções em PHP por não restringir o uso da linguagem PHP em suas
+páginas. Além disso, no Blade, cada view é compilada e armazenada em cache até
+sofrer alguma alteração, o que torna a aplicação mais eficiente e leve.
+
+
+2.8   Visual Studio Code
+
+
+O Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft, am-
+plamente utilizado no desenvolvimento de software. Ele oferece suporte a múltiplas
+linguagens de programação, integração com Git e extensões que aumentam sua
+funcionalidade Wikipédia (2026).
+                                                                                  24
+
+
+Devido à sua leveza e flexibilidade, tornou-se uma das ferramentas mais populares
+entre desenvolvedores web e back-end.
+
+
+2.9    Controle de acesso baseado em funções (RBAC)
+
+
+O modelo de Controle de Acesso Baseado em Funções, conhecido pela sigla RBAC
+(Role-Based Access Control), é um método de autorização que gerencia o acesso de
+usuários a sistemas, aplicações e dados com base em funções predefinidas. Segundo
+IBM (s.d.), nesse modelo, o acesso não é atribuído diretamente ao indivíduo, mas ao
+papel que ele desempenha na organização.
+
+
+Em um sistema que utiliza RBAC, um administrador atribui a cada usuário uma ou mais
+funções, em que cada função representa um conjunto específico de permissões ou
+privilégios. De acordo com IBM (s.d.), esse modelo oferece diversas vantagens:
+
+
+      • Simplificação da gestão: facilita o gerenciamento de acesso em organizações
+       com muitos funcionários;
+
+      • Segurança da informação: auxilia na proteção contra ações internas indevidas
+       e ameaças externas;
+
+      • Princípio do menor privilégio: garante que o usuário tenha acesso apenas aos
+       recursos necessários ao exercício de sua função.
+
+
+A aplicação do RBAC é fundamental para manter a integridade dos dados e a orga-
+nização dos fluxos operacionais, permitindo que o sistema escale de forma segura à
+medida que novos perfis e permissões sejam necessários.
+
+
+2.10    Docker
+
+
+Segundo Vitalino e Castro (2018), o Docker surgiu em 2013 a partir da empresa
+dotCloud, fundada por Solomon Hykes. Inicialmente, a empresa atuava com solu-
+ções PaaS (Platform as a Service), permitindo suporte a diferentes linguagens de
+programação, diferentemente de outras plataformas da época.
+                                                                                  25
+
+
+Os autores destacam que o Docker nasceu como uma tecnologia open source baseada
+inicialmente em LXC (Linux Containers) e Union Filesystem, possibilitando a criação
+de containers leves e eficientes. Seu crescimento ocorreu rapidamente, tornando-se
+amplamente utilizado por empresas de grande porte, como Spotify, além de receber
+suporte de plataformas como AWS e Google.
+
+
+De acordo com Vitalino e Castro (2018), o Docker trouxe maior facilidade na criação,
+distribuição e execução de aplicações em containers, garantindo mais portabilidade
+e consistência entre ambientes de desenvolvimento e produção. Além disso, por
+utilizar o mesmo kernel do sistema operacional hospedeiro, a tecnologia apresenta
+maior eficiência no consumo de recursos quando comparada às máquinas virtuais
+tradicionais.
+
+
+Os autores também ressaltam que o Docker possui melhor desempenho em sistemas
+Linux, embora atualmente também possa ser executado em ambientes Windows e
+macOS. Dessa forma, o Docker tornou-se uma das principais ferramentas utilizadas
+em processos modernos de desenvolvimento e implantação de software.
+
+
+2.10.1   Testes automatizados de software
+
+
+O teste de software é uma atividade importante no processo de desenvolvimento, pois
+permite identificar falhas e avaliar se o sistema apresenta o comportamento esperado.
+Conforme discutido por Sousa (2023), os testes podem ser realizados com o apoio de
+ferramentas de automação, que permitem executar verificações de maneira repetível e
+analisar o funcionamento de aplicações web.
+
+
+A automação de testes utiliza scripts e ferramentas para reproduzir ações e verificar
+resultados previamente definidos. Essa prática pode contribuir para reduzir o esforço
+associado à repetição manual de testes, especialmente quando o sistema passa por
+alterações durante o desenvolvimento. Entretanto, os resultados obtidos dependem
+dos cenários definidos e não garantem, isoladamente, a inexistência de defeitos na
+aplicação.
+                                                                                    26
+
+
+2.10.2   Testes de ponta a ponta (E2E)
+
+
+Os testes de ponta a ponta, conhecidos como E2E (End-to-End), verificam o comporta-
+mento de uma aplicação a partir de fluxos completos de utilização. Em aplicações web,
+esses testes podem reproduzir ações realizadas pelo usuário no navegador e verificar
+se a aplicação responde conforme o esperado.
+
+
+No estudo comparativo realizado por Sousa (2023), o Cypress e o Selenium são anali-
+sados como ferramentas para automatização de testes em aplicações web. O trabalho
+aborda características como configuração, escrita dos scripts, recursos disponíveis e
+execução dos testes. Essa abordagem demonstra a importância de considerar tanto as
+funcionalidades das ferramentas quanto as necessidades específicas do sistema que
+será testado.
+
+
+2.10.3   Cypress
+
+
+O Cypress é uma ferramenta voltada à automação de testes de aplicações web. Se-
+gundo Sousa (2023), a ferramenta utiliza JavaScript para a criação dos scripts de teste
+e foi projetada para trabalhar diretamente com a aplicação executada no navegador.
+Essa característica permite que os testes realizem ações na interface e verifiquem
+elementos e comportamentos apresentados durante a execução.
+
+
+Entre as operações que podem compor um teste estão acessar uma página, localizar
+elementos, preencher campos, clicar em botões e verificar se o resultado esperado foi
+apresentado. A documentação oficial do Cypress também descreve recursos voltados
+à criação e execução de testes automatizados (Cypress, 2023).
+
+
+Outro aspecto discutido por Sousa (2023) é o mecanismo de espera automática do
+Cypress. A ferramenta pode aguardar que determinados elementos ou condições
+estejam disponíveis antes de concluir uma verificação, reduzindo a necessidade de con-
+figurar manualmente esperas em diversos cenários. Ainda assim, os testes devem ser
+planejados e implementados de acordo com o comportamento esperado da aplicação.
+
+
+O estudo de Sousa (2023) também aponta que a escolha de uma ferramenta de
+                                                                                   27
+
+
+automação deve considerar o contexto de uso. Embora o Cypress apresente facilidades
+na escrita e depuração dos testes, existem limitações em comparação com outras
+ferramentas, incluindo diferenças no suporte a linguagens, ambientes e determinados
+cenários de navegação. Portanto, sua adequação deve ser avaliada conforme os
+requisitos do projeto.
+
+
+2.10.4    Uso do Cypress no sistema FlashFood
+
+
+No sistema FlashFood, o Cypress pode ser utilizado para automatizar testes de ponta
+a ponta que verifiquem os fluxos implementados na aplicação. Entre os exemplos de
+cenários que podem ser avaliados estão a autenticação de usuários, a navegação
+pelas telas e as operações de gerenciamento de produtos, vendas e pedidos, desde
+que esses fluxos estejam implementados e façam parte dos testes desenvolvidos.
+
+
+Em cada cenário, o teste deve executar as ações previstas e verificar se os resultados
+correspondem ao comportamento esperado. A execução repetida desses cenários
+após alterações no código pode auxiliar na identificação de regressões. Contudo,
+as conclusões sobre a qualidade do sistema devem se limitar às funcionalidades e
+condições efetivamente verificadas pelos testes.
+
+
+2.11     Redis
+
+
+O Redis (Remote Dictionary Server ) é um banco de dados NoSQL em memória
+amplamente utilizado como sistema de cache, armazenamento de sessões, filas de
+mensagens e banco de dados chave-valor. Diferentemente de outras soluções de
+cache, o Redis oferece suporte a diversas estruturas de dados, como listas, conjuntos,
+hashes e conjuntos ordenados, além de permitir persistência opcional dos dados em
+disco.
+
+
+Segundo Redis Ltd. (2025), o armazenamento dos dados diretamente na memória RAM
+reduz o tempo de acesso em comparação com sistemas que dependem de operações
+em disco, tornando o Redis adequado a aplicações que exigem alto desempenho.
+
+
+Além disso, o Redis oferece mecanismos de expiração automática de chaves (Time To
+                                                                                   28
+
+
+Live – TTL), permitindo que os dados armazenados sejam removidos automaticamente
+após determinado período, evitando inconsistências e desperdício de memória.
+
+
+2.11.1   Cache em aplicações web
+
+
+O cache é uma técnica utilizada para reduzir o tempo de resposta das aplicações, arma-
+zenando temporariamente informações frequentemente acessadas em uma camada de
+memória de alta velocidade. Dessa forma, evita-se a execução repetitiva de consultas
+ao banco de dados e outros processos computacionalmente custosos, contribuindo
+para a melhoria do desempenho e da escalabilidade dos sistemas.
+
+
+Em aplicações web modernas, o uso de mecanismos de cache torna-se essencial
+principalmente em cenários com elevado número de acessos simultâneos. A utiliza-
+ção dessa estratégia reduz a carga sobre o banco de dados, diminui a latência das
+requisições e melhora a experiência do usuário.
+
+
+2.11.2   Redis como camada de cache
+
+
+O Redis é frequentemente utilizado como uma camada intermediária entre a aplica-
+ção e o banco de dados. Quando uma informação é solicitada, a aplicação verifica
+inicialmente se ela está armazenada no cache. Caso esteja disponível, o dado é
+retornado imediatamente. Caso contrário, a informação é recuperada do banco de
+dados, armazenada no Redis e posteriormente enviada ao usuário.
+
+
+O fluxo de consulta ao cache e ao banco de dados adotado no sistema Flashfood é
+apresentado na Figura 1.
+
+
+Esse processo reduz significativamente a quantidade de consultas ao banco de dados,
+especialmente em informações acessadas repetidamente, como listas de produtos,
+categorias, configurações do sistema e dados estatísticos.
+
+
+De acordo com Almeida et al. (2023), o Redis apresenta desempenho superior em
+operações de leitura quando comparado a bancos relacionais tradicionais, tornando-se
+uma alternativa para aplicações com alta demanda de acesso.
+                                                                                  29
+
+
+Figura 1 – Fluxo de consulta ao Redis no sistema Flashfood
+
+
+
+
+Fonte: Elaborado pelo autor (2026).
+
+
+
+2.11.3   Escalabilidade horizontal
+
+
+A escalabilidade horizontal consiste na ampliação da capacidade de processamento
+de uma aplicação por meio da adição de novos servidores, em vez do aumento da
+capacidade de um único equipamento. Nesse cenário, soluções de cache como o
+Redis desempenham papel fundamental, reduzindo o número de acessos simultâneos
+ao banco de dados e distribuindo de forma mais eficiente a carga entre os servidores.
+
+
+Segundo Filho (2025), arquiteturas que utilizam cache podem responder mais rapida-
+mente às requisições dos usuários, proporcionando maior disponibilidade e desempe-
+nho.
+
+
+2.11.4   Aplicação do Redis no sistema desenvolvido
+
+
+Neste trabalho, o Redis foi utilizado como mecanismo de cache da aplicação desenvol-
+vida em Laravel. Informações frequentemente consultadas, como listas de funcionários,
+                                                                                    30
+
+
+categorias e outros registros de baixa frequência de alteração, foram armazenadas
+temporariamente no Redis utilizando o mecanismo Cache::remember() disponibilizado
+pelo framework.
+
+
+Quando ocorre alteração nos dados, como inclusão, edição ou exclusão de registros, o
+cache correspondente é invalidado por meio do método Cache::forget(), garantindo
+que as informações apresentadas aos usuários permaneçam consistentes.
+
+
+Essa estratégia reduz a quantidade de consultas ao banco de dados MySQL, melhora
+o tempo de resposta da aplicação e aumenta sua capacidade de atender múltiplos
+usuários simultaneamente.
+
+
+2.12   VPN e WireGuard
+
+
+Uma rede privada virtual (VPN) estabelece um canal de comunicação protegido entre
+dispositivos ou redes que se comunicam por uma infraestrutura compartilhada, como
+a Internet. O WireGuard implementa um túnel seguro de rede na camada de rede e
+associa os pares de comunicação às respectivas chaves públicas e aos endereços
+IP autorizados Donenfeld (2017). No FlashFood, essa tecnologia conecta a máquina
+virtual ao servidor próprio; os endereços e parâmetros usados na configuração são
+apresentados no Capítulo 5.
+
+
+2.13   Nginx como proxy reverso
+
+
+O Nginx é um servidor web que também pode atuar como proxy reverso. Nesse modo,
+recebe requisições dos clientes, encaminha-as a outro servidor e devolve as respostas
+recebidas F5, Inc. (s.d.). Essa função permite separar o ponto de entrada web do
+servidor que executa a aplicação. Na implantação do FlashFood, o Nginx da máquina
+virtual encaminha as requisições ao servidor próprio, conforme descrito no Capítulo 5.
+                                                                                    31
+
+
+3 REQUISITOS DE SOFTWARE
+
+
+Nesta seção são apresentados os requisitos de software definidos para o sistema,
+considerando as funcionalidades que devem ser disponibilizadas aos usuários e as
+características necessárias para seu funcionamento. Os requisitos são divididos em
+funcionais e não funcionais.
+
+
+3.1   Requisitos funcionais
+
+
+Os requisitos funcionais de um sistema descrevem o que ele deve fazer, ou seja, os
+serviços e funcionalidades que o sistema deve fornecer aos usuários. Esses requisitos
+podem variar de descrições mais gerais até especificações detalhadas, incluindo
+entradas, saídas e comportamentos esperados do sistema.
+
+
+Quando expressos como requisitos de usuário, são apresentados de forma mais abs-
+trata para facilitar o entendimento. Já em nível de sistema, tornam-se mais detalhados
+e técnicos. A imprecisão na definição desses requisitos pode gerar interpretações
+diferentes pelos desenvolvedores, causando problemas, retrabalho e aumento de
+custos.
+
+
+Em sistemas complexos, é difícil garantir que os requisitos funcionais sejam totalmente
+completos e consistentes, devido à grande quantidade de stakeholders e possíveis
+conflitos entre necessidades. Por isso, falhas ou omissões podem aparecer durante o
+desenvolvimento ou após a entrega do sistema (SOMMERVILLE, 2011).
+
+
+Com base nas necessidades identificadas e nos objetivos definidos para o sistema,
+foram estabelecidos os requisitos funcionais apresentados na Tabela 2.
+                                                                                               32
+
+
+Tabela 2 – Requisitos funcionais do sistema
+
+   ID     Descrição
+ RF01     O sistema deve permitir o cadastro de usuários, incluindo funcionários e clientes.
+ RF02     O sistema deve permitir que os usuários realizem autenticação e encerramento de
+          sessão.
+ RF03     O sistema deve controlar o acesso às funcionalidades de acordo com o perfil atribuído
+          ao usuário.
+ RF04     O sistema deve permitir que usuários gerenciem pedidos.
+ RF05     O sistema deve exibir os produtos disponíveis na área do cliente.
+ RF06     O sistema deve permitir gerenciar o carrinho de compras.
+ RF07     O sistema deve permitir a confirmação e o registro de pedidos.
+ RF08     O sistema deve permitir que funcionários autorizados consultem os pedidos registra-
+          dos.
+ RF09     O sistema deve permitir a localização e o acompanhamento dos pedidos em anda-
+          mento.
+ RF10     O sistema deve permitir a atualização do status do pedido para pendente, em preparo
+          ou finalizado.
+ RF11     O sistema deve armazenar e recuperar os dados de usuários, produtos e pedidos.
+
+Fonte: Elaborado pelo autor (2026).
+
+
+
+
+3.2     Requisitos não funcionais
+
+
+Os requisitos não funcionais não estão diretamente relacionados às funções espe-
+cíficas do sistema, mas às características de qualidade e restrições globais, como
+desempenho, confiabilidade, segurança, tempo de resposta e disponibilidade. Esses
+requisitos podem também envolver limitações de implementação, como tipos de dis-
+positivos de entrada e saída e formas de representação de dados em interfaces com
+outros sistemas.
+
+
+Diferentemente dos requisitos funcionais, os requisitos não funcionais são importantes
+para o funcionamento adequado do sistema como um todo. Falhas relacionadas à
+segurança, à disponibilidade ou ao desempenho podem comprometer o atendimento, a
+integridade dos dados e a continuidade das operações da lanchonete.
+
+
+Além disso, esses requisitos são mais difíceis de serem associados a componentes
+                                                                                           33
+
+
+específicos do sistema, pois sua implementação geralmente está distribuída em várias
+partes do software (SOMMERVILLE, 2011).
+
+
+Os requisitos não funcionais definidos para o sistema são apresentados na Tabela 3.
+
+Tabela 3 – Requisitos não funcionais do sistema
+
+   ID      Descrição
+ RNF01     O sistema deve suportar múltiplos usuários simultâneos.
+ RNF02     As senhas devem ser armazenadas exclusivamente na forma de resumo criptográ-
+           fico seguro (hash), conforme os mecanismos disponibilizados pelo Laravel.
+ RNF03     O sistema deve funcionar 24 horas por dia, 7 dias por semana.
+ RNF04     O sistema deve funcionar em navegadores como Chrome, Firefox e Edge.
+ RNF05     O código-fonte deve seguir a organização do padrão MVC, de modo a separar
+           apresentação, regras de negócio e acesso aos dados.
+ RNF06     O sistema deve proteger as rotas e operações restritas por meio de autenticação e
+           autorização baseada no perfil do usuário.
+ RNF07     O sistema deve registrar logs de autenticação e das operações de inclusão, altera-
+           ção e exclusão de registros.
+
+Fonte: Elaborado pelo autor (2026).
+                                                                                    34
+
+
+4 MODELAGEM DE SOFTWARE
+
+
+4.1   Diagrama de casos de uso
+
+
+Para sintetizar as funcionalidades previstas e os perfis que interagem com o sistema, a
+Figura 2 apresenta o diagrama de casos de uso do FlashFood.
+                                                           35
+
+
+
+
+Figura 2 – Diagrama de casos de uso do sistema FlashFood
+
+
+
+
+Fonte: Elaborado pelo autor (2026).
+                                                                                    36
+
+
+O visitante representa o usuário que ainda não está autenticado. Para esse perfil, o
+sistema disponibiliza a consulta ao cardápio, a criação de uma conta, o acesso ao
+sistema e a recuperação de senha. Após a autenticação, o cliente pode consultar e
+acompanhar pedidos, gerenciar o carrinho e o próprio perfil, além de finalizar uma
+compra.
+
+
+Na finalização do pedido, o diagrama indica duas interações incluídas: informar o ende-
+reço ou a mesa e selecionar a forma de pagamento. A relação «include» representa
+etapas que fazem parte desse caso de uso, evidenciando as informações necessárias
+para registrar o pedido.
+
+
+As atividades internas são distribuídas entre os demais perfis. O garçom pode lançar
+pedidos para mesas; o entregador pode gerenciar entregas; e o funcionário autorizado
+pode consultar pedidos, registrar pedidos recebidos pelo WhatsApp, cancelar pedidos,
+atualizar seus status e emitir comprovantes. O administrador, por sua vez, pode
+gerenciar produtos e bordas, funcionários, permissões e mesas, consultar o painel
+administrativo e configurar o sistema e a impressora.
+
+
+As relações de generalização representadas no diagrama vinculam os papéis de
+garçom, entregador e administrador ao ator Funcionário autorizado. Essa organização
+reúne as operações comuns no perfil geral e mantém as funcionalidades específicas
+associadas a cada papel.
+
+
+4.2   Diagrama de classes
+
+
+Para facilitar a visualização das principais classes de domínio e de suas relações, a
+Figura 3 apresenta uma visão resumida do modelo de classes do sistema.
+                                                                      37
+
+
+
+
+Figura 3 – Visão resumida do modelo de classes do sistema FlashFood
+
+
+
+
+Fonte: Elaborado pelo autor (2026).
+                                                                                38
+
+
+O modelo agrupa as classes por áreas do sistema, como acesso e usuários, endereços,
+atendimento em mesa, catálogo de produtos e carrinho e pedidos. As classes apre-
+sentam atributos e chaves, enquanto as associações e multiplicidades indicam como
+os registros se relacionam. A versão integral complementa essa visão com as classes
+de controle, serviços, repositórios e suas implementações, middleware, mensagens
+e enumerações. Devido à quantidade de elementos, o diagrama completo pode ser
+acessado pelo endereço: <https://github.com/RIGUETE-PEDRO/FastFood/blob/main/
+diagrama%20de%20class.jpg>.
+
+
+4.3    Modelo físico do banco de dados
+
+
+A Figura 4 apresenta a visão geral do banco de dados. Para facilitar a leitura das
+tabelas e de seus campos, as ampliações das diferentes regiões estão nas Figuras 5
+a 8.
+Figura 4 – Modelo físico do banco de dados do sistema Flashfood (visão geral)
+
+
+
+
+Fonte: elaborado pelo autor (2026).
+
+
+
+
+                                                                                39
+Figura 5 – Detalhe do modelo físico do banco de dados – região superior esquerda
+
+
+
+
+Fonte: elaborado pelo autor (2026).
+
+
+
+
+                                                                                   40
+Figura 6 – Detalhe do modelo físico do banco de dados – região superior direita
+
+
+
+
+Fonte: elaborado pelo autor (2026).
+
+
+
+
+                                                                                  41
+Figura 7 – Detalhe do modelo físico do banco de dados – região inferior esquerda
+
+
+
+
+Fonte: elaborado pelo autor (2026).
+
+
+
+
+                                                                                   42
+Figura 8 – Detalhe do modelo físico do banco de dados – região inferior direita
+
+
+
+
+Fonte: elaborado pelo autor (2026).
+
+
+
+
+                                                                                  43
+                                                                                    44
+
+
+5 IMPLANTAÇÃO E HOSPEDAGEM
+
+
+5.1   Infraestrutura de hospedagem
+
+
+A hospedagem do FlashFood utilizou dois equipamentos com funções distintas: uma
+máquina virtual contratada na HostGator e o servidor próprio do projeto. A máquina
+virtual forneceu um endereço IP fixo utilizado para o acesso externo ao sistema. A
+aplicação Laravel e o banco de dados MySQL permaneceram em execução no servidor
+próprio; portanto, a máquina virtual não armazenava os dados da aplicação nem
+executava sua lógica de negócio.
+
+
+O endereço utilizado para acessar o sistema pelo navegador é <https://www.flashfood.
+store/>. A disponibilidade da aplicação nesse domínio depende do redirecionamento
+do tráfego na máquina virtual para o servidor próprio pelo túnel WireGuard. Quando
+esse redirecionamento está desativado, o sistema não fica acessível pelo domínio.
+
+
+A escolha do plano com recursos reduzidos teve como objetivo diminuir o custo da
+disponibilização externa do sistema. Como a aplicação e o banco de dados eram
+executados no servidor próprio, não era necessário utilizar a máquina virtual para
+processamento ou armazenamento desses componentes. Para a arquitetura adotada,
+a função principal da VM era fornecer um endereço IP público fixo e atuar como
+ponto remoto da conexão WireGuard, pela qual o tráfego de acesso era encaminhado
+ao servidor do projeto. Na comparação de preços realizada pelo autor à época da
+contratação, esse plano apresentou custo inferior ao da contratação de um endereço
+IP fixo com um provedor de Internet local. Assim, foi priorizada uma configuração de
+menor custo que atendesse ao requisito de acesso externo ao sistema.
+
+
+5.2   Recursos computacionais
+
+
+A Tabela 4 resume as especificações informadas para os dois equipamentos. Os
+valores de memória representam a capacidade total indicada pelas ferramentas, e não
+o consumo momentâneo observado durante a coleta.
+                                                                                      45
+
+
+Tabela 4 – Recursos utilizados na hospedagem do sistema
+
+ Equipamento           Especificações                   Função na hospedagem
+ Máquina virtual da    Plano VPS NVMe 2, com 1 vCPU, Receber o acesso externo pelo IP
+ HostGator             2 GB de memória DDR5, 50 GB fixo e participar da conexão VPN
+                       de armazenamento NVMe e um com o servidor próprio.
+                       IP dedicado. O ambiente utiliza
+                       Ubuntu 22.04.5 LTS, kernel Linux
+                       6.8.0-138-generic e virtualização
+                       KVM/OpenStack. O sistema opera-
+                       cional reconhece 1,9 GiB de RAM
+                       e não possui área de troca (swap)
+                       configurada.
+ Servidor próprio      Computador desktop com arquite- Executar a aplicação Laravel e o
+                       tura x86-64, Ubuntu 24.04.5 LTS, banco de dados MySQL.
+                       kernel Linux 6.8.0-147-generic, 15
+                       GiB de memória RAM e 4 GiB de
+                       área de troca (swap).
+
+Fonte: Elaborado pelo autor (2026).
+
+
+
+5.3   Comunicação por meio do WireGuard
+
+
+A comunicação entre a máquina virtual e o servidor próprio foi estabelecida por meio de
+uma VPN configurada com WireGuard (DONENFELD, 2017). Essa configuração criou
+uma rede privada entre os equipamentos, permitindo encaminhar o tráfego entre eles
+sem expor diretamente à Internet os endereços utilizados nessa rede. Na configuração
+do servidor próprio, a interface WireGuard recebeu o endereço 10.200.200.2/24. A
+faixa 10.200.200.0/24 foi indicada como rede acessível pelo túnel, e o peer remoto
+foi configurado para ser alcançado pelo endereço público da máquina virtual na porta
+UDP 25000.
+
+
+Na VM, o Nginx escuta nas portas TCP 80 e 443, enquanto o WireGuard recebe
+conexões na porta UDP 25000. A configuração do Nginx contém blocos para os do-
+mínios flashfood.store e www.flashfood.store; o bloco HTTPS escuta na porta
+443 com TLS e encaminha as requisições para http://10.200.200.2:8000. Dessa
+forma, o Nginx da VM atua como proxy reverso e envia o tráfego ao servidor pró-
+prio pela rede WireGuard (F5, Inc., s.d.). O TLS é encerrado na VM, e a conexão
+HTTP entre os servidores percorre o túnel VPN. A saída das tabelas NAT não mostrou
+uma regra DNAT para esse fluxo, o que é compatível com o uso de proxy reverso. O
+                                                                                 46
+
+
+parâmetro net.ipv4.ip_forward=1 também está habilitado. Em um teste realizado
+localmente na VM, uma requisição HTTP para www.flashfood.store retornou o status
+301 Moved Permanently e o cabeçalho Location:      https://www.flashfood.store/,
+confirmando o redirecionamento da porta 80 para HTTPS. A resposta também infor-
+mou o servidor nginx/1.18.0 (Ubuntu), distinguindo-o do Nginx 1.27 executado no
+contêiner do servidor próprio.
+
+
+O fluxo de acesso começa quando o usuário abre <https://www.flashfood.store/>. A co-
+nexão HTTPS chega ao Nginx da VM, que encaminha a requisição para 10.200.200.2:8000
+pelo túnel WireGuard. Nesse endereço, a porta 8000 do servidor próprio está mapeada
+para a porta 80 do contêiner web. A partir daí, o Nginx em contêiner encaminha a
+requisição à aplicação Laravel, conforme a configuração local do Nginx. A aplicação
+consulta o MySQL e o Redis na rede Docker. A resposta retorna pelo mesmo caminho.
+Assim, a VM fornece o ponto público de entrada, enquanto a aplicação e os dados
+permanecem no servidor próprio.
+
+
+5.4   Serviços em contêineres
+
+
+No servidor próprio, os componentes da aplicação foram organizados com Docker
+Compose. O contêiner web, baseado no Nginx, publica a porta 8000 do servidor
+para a porta 80 do contêiner. O contêiner app executa o Laravel com PHP 8.3; a
+aplicação atende na porta 8000 da rede Docker. O mesmo contêiner inicia o Laravel
+Reverb na porta 8080, publicada também na porta 8080 do servidor. A configuração do
+Nginx é montada no contêiner a partir do arquivo docker/nginx/default.conf; como
+o conteúdo desse arquivo não está descrito nesta seção, o diagrama apresenta o
+encaminhamento web em nível lógico.
+
+
+O MySQL 8.0 e o Redis 7 são executados em contêineres separados. O arquivo
+Compose publica as portas 3307:3306 para o MySQL e 6379:6379 para o Redis,
+considerando primeiro a porta do servidor e depois a porta do contêiner. A persis-
+tência é mantida pelo volume db_data, associado aos dados do MySQL, pelo volume
+app_storage, associado aos arquivos de armazenamento do Laravel, e por um diretório
+do servidor montado para as imagens dos produtos. A publicação de uma porta no
+                                                                                     47
+
+
+Docker não determina, por si só, se ela pode ser acessada pela Internet; isso também
+depende das regras de encaminhamento e do firewall.
+
+
+A Tabela 5 resume os serviços da aplicação definidos no arquivo Compose. O arquivo
+docker/nginx/default.conf, montado no contêiner web, não foi analisado; por isso, o
+encaminhamento desse Nginx para a aplicação Laravel é apresentado no diagrama de
+forma lógica.
+
+Tabela 5 – Serviços Docker utilizados na hospedagem
+
+ Serviço           Componente e função                              Portas ou persis-
+                                                                    tência
+ web               Nginx 1.27, ponto de entrada web no servidor.    8000:80
+ app               Laravel executado com PHP 8.3; inicia também o   Laravel: porta in-
+                   Laravel Reverb.                                  terna 8000; Reverb:
+                                                                    8080:8080; volume
+                                                                    app_storage e dire-
+                                                                    tório de imagens.
+ db                Banco de dados MySQL 8.0.                        3307:3306; volume
+                                                                    db_data.
+ redis             Serviço Redis 7 utilizado como cache.            6379:6379.
+
+Fonte: Elaborado pelo autor (2026).
+
+
+
+A Figura 9 sintetiza a comunicação entre o usuário, a VM pública e os serviços executa-
+dos em contêineres no servidor próprio.
+
+
+As chaves criptográficas utilizadas para estabelecer a VPN são parâmetros de con-
+figuração e não são apresentadas neste trabalho. A descrição registra apenas os
+endereços da rede privada e a porta de comunicação necessários para caracterizar a
+arquitetura adotada.
+                                                                                                                                                                                                            48
+
+
+
+
+Figura 9 – Arquitetura de rede, hospedagem e serviços Docker do sistema FlashFood
+
+                                          ARQUITETURA DE REDE E SERVIÇOS DO FLASHFOOD
+                                       IP fixo na VM HostGator; aplicação e dados executados no servidor próprio com Docker Compose
+
+
+                               VM HostGator - VPS NVMe 2                                                                                        Servidor próprio - desktop x86-64
+                                                                                           WireGuard                                   Ubuntu 24.04.5 LTS - WG 10.200.200.2/24 - 15 GiB RAM - 4 GiB swap
+                               Ubuntu 22.04.5 LTS - 1 vCPU - 2 GB RAM
+                                                                                            UDP 25000
+         Usuário                     50 GB NVMe - IP dedicado
+                                                                                                                                                       Docker Compose - rede interna
+      Navegador web                          IP público fixo
+                                                                                                                                web - Nginx 1.27                           app - Laravel / PHP 8.3
+     flashfood.store (HTTPS)            143.95.172.121                                  10.200.200.2:8000                                                                     Laravel :8000 interno
+                                                                                                                                host 8000 : cont. 80                         Reverb :8080 - host :8080
+                               Nginx 1.18 TCP 80/443 - WireGuard UDP 25000                                                                                                 Volume app_storage + uploads
+
+
+                                                                                                                                         MySQL 8.0                                       Redis 7
+                                                                                                                                     host 3307 : cont. 3306                        host 6379 : cont. 6379
+                                                                                                                                        Volume db_data
+
+
+
+
+                                                                                          Fluxo do acesso
+                                                    HTTP :80 -> 301 HTTPS | HTTPS :443/TLS -> proxy HTTP via WireGuard -> 10.200.200.2:8000
+                                                   Nginx Docker :80 -> Laravel :8000 -> MySQL / Redis. O redirect HTTP foi confirmado por resposta 301.
+                                                          A configuração local docker/nginx/default.conf não foi analisada; credenciais omitidas.
+
+
+
+
+Fonte: Elaborado pelo autor (2026).
+                                                                                    49
+
+
+6 TESTES E VALIDAÇÃO DO SISTEMA
+
+
+6.1   Objetivo e escopo dos testes
+
+
+Os testes de ponta a ponta foram desenvolvidos com Cypress para verificar os principais
+fluxos do FlashFood pela interface da aplicação. Os cenários abrangem cadastro
+e autenticação de usuários, controle de acesso, catálogo de produtos, carrinho de
+compras, pedidos, histórico de mesas e entrega. Os arquivos estão organizados no
+diretório cypress/e2e/.
+
+
+6.2   Arquivos e cenários de teste
+
+
+As tabelas a seguir apresentam os arquivos Cypress e a finalidade de cada teste. A
+coluna de requisitos registra apenas as associações indicadas para os cenários; o
+símbolo – indica que não foi informado um requisito específico.
+                                                                                                50
+
+
+6.2.1    Cadastro, autenticação e controle de acesso
+
+Tabela 6 – Testes de cadastro, autenticação e controle de acesso
+ ID     Arquivo                   Requisito   Aprovados O que o teste faz
+T01 AcessoAdmin.cy.js             RF03            1      Tenta abrir o painel administrativo sem
+                                                         autenticação e verifica se o sistema redi-
+                                                         reciona o visitante para a tela de login.
+T02 AcessoPerfil.cy.js            RF03            2      Verifica que um cliente não consegue
+                                                         abrir o gerenciamento de produtos e que
+                                                         um administrador autorizado consegue
+                                                         acessar essa funcionalidade.
+T03 AcessoProtegido.cy.js         RF03            8      Acessa oito páginas protegidas, inclu-
+                                                         indo perfil, pedidos, carrinho, mesas e
+                                                         entregas, sem uma sessão ativa e veri-
+                                                         fica o redirecionamento para o login.
+T04 Cadastro.cy.js                RF01            1      Cadastra um cliente pela página de re-
+                                                         gistro e, em seguida, confirma que ele
+                                                         consegue entrar no sistema.
+T05 CriarFuncionario.cy.js        RF01            1      Verifica o cadastro de um funcionário por
+                                                         meio do painel administrativo.
+T06 DeletarFuncionario            –               1      Verifica a remoção de um funcionário
+    .cy.js                                               pelo painel administrativo.
+    LogandoComFuncionario
+T07 Criado.cy.js                  RF01,           2      Cadastra um funcionário autorizado e
+                                  RF02                   verifica se ele consegue se autenticar no
+                                                         sistema.
+T08 Logout.cy.js                  RF02            1      Encerra a sessão pelo menu e verifica
+                                                         se uma página protegida volta a exigir
+                                                         autenticação.
+T09 ValidacaoFormularios          –               4      Verifica campos obrigatórios nas telas
+    .cy.js                                               de login, cadastro e redefinição de se-
+                                                         nha, além do link para voltar ao login.
+T10 loginAdmin.cy.js              RF02            1      Autentica um administrador e verifica se
+                                                         o painel administrativo é aberto.
+T11 LoginInvalido.cy.js           RF02            1      Tenta entrar com credenciais inválidas e
+                                                         verifica se o sistema permanece na tela
+                                                         de login.
+
+Fonte: Elaborado pelo autor (2026).
+                                                                                                 51
+
+
+6.2.2    Produtos, cardápio, carrinho e pedidos
+
+Tabela 7 – Testes de produtos, cardápio, carrinho e pedidos
+ ID     Arquivo                   Requisito   Aprovados O que o teste faz
+T12 AtualizarProduto.cy.js        –               1      Abre a edição de um produto no painel
+                                                         administrativo, altera seus dados e veri-
+                                                         fica se a atualização foi realizada.
+T13 BuscaProduto.cy.js            –               1      Pesquisa produtos pelo nome na tabela
+                                                         administrativa e verifica se os resultados
+                                                         são filtrados.
+T14 Carrinho.cy.js                RF06            1      Adiciona um produto ao carrinho, altera
+                                                         a quantidade, confere o subtotal e re-
+                                                         move o produto.
+T15 CatalogoProdutos.cy.js        RF05            1      Cadastra um produto disponível e veri-
+                                                         fica se ele aparece no catálogo de bebi-
+                                                         das do cliente com preço e descrição.
+T16 CriandoProduto.cy.js          RF11            1      Cria um produto pelo painel administra-
+                                                         tivo e verifica se seus dados aparecem
+                                                         na listagem.
+T17 DeletandoProduto.cy.js        –               1      Verifica a remoção de um produto pelo
+                                                         painel administrativo.
+T18 NavegacaoCardapio             RF05            7      Verifica as páginas do cardápio, a nave-
+    .cy.js                                               gação até a seção de bebidas e a exibi-
+                                                         ção do controle do menu em uma tela
+                                                         pequena.
+T19 PersonalizacaoPizza           –               3      Verifica o formulário de preços por ta-
+    .cy.js                                               manho, o salvamento e a edição desses
+                                                         preços e a disponibilidade das bordas
+                                                         ativas para pizzas.
+T20 FluxoCompraEntrega            RF04,           1      Percorre o fluxo de compra: registra o cli-
+    .cy.js                        RF07–                  ente e o pedido, confere os dados salvos,
+                                  RF11                   consulta e atualiza o pedido no painel ad-
+                                                         ministrativo, acompanha o status como
+                                                         cliente e verifica as etapas da entrega.
+T21 MesasHistorico.cy.js          –               2      Verifica os resumos e filtros do histórico
+                                                         de mesas e confirma a aplicação do filtro
+                                                         por datas.
+
+Fonte: Elaborado pelo autor (2026).
+
+
+
+
+6.3     Ambiente e execução
+
+
+Os testes foram executados com Cypress, versão 15.18.0, utilizando o navegador
+Google Chrome, versão 149. O ambiente de execução utilizou Node.js, versão 24.18.0.
+A aplicação foi executada em contêineres gerenciados pelo Docker Compose. O
+                                                                                   52
+
+
+Cypress acessou o serviço app pelo endereço interno http://app:8000, configurado
+pela variável CYPRESS_BASE_URL.
+
+
+6.4   Resultados
+
+
+Na execução registrada, foram executados 21 arquivos de teste, totalizando 42 casos.
+Todos os 42 casos foram aprovados; não houve falhas, casos pendentes ou casos
+ignorados. A execução completa durou 1 minuto e 46 segundos.
+
+
+6.5   Evidências
+
+
+Como evidência da execução, foi considerado o relatório de resultados do Cypress envi-
+ado pelo autor, que registra 21 arquivos e 42 casos aprovados, sem falhas, pendências
+ou casos ignorados. Essa execução não gerou capturas de tela nem vídeo.
+                                                                                     53
+
+
+7 AVALIAÇÃO DE USABILIDADE DO SISTEMA
+
+
+7.1   Objetivo e escopo
+
+
+Este capítulo descreve a avaliação exploratória de usabilidade e aceitação do Flash-
+Food, realizada com pessoas dos perfis de cliente, funcionário autorizado, administrador
+e garçom. A avaliação complementa os testes automatizados descritos no Capítulo 6:
+enquanto aqueles verificam comportamentos especificados da aplicação, o questio-
+nário pós-tarefa reúne percepções e comentários dos usuários sobre as atividades
+propostas.
+
+
+A usabilidade é considerada em relação aos usuários, objetivos e contexto de uso
+definidos para o sistema. Conforme a ISO 9241-11, ela envolve a eficácia na realização
+dos objetivos, a eficiência dos recursos utilizados e a satisfação obtida durante o uso
+(International Organization for Standardization, 2018). Para investigar a aceitação da
+tecnologia, utiliza-se o Technology Acceptance Model (TAM), ou Modelo de Aceitação
+de Tecnologia, que considera a utilidade percebida e a facilidade de uso percebida
+como fatores relacionados à aceitação de sistemas de informação (DAVIS, 1989). Nesta
+avaliação, o questionário pós-tarefa reuniu itens em escala Likert e perguntas abertas.
+Como não houve registro estruturado da execução de cada tarefa, os resultados
+permitem descrever percepções, mas não medir eficácia ou eficiência por tarefa.
+
+
+7.2   Método de avaliação
+
+
+Os participantes foram abordados no ambiente de trabalho. Como não havia tempo
+disponível para realizar as tarefas durante o expediente, as instruções foram encami-
+nhadas pelo WhatsApp para que fossem executadas em casa. O roteiro orientava
+a realização de uma tarefa por vez, somente das tarefas correspondentes ao perfil
+do participante e sem demonstração do caminho de navegação. Após as tarefas, os
+participantes responderam ao questionário pós-tarefa.
+
+
+A execução ocorreu remotamente e não foi cronometrada. O arquivo recebido contém
+as respostas ao questionário, mas não possui registros padronizados de conclusão,
+pedidos de ajuda, erros, duração, dispositivo ou navegador por tarefa. As atividades que
+                                                                                   54
+
+
+envolviam pedidos utilizaram dados fictícios, conforme indicado nas próprias tarefas.
+
+
+7.2.1   Participantes
+
+
+O arquivo analisado reúne dez respostas. Os perfis declarados foram cliente, funci-
+onário, administrador e garçom; a distribuição detalhada é apresentada na seção de
+resultados. Os participantes foram contatados no ambiente de trabalho e convidados,
+pelo WhatsApp, a realizar as tarefas em casa. O formulário também perguntou a
+frequência de uso anterior de aplicativos ou sistemas para pedidos de alimentos, com
+as opções raramente, mensalmente, semanalmente e diariamente. Os resultados são
+apresentados de forma agregada, sem nomes ou dados de contato.
+
+
+7.2.2   Tarefas enviadas aos participantes
+
+
+As tarefas foram derivadas das funcionalidades implementadas e dos fluxos cobertos
+pelos testes de ponta a ponta. Cada participante recebeu as tarefas correspondentes
+ao perfil informado e às permissões da conta utilizada.
+
+
+As tarefas foram redigidas como objetivos, sem indicar botões, menus ou caminhos
+específicos. O roteiro orientava o moderador a registrar uma dificuldade antes de
+oferecer ajuda. Como as atividades foram realizadas em casa, sem observação
+presencial padronizada, o arquivo disponível não permite classificar cada tarefa como
+concluída sem ajuda, concluída com ajuda ou não concluída.
+
+
+7.2.3   Registro e análise dos dados
+
+
+Para a análise, foram consideradas as respostas aos itens Likert por construto e as
+respostas às perguntas abertas. Os comentários foram agrupados por tema, sem
+atribuição a pessoas identificadas. Como o formulário não registrou conclusão, tempo,
+ajuda, erros ou desvios por tarefa, não foram calculadas medidas de desempenho. A
+interpretação é descritiva e não deve ser generalizada para todos os usuários a partir
+desta amostra.
+                                                                                                      55
+
+
+Tabela 8 – Tarefas enviadas aos participantes no teste de usabilidade
+  ID    Perfil            Tarefa apresentada ao partici-          Critério de conclusão
+                          pante
+ U01    Cliente           Localize uma bebida no catálogo e       O produto correto aparece no carri-
+                          adicione duas unidades ao carrinho.     nho com a quantidade solicitada e o
+                                                                  subtotal correspondente.
+ U02    Cliente           Com os dados fictícios fornecidos,      O sistema confirma o pedido e apre-
+                          conclua um pedido para entrega.         senta os dados essenciais da solici-
+                                                                  tação.
+ U03    Cliente           Encontre o pedido recém-criado e        O participante localiza o pedido e
+                          verifique em que etapa ele se encon-    identifica corretamente o status exi-
+                          tra.                                    bido.
+ U04    Funcionário au-   Localize o pedido de teste e atualize   O pedido correto é atualizado e o
+        torizado          seu status para em preparo.             novo status fica visível na interface.
+ U05    Administrador     Localize um produto de teste, altere    A alteração é salva e os dados atu-
+                          uma informação indicada e confirme      alizados aparecem na listagem do
+                          a atualização.                          painel.
+ U06    Administrador     Cadastre um funcionário.                O funcionário é cadastrado e apa-
+                                                                  rece na listagem do painel.
+ U07    Garçom            Abra uma mesa nova.                     A mesa é aberta e fica disponível
+                                                                  para lançamento do pedido.
+ U08    Garçom            Adicione produtos à mesa aberta.        Os produtos selecionados aparecem
+                                                                  no pedido associado à mesa correta.
+ U09    Garçom            Feche o pedido da mesa.                 O pedido é fechado e o sistema apre-
+                                                                  senta a situação atualizada.
+
+Fonte: Elaborado pelo autor (2026).
+
+
+
+7.3    Questionário pós-tarefa baseado no TAM
+
+
+O TAM fundamenta a avaliação da aceitação da tecnologia a partir de crenças do
+usuário, entre elas a utilidade percebida e a facilidade de uso percebida (DAVIS, 1989).
+Nesta avaliação, também se observa a intenção de uso, relacionada à aceitação compor-
+tamental da tecnologia (DAVIS; BAGOZZI; WARSHAW, 1989). Os itens apresentados
+na Tabela 9 foram redigidos para o contexto do FlashFood e foram respondidos após a
+realização das tarefas.
+
+
+Para cada afirmação, utiliza-se uma escala Likert de cinco pontos: 1 – discordo
+totalmente; 2 – discordo; 3 – nem discordo nem concordo; 4 – concordo; e 5 – concordo
+totalmente. Os itens são agrupados em três construtos: facilidade de uso percebida,
+utilidade percebida e intenção de uso.
+                                                                                                   56
+
+
+Tabela 9 – Questionário de aceitação do FlashFood baseado no TAM
+  ID    Construto             Afirmação
+ Q01    Facilidade de uso     Aprender a utilizar o FlashFood para realizar as tarefas do meu perfil
+        percebida             seria fácil.
+ Q02    Facilidade de uso     Considero fácil encontrar no FlashFood as funcionalidades necessárias
+        percebida             para minhas tarefas.
+ Q03    Facilidade de uso     A interação com o FlashFood é clara e compreensível.
+        percebida
+ Q04    Utilidade percebida   O FlashFood é útil para realizar as tarefas relacionadas ao meu perfil.
+ Q05    Utilidade percebida   O FlashFood ajuda a organizar as informações necessárias para mi-
+                              nhas tarefas.
+ Q06    Utilidade percebida   As funcionalidades do FlashFood atendem às necessidades das tarefas
+                              que realizei.
+ Q07    Intenção de uso       Pretendo utilizar o FlashFood quando precisar realizar essas tarefas.
+ Q08    Intenção de uso       Eu escolheria o FlashFood para realizar tarefas semelhantes no meu
+                              contexto de uso.
+
+Fonte: Elaborado pelo autor (2026), com base nos construtos do TAM.
+
+
+
+Os itens foram formulados para este estudo e não correspondem à aplicação de
+uma escala psicométrica validada para o FlashFood. Por esse motivo, os resultados
+devem ser tratados como uma avaliação exploratória das percepções dos participantes,
+sem afirmar validação estatística do instrumento. Para a análise, apresentam-se a
+distribuição das respostas por item e as medianas por construto. As medianas também
+são descritas por perfil, sem comparação inferencial devido ao pequeno número de
+respostas. Os resultados devem ser interpretados em conjunto com as respostas
+abertas, sem estabelecer um limite universal de aprovação.
+
+
+Além dos itens em escala, o formulário apresentou três perguntas abertas: “O que foi
+mais fácil de realizar?”, “Em qual tarefa você encontrou mais dificuldade? O que dificul-
+tou?” e “O que você mudaria ou melhoraria no sistema?”. As respostas complementam
+as avaliações em escala ao registrar percepções e sugestões dos participantes.
+
+
+7.4    Resultados da avaliação
+
+
+O arquivo do questionário pós-tarefa reúne 10 respostas registradas em 8 de novembro
+de 2026. Os perfis informados foram: cinco clientes, dois funcionários, dois garçons e
+um administrador. Sobre a frequência de uso anterior de aplicativos ou sistemas para
+                                                                                   57
+
+
+pedidos de alimentos, três respostas indicaram “raramente”, quatro “mensalmente”,
+duas “semanalmente” e uma “diariamente”. Como há poucos registros em alguns perfis,
+especialmente apenas um de administrador, os resultados são apresentados de forma
+descritiva e não permitem generalizações para todos os usuários do sistema.
+
+Tabela 10 – Distribuição das respostas aos itens do questionário pós-tarefa
+
+                              Item    1   2   3   4   5    Mediana
+                              Q01     0   0   0   0   10      5
+                              Q02     0   0   0   1   9       5
+                              Q03     0   0   1   0   9       5
+                              Q04     0   0   0   1   9       5
+                              Q05     0   0   0   0   10      5
+                              Q06     0   0   0   0   10      5
+                              Q07     0   0   0   1   9       5
+                              Q08     0   0   0   0   10      5
+
+Fonte: Elaborado pelo autor (2026).
+
+
+
+Considerando os itens Q01 a Q03, referentes à facilidade de uso percebida, a mediana
+foi 5; entre as 30 respostas desse grupo, 28 foram 5, uma foi 4 e uma foi 3. Nos
+itens Q04 a Q06, relacionados à utilidade percebida, a mediana também foi 5, com
+29 respostas 5 e uma resposta 4. Para os itens Q07 e Q08, relativos à intenção de
+uso, a mediana foi 5, com 19 respostas 5 e uma resposta 4. No conjunto das 80
+avaliações dos oito itens, 76 foram 5, três foram 4 e uma foi 3. As medianas dos três
+construtos também foram 5 quando calculadas separadamente para cada perfil. Assim,
+as respostas registradas foram predominantemente positivas; a única avaliação neutra
+ocorreu no item sobre clareza e compreensão da interação. Como os grupos têm de
+uma a cinco respostas, esses resultados por perfil são descritivos e não sustentam
+comparações entre os grupos.
+
+
+Nas perguntas abertas, os participantes citaram como aspectos mais fáceis a rea-
+lização e o acompanhamento de pedidos, a edição de produtos, o atendimento de
+pedidos para entrega e as operações com mesas. Também foram mencionadas a
+criação de perfis de funcionários e a consulta ao painel administrativo. Três partici-
+pantes relataram dificuldades: um apontou dúvidas no enunciado da pergunta, outro
+                                                                                     58
+
+
+descreveu problemas de interação no celular, especialmente com os pedidos exibidos
+no cabeçalho, e um garçom relatou dificuldade inicial para localizar o fluxo de inclusão
+de produtos na mesa. Seis respostas indicaram que não houve dificuldade e uma não
+trouxe comentário nessa pergunta.
+
+
+Entre as sugestões de melhoria apareceram ajustes na experiência em dispositivos
+móveis e na clareza do fluxo de inclusão de produtos em mesas, além de ideias
+de funcionalidades, como programa de fidelidade, cupons de desconto, atendimento
+com inteligência artificial pelo WhatsApp e priorização de rotas de entrega. Também
+houve uma observação sobre a forma de apresentar perguntas aos clientes. Dois
+participantes responderam que não mudariam o sistema e uma resposta não continha
+comentário. Essas sugestões são percepções individuais e devem ser consideradas
+junto às prioridades e aos requisitos do projeto.
+
+
+Os participantes foram orientados a realizar as tarefas remotamente, em seus ambien-
+tes domésticos. Nessa aplicação, não foi adotado um procedimento padronizado de
+cronometragem, portanto o tempo de execução não foi registrado. O arquivo disponi-
+bilizado contém as respostas ao questionário pós-tarefa, mas não inclui registros por
+tarefa de conclusão com ou sem ajuda, erros ou desvios observados pelo moderador.
+O carimbo de data e hora do CSV corresponde ao envio do formulário e não permite
+calcular a duração das tarefas. Por isso, não foi possível calcular taxas de conclusão
+nem comparar o desempenho entre U01 e U09. Os resultados apresentados descre-
+vem a percepção dos respondentes e complementam os testes automatizados, mas
+não demonstram, por si só, ganhos de produtividade ou satisfação no contexto real da
+lanchonete.
+                                                                                  59
+
+
+8 CONCLUSÃO
+
+
+Este trabalho apresentou a proposta e o desenvolvimento de uma aplicação web
+para apoiar a gestão operacional de uma lanchonete. A solução foi concebida para
+centralizar informações de usuários, produtos e pedidos, reduzindo a dependência de
+registros manuais e favorecendo a organização das rotinas do estabelecimento.
+
+
+A adoção do Laravel e do padrão MVC contribuiu para separar as responsabilidades
+da aplicação. O MySQL foi utilizado para a persistência dos dados, enquanto o Redis
+foi incorporado como camada de cache para informações consultadas com frequência.
+O controle de acesso baseado em funções permitiu relacionar as permissões às
+atribuições dos diferentes usuários. Docker, Git e GitHub complementaram o ambiente
+de desenvolvimento ao apoiar, respectivamente, a padronização da execução e o
+controle de versões.
+
+
+Os requisitos levantados abrangem o cadastro e a autenticação de usuários, o geren-
+ciamento e a exibição de produtos, o carrinho de compras e o acompanhamento dos
+pedidos. Esses recursos atendem às necessidades centrais identificadas no contexto
+analisado. A avaliação exploratória de usabilidade reuniu dez respostas, cujas media-
+nas foram 5 nos itens de facilidade de uso, utilidade percebida e intenção de uso. Os
+comentários destacaram aspectos positivos dos fluxos de pedidos e administração,
+além de oportunidades de melhoria na experiência móvel e na inclusão de produtos
+em mesas. O CSV disponível não contém registros de conclusão, tempo ou ajuda por
+tarefa; assim, os resultados descrevem as percepções dos respondentes, mas não
+comprovam ganhos de desempenho ou eficiência operacional. Avaliações futuras em
+condições representativas da lanchonete podem incluir esses registros e ampliar a
+participação dos diferentes perfis.
+
+
+8.1   Trabalhos futuros
+
+
+Como trabalhos futuros, propõe-se implementar a autenticação por meio de contas
+Google. Essa funcionalidade permitiria que o usuário acessasse o sistema usando
+uma conta existente, sem precisar criar uma senha específica para a aplicação. A
+implementação deverá associar a conta Google ao perfil correspondente no sistema e
+                                                                                   60
+
+
+manter as permissões de acesso definidas para cada tipo de usuário.
+
+
+Também se propõe integrar o sistema ao Google Maps para auxiliar no planejamento
+das entregas. A partir dos endereços cadastrados nos pedidos, a aplicação poderia cal-
+cular automaticamente rotas, estimar distâncias e tempos de deslocamento e, quando
+houver várias entregas, sugerir uma sequência de atendimento. A viabilidade dessa
+integração deverá considerar a validação dos endereços, a proteção dos dados dos
+clientes e os custos de uso do serviço.
+                                                                                  61
+
+
+                                  REFERÊNCIAS
+
+ALMEIDA, D. et al. Performance comparison of redis, memcached, mysql, and
+postgresql: A study on key-value and relational databases. In: Second International
+Conference on Smart Technologies for Smart Nation. [S.l.: s.n.], 2023. p. 902–907.
+
+Cypress. Why Cypress? 2023. Disponível em: <https://docs.cypress.io/guides/
+overview/why-cypress>. Acesso em: 17 out. 2026.
+
+DALL’OGLIO, P. PHP: programando com orientação a objetos. São Paulo: Novatec
+Editora, 2015. 552 p.
+
+DAVIS, F. D. Perceived usefulness, perceived ease of use, and user acceptance of
+information technology. MIS Quarterly, v. 13, n. 3, p. 319–340, 1989. Disponível em:
+<https://aisel.aisnet.org/misq/vol13/iss3/6/>.
+
+DAVIS, F. D.; BAGOZZI, R. P.; WARSHAW, P. R. User acceptance of computer
+technology: A comparison of two theoretical models. Management Science, v. 35, n. 8,
+p. 982–1003, 1989. Disponível em: <https://doi.org/10.1287/mnsc.35.8.982>.
+
+DONENFELD, J. A. Wireguard: Next generation kernel network tunnel. In: Proceedings
+of the Network and Distributed System Security Symposium. San Diego, CA: [s.n.],
+2017. Disponível em: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/
+ndss2017_04A-3_Donenfeld_paper.pdf>. Acesso em: 8 nov. 2026.
+
+F5, Inc. Beginner’s Guide. s.d. Disponível em: <https://nginx.org/en/docs/beginners_
+guide.html>. Acesso em: 8 nov. 2026.
+
+FERREIRA, R. Controlando versões com Git e GitHub. [S.l.]: Casa do Código, 2014.
+199 p.
+
+FILHO, N. S. Comparative analysis between monolithic architecture and microservices
+in .net applications. Leaders Tec, v. 2, n. 13, 2025.
+
+HIDAYAT, T.; FARELL, G. R. Rancang bangun sistem informasi point of sale di kedai
+kopi. Jurnal Pendidikan Tambusai, v. 7, n. 2, p. 18372–18381, 2023. Disponível em:
+<https://jptam.org/index.php/jptam/article/view/9273>.
+
+IBM. O que é controle de acesso baseado em função (RBAC)? s.d. Acesso em: 30
+abr. 2026. Disponível em: <https://www.ibm.com/>.
+
+International Organization for Standardization. Ergonomics of human-system
+interaction – Part 11: Usability: Definitions and concepts. [S.l.], 2018. Acesso em:
+29 out. 2026. Disponível em: <https://www.iso.org/standard/63500.html>.
+
+JINGGA, F.; LIMANTARA, N. Pembangunan model restaurant management system.
+ComTech: Computer, Mathematics and Engineering Applications, v. 5, n. 2, p.
+973–982, 2014. Disponível em: <https://journal.binus.ac.id/index.php/comtech/article/
+view/2348>.
+
+KHAIRUNNISA, G. W.; ARWANI, I.; HANGGARA, B. T. Pengembangan sistem
+informasi point of sales berbasis web menggunakan framework laravel: Studi
+kasus meetup station. Jurnal Pengembangan Teknologi Informasi dan
+                                                                                        62
+
+
+Ilmu Komputer, v. 6, n. 4, p. 1858–1864, 2022. Disponível em: <https:
+//j-ptiik.ub.ac.id/index.php/j-ptiik/article/view/10937>.
+
+LATHIEF, F. M.; HASDIANA; LUBIS, H. Perancangan sistema point of sales multi
+payment berbasis web menggunakan framework laravel pada umkm mr. boba.
+Jurnal Ilmu Komputer dan Sistem Informasi, v. 2, n. 3, 2023. Disponível em:
+<https://jurnal.unity-academy.sch.id/index.php/jirsi/article/view/72>.
+
+LUCIANO. Blade Engine: Utilizando templates no Laravel. 2016.
+Acesso em: 29 abr. 2026. Disponível em: <https://www.devmedia.com.br/
+blade-engine-utilizando-templates-no-laravel/36749>.
+
+MILANI, A. MySQL: guia do programador. São Paulo: Novatec Editora, 2007. 400 p.
+
+N.RICARDO. O que é Laravel: principais recursos, onde usar e vantagens
+do framework PHP. 2025. Acesso em: 29 abr. 2026. Disponível em: <https:
+//www.hostinger.com/br/tutoriais/o-que-e-laravel>.
+
+Redis Ltd. Redis Documentation. 2025. Disponível em: <https://redis.io/
+documentation>.
+
+RUSMARA, R. H. Pengembangan sistem kasir berbasis web di natta coffee: Studi
+implementasi framework laravel. Jurnal Informatika dan Teknik Elektro Terapan,
+v. 13, n. 2, 2025. Disponível em: <https://journal.eng.unila.ac.id/index.php/jitet/article/
+view/6414>.
+
+SOMMERVILLE, I. Engenharia de Software. 9. ed. São Paulo: Pearson Prentice Hall,
+2011. Revisão técnica de Kechi Hirama.
+
+SOUSA, R. E. d. Um estudo comparativo entre ferramentas de automação
+de testes: Selenium e Cypress. Monografia (Trabalho de Conclusão de
+Curso) — Universidade Federal do Ceará, Sobral, 2023. Disponível em:
+<https://repositorio.ufc.br/bitstream/riufc/76304/1/2023_tcc_resousa.pdf>. Acesso em:
+17 out. 2026.
+
+VITALINO, J. F. N.; CASTRO, M. A. N. Descomplicando o Docker. 2. ed. Rio de
+Janeiro: Brasport, 2018. ISBN 978-85-7452-902-8.
+
+Wikipédia. Visual Studio Code. 2026. Acesso em: 29 abr. 2026. Disponível em:
+<https://pt.wikipedia.org/wiki/Visual_Studio_Code>.
+

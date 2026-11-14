@@ -23,6 +23,34 @@ Dispon{\'\i}vel em: \url{https://docs.cypress.io/guides/overview/why-cypress}.
 {DALL'OGLIO, P. \textbf{PHP: programando com orientação a objetos}. São
   Paulo: Novatec Editora, 2015. 552~p.}
 
+\bibitem[Davis 1989]{Davis1989TAM}
+\abntrefinfo{Davis}{DAVIS}{1989}
+{DAVIS, F.~D. Perceived usefulness, perceived ease of use, and user acceptance
+  of information technology.
+\textbf{MIS Quarterly}, v.~13, n.~3, p. 319--340, 1989.
+Dispon{\'\i}vel em: \url{https://aisel.aisnet.org/misq/vol13/iss3/6/}.}
+
+\bibitem[Davis, Bagozzi e Warshaw 1989]{DavisBagozziWarshaw1989}
+\abntrefinfo{Davis, Bagozzi e Warshaw}{DAVIS; BAGOZZI; WARSHAW}{1989}
+{DAVIS, F.~D.; BAGOZZI, R.~P.; WARSHAW, P.~R. User acceptance of computer
+  technology: A comparison of two theoretical models.
+\textbf{Management Science}, v.~35, n.~8, p. 982--1003, 1989.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1287/mnsc.35.8.982}.}
+
+\bibitem[Donenfeld 2017]{donenfeld2017wireguard}
+\abntrefinfo{Donenfeld}{DONENFELD}{2017}
+{DONENFELD, J.~A. {WireGuard}: Next generation kernel network tunnel. In:
+  \textbf{Proceedings of the Network and Distributed System Security
+  Symposium}. San Diego, CA: [s.n.], 2017. Dispon{\'\i}vel em:
+  \url{https://www.ndss-symposium.org/wp-content/uploads/2017/09/ndss2017\_04A-3\_Donenfeld\_paper.pdf}.
+  Acesso em: 8 nov. 2026.}
+
+\bibitem[{F5, Inc.} s.d.]{nginxBeginnersGuide}
+\abntrefinfo{{F5, Inc.}}{{F5, Inc.}}{s.d.}
+{{F5, Inc.} \textbf{Beginner's Guide}. s.d.
+Dispon{\'\i}vel em: \url{https://nginx.org/en/docs/beginners\_guide.html}.
+  Acesso em: 8 nov. 2026.}
+
 \bibitem[Ferreira 2014]{Ferreira2014}
 \abntrefinfo{Ferreira}{FERREIRA}{2014}
 {FERREIRA, R. \textbf{Controlando versões com Git e GitHub}. [S.l.]: Casa do
@@ -46,6 +74,15 @@ Dispon{\'\i}vel em: \url{https://jptam.org/index.php/jptam/article/view/9273}.}
 {{IBM}. \textbf{O que é controle de acesso baseado em função (RBAC)?} s.d.
 Acesso em: 30 abr. 2026.
 Dispon{\'\i}vel em: \url{https://www.ibm.com/}.}
+
+\bibitem[{International Organization for Standardization}
+  2018]{ISO9241_11_2018}
+\abntrefinfo{{International Organization for Standardization}}{{International
+  Organization for Standardization}}{2018}
+{{International Organization for Standardization}. \textbf{Ergonomics of
+  human-system interaction -- Part 11: Usability: Definitions and concepts}.
+[S.l.], 2018. Acesso em: 29 out. 2026. Dispon{\'\i}vel em:
+  \url{https://www.iso.org/standard/63500.html}.}
 
 \bibitem[Jingga e Limantara 2014]{jingga2014}
 \abntrefinfo{Jingga e Limantara}{JINGGA; LIMANTARA}{2014}
@@ -86,13 +123,21 @@ Dispon{\'\i}vel em:
 {MILANI, A. \textbf{MySQL: guia do programador}. São Paulo: Novatec Editora,
   2007. 400~p.}
 
-\bibitem[N.Ricardo 2025]{Laravel2025}
-\abntrefinfo{N.Ricardo}{N.RICARDO}{2025}
-{N.RICARDO. \textbf{O que é Laravel: principais recursos, onde usar e
-  vantagens do framework PHP}. 2025.
+\bibitem[Neto 2025]{Laravel2025}
+\abntrefinfo{Neto}{NETO}{2025}
+{NETO, R. \textbf{O que é Laravel: principais recursos, onde usar e vantagens
+  do framework PHP}. 2025.
 Acesso em: 29 abr. 2026.
 Dispon{\'\i}vel em:
   \url{https://www.hostinger.com/br/tutoriais/o-que-e-laravel}.}
+
+\bibitem[{Otoritas Jasa Keuangan} 2024]{ojk2024tkbi}
+\abntrefinfo{{Otoritas Jasa Keuangan}}{{Otoritas Jasa Keuangan}}{2024}
+{{Otoritas Jasa Keuangan}. \textbf{Frequently Asked Question (FAQ): Taksonomi
+  untuk Keuangan Berkelanjutan Indonesia (TKBI)}. 2024.
+Dispon{\'\i}vel em:
+  \url{https://www.ojk.go.id/id/Publikasi/Roadmap-dan-Pedoman/Sektor-Jasa-Keuangan/Keuangan-Berkelanjutan/Documents/FAQ\%20Taksonomi\%20untuk\%20Keuangan\%20Berkelanjutan\%20Indonesia\%20TKBI.pdf}.
+  Acesso em: 9 nov. 2026.}
 
 \bibitem[{Redis Ltd.} 2025]{redis2025}
 \abntrefinfo{{Redis Ltd.}}{{Redis Ltd.}}{2025}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.7.7)  25 OCT 2026 16:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.7.7)  14 NOV 2026 11:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1022,7 +1022,7 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \cftbeforequadroskip=\skip270
 \cftquadroindent=\skip271
 \cftquadronumwidth=\skip272
-Package hyperref Info: Option `colorlinks' set `true' on input line 568.
+Package hyperref Info: Option `colorlinks' set `true' on input line 557.
 )
 \main@idxfile=\write4
 \openout4 = `main.idx'.
@@ -1341,50 +1341,58 @@ rypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
 \c@@todonotes@numberoftodonotes=\count435
-)))
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 21
-.
- (C:\Program Files\MiKTeX\tex/latex/psnfss\t1phv.fd
-File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
+))) (C:\Program Files\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count436
+\float@exts=\toks63
+\float@box=\box77
+\@float@everytoks=\toks64
+\@floatcapt=\box78
 )
-(main.aux)
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 22
+.
+
+(C:\Program Files\MiKTeX\tex/latex/psnfss\t1phv.fd
+File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
+) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-Package hyperref Info: Link coloring ON on input line 21.
-LaTeX Info: Redefining \degres on input line 21.
-\myptabbox=\box77
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+Package hyperref Info: Link coloring ON on input line 22.
+LaTeX Info: Redefining \degres on input line 22.
+\myptabbox=\box79
 \myptabboxwidth=\skip274
- (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+
+(C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count436
+\scratchcounter=\count437
 \scratchdimen=\dimen365
-\scratchbox=\box78
-\nofMPsegments=\count437
-\nofMParguments=\count438
-\everyMPshowfont=\toks63
-\MPscratchCnt=\count439
+\scratchbox=\box80
+\nofMPsegments=\count438
+\nofMParguments=\count439
+\everyMPshowfont=\toks65
+\MPscratchCnt=\count440
 \MPscratchDim=\dimen366
-\MPnumerator=\count440
-\makeMPintoPDFobject=\count441
-\everyMPtoPDFconversion=\toks64
+\MPnumerator=\count441
+\makeMPintoPDFobject=\count442
+\everyMPtoPDFconversion=\toks66
 ) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1393,13 +1401,13 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \microtypecontext on input line 21.
-Package microtype Info: Applying patch `item' on input line 21.
-Package microtype Info: Applying patch `toc' on input line 21.
-Package microtype Info: Applying patch `eqnum' on input line 21.
-Package microtype Info: Applying patch `footnote' on input line 21.
-Package microtype Info: Applying patch `verbatim' on input line 21.
-LaTeX Info: Redefining \microtypesetup on input line 21.
+LaTeX Info: Redefining \microtypecontext on input line 22.
+Package microtype Info: Applying patch `item' on input line 22.
+Package microtype Info: Applying patch `toc' on input line 22.
+Package microtype Info: Applying patch `eqnum' on input line 22.
+Package microtype Info: Applying patch `footnote' on input line 22.
+Package microtype Info: Applying patch `verbatim' on input line 22.
+LaTeX Info: Redefining \microtypesetup on input line 22.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1414,7 +1422,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `phv' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-\c@lstlisting=\count442
+\c@lstlisting=\count443
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -1457,14 +1465,14 @@ Package caption Info: End \AtBeginDocument code.
 Package todonotes Warning: The length marginparwidth is less than 2cm and will 
 most likely cause issues with the appearance of inserted todonotes. The issue c
 an be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to 
-loading the todonotes package. on input line 21.
+loading the todonotes package. on input line 22.
 
 [1
 
 {C:/Users/omega/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program Fi
 les/MiKTeX/fonts/enc/dvips/base/8r.enc}]
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 29.
+ 30.
 
 (C:\Program Files\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
@@ -1474,48 +1482,50 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 29.
+ 30.
 
 (C:\Program Files\MiKTeX\tex/latex/psnfss\omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )<<oml.cmap>>
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 29.
+ 30.
 
 (C:\Program Files\MiKTeX\tex/latex/psnfss\omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )<<oms.cmap>>
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 29.
+ 30.
 
 (C:\Program Files\MiKTeX\tex/latex/psnfss\omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )<<omx.cmap>>
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
-9.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
+0.
 
 (C:\Program Files\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
 
 (C:\Program Files\MiKTeX\tex/latex/microtype\mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
  [2
 
 ]
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 31.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
  [3] [2
 
 
@@ -1529,149 +1539,429 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (pre_textuais/agradecimentos.tex) [5
 
 
-] (pre_textuais/epigrafe.tex) [6
-
-]
-(pre_textuais/resumo.tex [7
-
-] [8
-
-]) (main.lof) [9
-
-] (main.lot) [10
-
-] (main.loq)
-[11
-
-] (pre_textuais/siglas.tex [12
-
-
-]) (main.toc [13
-
-]) [14]
-(textuais/introducao.tex
-Cap\'{\i }tulo 1.
-) (textuais/justificativa.tex [15
-
-
-]
-Cap\'{\i }tulo 2.
-[16
-
-]) (textuais/ref_teorico.tex [17]
-Cap\'{\i }tulo 3.
-[18
-
-] [19] [20]
+] (pre_textuais/resumo.tex
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 81.
- [21] [22]
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 5.
+ [6
+
+] [7
+
+])
+(main.lof) [8
+
+] (main.lot) [9
+
+] (pre_textuais/siglas.tex [10
+
+
+]) (main.toc
+LaTeX Font Info:    Font shape `T1/phv/b/it' in size <12> not available
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 32.
+ [11
+
+]
+[12]) [13] (textuais/introducao.tex
+Cap\'{\i }tulo 1.
+) (textuais/problema_de_pesquisa.tex [14
+
+
+]) (textuais/justificativa.tex [15])
+(textuais/objetivos.tex [16]
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
-16.
- (C:\Program Files\MiKTeX\tex/latex/psnfss\ts1phv.fd
+1.
+
+(C:\Program Files\MiKTeX\tex/latex/psnfss\ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `phv' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+) (textuais/ref_teorico.tex [17]
+Cap\'{\i }tulo 2.
+[18
 
-[23] [24] [25] [26]
-<figuras/imagenRedis.png, id=330, 845.26315pt x 597.60106pt>
+] [19] [20
+pdfTeX warning (ext4): destination with the same identifier (name{table.2.1}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.68 
+     ] [21] [22] [23] [24] [25] [26] [27]
+<figuras/imagenRedis.png, id=432, 845.26315pt x 597.60106pt>
 File: figuras/imagenRedis.png Graphic file (type png)
 <use figuras/imagenRedis.png>
 Package pdftex.def Info: figuras/imagenRedis.png  used on input line 194.
 (pdftex.def)             Requested size: 432.48051pt x 305.76643pt.
- [27]
+ [28
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.205 
+       <./figuras/imagenRedis.png>]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [28 <./figuras/imagenRedis.png>])
-(textuais/Requisitos.tex [29]
-Cap\'{\i }tulo 4.
-[30
+ [29]) (textuais/Requisitos.tex [30]
+Cap\'{\i }tulo 3.
+[31
 
-]) (textuais/modelagem_de_sofware.tex [31] [32]
-Cap\'{\i }tulo 5.
-[33
+] [32
+pdfTeX warning (ext4): destination with the same identifier (name{table.3.2}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.60 
+     ]) (textuais/modelagem_de_sofware.tex [33
+pdfTeX warning (ext4): destination with the same identifier (name{table.3.3}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1 \chapter
+            [Modelagem de \textit{software}]{Modelagem de \textit{software}}]
+Cap\'{\i }tulo 4.
+[34
 
 ]
-<figuras/modelo-banco-organizado.pdf, id=379, 845.07718pt x 592.13219pt>
+<figuras/diagrama-caso-de-uso.jpeg, id=486, 948.54375pt x 1440.43144pt>
+File: figuras/diagrama-caso-de-uso.jpeg Graphic file (type jpg)
+<use figuras/diagrama-caso-de-uso.jpeg>
+Package pdftex.def Info: figuras/diagrama-caso-de-uso.jpeg  used on input line 
+14.
+(pdftex.def)             Requested size: 407.27245pt x 618.45253pt.
+ [35
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.17 \clearpage
+                <./figuras/diagrama-caso-de-uso.jpeg>] [36
+
+
+]
+<figuras/modelo-de-classes.jpg, id=497, 2418.03375pt x 3577.365pt>
+File: figuras/modelo-de-classes.jpg Graphic file (type jpg)
+<use figuras/modelo-de-classes.jpg>
+Package pdftex.def Info: figuras/modelo-de-classes.jpg  used on input line 36.
+(pdftex.def)             Requested size: 417.99678pt x 618.45253pt.
+ [37
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.39 \clearpage
+                <./figuras/modelo-de-classes.jpg>] [38
+
+
+]
+<figuras/modelo-banco-organizado.pdf, id=511, 845.07718pt x 592.13219pt>
 File: figuras/modelo-banco-organizado.pdf Graphic file (type pdf)
 <use figuras/modelo-banco-organizado.pdf>
 Package pdftex.def Info: figuras/modelo-banco-organizado.pdf  used on input lin
-e 12.
+e 54.
 (pdftex.def)             Requested size: 541.14597pt x 379.17111pt.
- [34 <./figuras/modelo-banco-organizado.pdf>]
+ [39
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.58 \end{landscape}
+                     <./figuras/modelo-banco-organizado.pdf>]
 File: figuras/modelo-banco-organizado.pdf Graphic file (type pdf)
 <use figuras/modelo-banco-organizado.pdf>
 Package pdftex.def Info: figuras/modelo-banco-organizado.pdf  used on input lin
-e 25.
+e 67.
 (pdftex.def)             Requested size: 498.9807pt x 376.85014pt.
- [35]
+ [40
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.71 \end{landscape}
+                    ]
 File: figuras/modelo-banco-organizado.pdf Graphic file (type pdf)
 <use figuras/modelo-banco-organizado.pdf>
 Package pdftex.def Info: figuras/modelo-banco-organizado.pdf  used on input lin
-e 38.
+e 80.
 (pdftex.def)             Requested size: 555.19391pt x 376.95786pt.
- [36]
+ [41
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.6}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.84 \end{landscape}
+                    ]
 File: figuras/modelo-banco-organizado.pdf Graphic file (type pdf)
 <use figuras/modelo-banco-organizado.pdf>
 Package pdftex.def Info: figuras/modelo-banco-organizado.pdf  used on input lin
-e 51.
+e 93.
 (pdftex.def)             Requested size: 477.88734pt x 374.87825pt.
- [37]
+ [42
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.7}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.97 \end{landscape}
+                    ]
 File: figuras/modelo-banco-organizado.pdf Graphic file (type pdf)
 <use figuras/modelo-banco-organizado.pdf>
 Package pdftex.def Info: figuras/modelo-banco-organizado.pdf  used on input lin
-e 64.
+e 106.
 (pdftex.def)             Requested size: 534.11127pt x 376.66823pt.
- [38])
-(textuais/testes.tex
+ [43
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.8}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.110 \end{landscape}
+                     ]) (textuais/implementacao_sistema.tex
+Cap\'{\i }tulo 5.
+<FlashfoodImagemSistema/login.png, id=560, 1154.51324pt x 522.15076pt>
+File: FlashfoodImagemSistema/login.png Graphic file (type png)
+<use FlashfoodImagemSistema/login.png>
+Package pdftex.def Info: FlashfoodImagemSistema/login.png  used on input line 1
+7.
+(pdftex.def)             Requested size: 409.70534pt x 185.29709pt.
+<figuras/captura-cadastro-usuario.png, id=561, 1153.30875pt x 524.55975pt>
+File: figuras/captura-cadastro-usuario.png Graphic file (type png)
+<use figuras/captura-cadastro-usuario.png>
+Package pdftex.def Info: figuras/captura-cadastro-usuario.png  used on input li
+ne 23.
+(pdftex.def)             Requested size: 409.71783pt x 186.35207pt.
+[44
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]
+<FlashfoodImagemSistema/telainicialCLinete.png, id=567, 1153.30875pt x 515.526p
+t>
+File: FlashfoodImagemSistema/telainicialCLinete.png Graphic file (type png)
+<use FlashfoodImagemSistema/telainicialCLinete.png>
+Package pdftex.def Info: FlashfoodImagemSistema/telainicialCLinete.png  used on
+ input line 37.
+(pdftex.def)             Requested size: 455.244pt x 203.49287pt.
+ [45
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.9}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.40 
+      <./FlashfoodImagemSistema/login.png> <./figuras/captura-cadastro-usuario.
+png>]
+<FlashfoodImagemSistema/carrinho.png, id=575, 1148.49075pt x 516.12825pt>
+File: FlashfoodImagemSistema/carrinho.png Graphic file (type png)
+<use FlashfoodImagemSistema/carrinho.png>
+Package pdftex.def Info: FlashfoodImagemSistema/carrinho.png  used on input lin
+e 47.
+(pdftex.def)             Requested size: 455.23485pt x 204.58115pt.
+ [46
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.10})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.54 
+     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.11})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.54 
+      <./FlashfoodImagemSistema/telainicialCLinete.png> <./FlashfoodImagemSiste
+ma/carrinho.png>]
+<FlashfoodImagemSistema/telaadministrador.png, id=583, 1154.51324pt x 519.1395p
+t>
+File: FlashfoodImagemSistema/telaadministrador.png Graphic file (type png)
+<use FlashfoodImagemSistema/telaadministrador.png>
+Package pdftex.def Info: FlashfoodImagemSistema/telaadministrador.png  used on 
+input line 59.
+(pdftex.def)             Requested size: 455.2438pt x 204.70534pt.
+<figuras/captura-cadastro-produto.png, id=585, 1153.911pt x 519.1395pt>
+File: figuras/captura-cadastro-produto.png Graphic file (type png)
+<use figuras/captura-cadastro-produto.png>
+Package pdftex.def Info: figuras/captura-cadastro-produto.png  used on input li
+ne 69.
+(pdftex.def)             Requested size: 455.23523pt x 204.80832pt.
+ [47
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.12})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.72 
+      <./FlashfoodImagemSistema/telaadministrador.png>]
+<FlashfoodImagemSistema/telaParaDefinicaoRoles.png, id=593, 1154.51324pt x 517.
+935pt>
+File: FlashfoodImagemSistema/telaParaDefinicaoRoles.png Graphic file (type png)
+
+<use FlashfoodImagemSistema/telaParaDefinicaoRoles.png>
+Package pdftex.def Info: FlashfoodImagemSistema/telaParaDefinicaoRoles.png  use
+d on input line 79.
+(pdftex.def)             Requested size: 455.2438pt x 204.2304pt.
+<FlashfoodImagemSistema/telaParaConfiguracaoIMpressao.png, id=595, 449.88075pt 
+x 482.40225pt>
+File: FlashfoodImagemSistema/telaParaConfiguracaoIMpressao.png Graphic file (ty
+pe png)
+<use FlashfoodImagemSistema/telaParaConfiguracaoIMpressao.png>
+Package pdftex.def Info: FlashfoodImagemSistema/telaParaConfiguracaoIMpressao.p
+ng  used on input line 89.
+(pdftex.def)             Requested size: 409.71477pt x 439.33269pt.
+ [48
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.13})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.92 
+     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.14})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.92 
+      <./figuras/captura-cadastro-produto.png> <./FlashfoodImagemSistema/telaPa
+raDefinicaoRoles.png>]
+<figuras/captura-gerenciamento-mesa.png, id=603, 1154.51324pt x 519.1395pt>
+File: figuras/captura-gerenciamento-mesa.png Graphic file (type png)
+<use figuras/captura-gerenciamento-mesa.png>
+Package pdftex.def Info: figuras/captura-gerenciamento-mesa.png  used on input 
+line 101.
+(pdftex.def)             Requested size: 455.2438pt x 204.70534pt.
+ [49
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.15})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.104 
+       <./FlashfoodImagemSistema/telaParaConfiguracaoIMpressao.png>]
+<FlashfoodImagemSistema/mobile.png, id=610, 198.7425pt x 446.8695pt>
+File: FlashfoodImagemSistema/mobile.png Graphic file (type png)
+<use FlashfoodImagemSistema/mobile.png>
+Package pdftex.def Info: FlashfoodImagemSistema/mobile.png  used on input line 
+115.
+(pdftex.def)             Requested size: 170.26927pt x 382.8479pt.
+<FlashfoodImagemSistema/menu_mobile.png, id=611, 199.947pt x 449.88075pt>
+File: FlashfoodImagemSistema/menu_mobile.png Graphic file (type png)
+<use FlashfoodImagemSistema/menu_mobile.png>
+Package pdftex.def Info: FlashfoodImagemSistema/menu_mobile.png  used on input 
+line 120.
+(pdftex.def)             Requested size: 170.26999pt x 383.1075pt.
+)
+(textuais/implantacao.tex [50
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.16})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1 \chapter
+            {Implantação e hospedagem} <./figuras/captura-gerenciamento-mesa.
+png>] [51
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.17})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1 \chapter
+            {Implantação e hospedagem} <./FlashfoodImagemSistema/mobile.png> 
+<./FlashfoodImagemSistema/menu_mobile.png>]
 Cap\'{\i }tulo 6.
-) (textuais/conclusao.tex [39
+[52
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-] [40] [41] [42]
+] [53
+pdfTeX warning (ext4): destination with the same identifier (name{table.6.4}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.40 
+     ] [54]
+<figuras/arquitetura-rede.pdf, id=646, 999.63863pt x 552.79326pt>
+File: figuras/arquitetura-rede.pdf Graphic file (type pdf)
+<use figuras/arquitetura-rede.pdf>
+Package pdftex.def Info: figuras/arquitetura-rede.pdf  used on input line 78.
+(pdftex.def)             Requested size: 455.24411pt x 251.74907pt.
+) (textuais/testes.tex [55
+pdfTeX warning (ext4): destination with the same identifier (name{table.6.5}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.2 \chapter
+            [Testes e validação]{Testes e validação do sistema}] [56
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6.18})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.2 \chapter
+            [Testes e validação]{Testes e validação do sistema} <./figuras/
+arquitetura-rede.pdf>]
 Cap\'{\i }tulo 7.
-) [43
+[57
 
-] (main.bbl (main.brf)
+] [58
+pdfTeX warning (ext4): destination with the same identifier (name{table.7.6}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.54 \Needspace{0.8\textheight}
+                               ] [59
+pdfTeX warning (ext4): destination with the same identifier (name{table.7.7}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.94 
+     ]) (textuais/usabilidade.tex [60]
+Cap\'{\i }tulo 8.
+[61
+
+] [62] [63
+pdfTeX warning (ext4): destination with the same identifier (name{table.8.8}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.100 
+      ] [64
+pdfTeX warning (ext4): destination with the same identifier (name{table.8.9}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.106 
+      ] [65
+pdfTeX warning (ext4): destination with the same identifier (name{table.8.10}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.140 
+      ]) (textuais/conclusao.tex [66]
+Cap\'{\i }tulo 9.
+[67
+
+]) (main.bbl (main.brf)
 \tf@brf=\write6
 \openout6 = `main.brf'.
 
- [44]
+ [68]
 bibitemlist
-[45
+[69
 
-]) (main.ind) [46]
+]) (main.ind) [70]
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
 \tf@lot=\write8
 \openout8 = `main.lot'.
 
-\tf@loq=\write9
-\openout9 = `main.loq'.
-
-\tf@toc=\write10
-\openout10 = `main.toc'.
+\tf@toc=\write9
+\openout9 = `main.toc'.
 
 
 
@@ -1682,24 +1972,26 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: A744E02AAD8BE57F99FDFA541FF6E257;1366.
+(rerunfilecheck)             Checksum: 31E44B3107A1DF793430AECC572E6738;1956.
  ) 
 Here is how much of TeX's memory you used:
- 35741 strings out of 467691
- 638379 string characters out of 5425055
- 1117492 words of memory out of 5000000
- 63518 multiletter control sequences out of 15000+600000
- 699991 words of font info for 369 fonts, out of 8000000 for 9000
+ 36286 strings out of 467691
+ 649477 string characters out of 5425055
+ 1117888 words of memory out of 5000000
+ 63817 multiletter control sequences out of 15000+600000
+ 719462 words of font info for 475 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 119i,14n,125p,1312b,764s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 119i,14n,125p,1425b,762s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\omega\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
 1000.pk> <C:\Users\omega\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ectt1200.pk><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/
-Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKT
-eX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (48 pages, 1349499 bytes).
+0\ectt1095.pk> <C:\Users\omega\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ectt1200.pk><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pf
+b><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Program Fil
+es/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX/fonts/ty
+pe1/urw/helvetic/uhvro8a.pfb>
+Output written on main.pdf (72 pages, 6698654 bytes).
 PDF statistics:
- 775 PDF objects out of 1000 (max. 8388607)
- 154 named destinations out of 1000 (max. 500000)
- 86003 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 1327 PDF objects out of 1440 (max. 8388607)
+ 225 named destinations out of 1000 (max. 500000)
+ 99081 words of extra memory for PDF output out of 106986 (max. 10000000)
 

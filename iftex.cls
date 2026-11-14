@@ -108,23 +108,24 @@
 \newcommand{\source}[1][Elaborado pelo autor (\imprimirdata).]{\begin{flushleft}\footnotesize Fonte: #1\end{flushleft}}
 \renewcommand{\legend}[1]{\begin{flushleft}\footnotesize Fonte: #1.\end{flushleft}}
 
-% Títulos 
+% Títulos: destaques progressivos conforme a hierarquia da ABNT NBR 6024.
 \renewcommand{\ABNTEXchapterfont}{\rmfamily\bfseries}
 
 \renewcommand*{\chapnumfont}{\normalfont\normalsize\bfseries}
 \renewcommand*{\chaptitlefont}{\normalfont\normalsize\bfseries}
+\renewcommand\cftchapterfont{\normalfont\normalsize\bfseries\MakeUppercase}
 
-\setsecheadstyle{\normalfont\normalsize\MakeUppercase}
-\renewcommand\cftsectionfont{\normalfont\normalsize\Capitalize}
+\setsecheadstyle{\normalfont\normalsize\bfseries}
+\renewcommand\cftsectionfont{\normalfont\normalsize\bfseries}
 
-\setsubsecheadstyle{\normalfont\normalsize\bfseries}
-\renewcommand\cftsubsectionfont{\normalfont\normalsize\bfseries}
+\setsubsecheadstyle{\normalfont\normalsize}
+\renewcommand\cftsubsectionfont{\normalfont\normalsize}
 
-\setsubsubsecheadstyle{\normalfont\normalsize}
-\renewcommand\cftsubsubsectionfont{\normalfont\normalsize}
+\setsubsubsecheadstyle{\normalfont\normalsize\itshape}
+\renewcommand\cftsubsubsectionfont{\normalfont\normalsize\itshape}
 
-\setsubsubsubsecheadstyle{\normalfont\itshape}
-\renewcommand\cftparagraphfont{\normalfont\normalsize\itshape} 
+\setsubsubsubsecheadstyle{\normalfont\normalsize}
+\renewcommand\cftparagraphfont{\normalfont\normalsize}
 
 % Curso
 \providecommand{\imprimircurso}{}
@@ -462,18 +463,6 @@
 % ------------------------------------------------------------------------------- %
 % EPÍGRAFE                                                                        %
 % ------------------------------------------------------------------------------- %
-\providecommand{\imprimirepigrafe}{}
-\newcommand{\editarepigrafe}[1]{
-  \renewcommand{\imprimirepigrafe}{
-    \begin{epigrafe}
-      \vspace*{\fill}
-      \begin{center}
-        #1
-      \end{center}
-      \vspace*{3cm}
-    \end{epigrafe}
-  }
-}
 
 % ------------------------------------------------------------------------------- %
 % AUTOREF                                                                         %

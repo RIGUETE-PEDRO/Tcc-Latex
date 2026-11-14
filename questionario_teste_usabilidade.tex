@@ -1,0 +1,139 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage[margin=2cm]{geometry}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{tabularx,array}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\renewcommand{\arraystretch}{1.25}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcommand{\caixa}{\fbox{\rule{0pt}{1.1ex}\rule{1.1ex}{0pt}}}
+\newcommand{\linharesposta}{\par\vspace{0.45cm}\hrule\vspace{0.45cm}}
+
+\begin{document}
+
+\begin{center}
+  {\Large\textbf{Roteiro e questionário do teste de usabilidade}}\\[2mm]
+  {\large Sistema FlashFood}
+\end{center}
+
+\textbf{Código do participante:} \rule{3cm}{0.4pt}\hfill
+\textbf{Data:} \rule{3cm}{0.4pt}
+
+\section*{1. Orientações e perfil}
+
+\textbf{Texto para apresentar ao participante:} Você realizará algumas tarefas no FlashFood. Esta avaliação observa o funcionamento do sistema, não o seu desempenho; não há respostas certas ou erradas. Tente realizar cada tarefa sem receber instruções sobre onde clicar ou qual caminho seguir. Se não conseguir prosseguir, avise o moderador; ele registrará a dificuldade antes de oferecer ajuda. Serão usados apenas dados fictícios e não será necessário concluir uma compra real.
+
+\textbf{Perfil avaliado:} \caixa\ Cliente\quad \caixa\ Funcionário autorizado\quad \caixa\ Administrador
+
+\textbf{1. Você já utilizou aplicativos ou sistemas para fazer pedidos de alimentos?}\\
+\caixa\ Nunca\quad \caixa\ Poucas vezes\quad \caixa\ Às vezes\quad \caixa\ Frequentemente
+
+\textbf{2. Com que frequência utiliza celular ou computador para tarefas semelhantes às que realizará?}\\
+\caixa\ Raramente\quad \caixa\ Mensalmente\quad \caixa\ Semanalmente\quad \caixa\ Diariamente
+
+\section*{2. Tarefas}
+
+O moderador deve apresentar uma tarefa por vez e somente as tarefas correspondentes ao perfil do participante. Não deve demonstrar o caminho de navegação. Se a pessoa não conseguir prosseguir, registre a dificuldade antes de oferecer ajuda.
+
+\textbf{Perfil: cliente}
+\begin{enumerate}[label=U0\arabic*,leftmargin=1.4cm]
+  \item Localize uma bebida no catálogo e adicione duas unidades ao carrinho.
+  \item Com os dados fictícios fornecidos, conclua um pedido para entrega.
+  \item Encontre o pedido recém-criado e verifique em que etapa ele se encontra.
+\end{enumerate}
+
+\textbf{Perfil: funcionário autorizado}
+\begin{enumerate}[label=U0\arabic*,leftmargin=1.4cm,start=4]
+  \item Localize o pedido de teste e atualize seu status para \textit{em preparo}.
+\end{enumerate}
+
+\textbf{Perfil: administrador}
+\begin{enumerate}[label=U0\arabic*,leftmargin=1.4cm,start=5]
+  \item Localize um produto de teste, altere uma informação indicada e confirme a atualização.
+\end{enumerate}
+
+\newpage
+\section*{3. Questionário após as tarefas}
+
+\textbf{Código do participante:} \rule{3cm}{0.4pt}
+
+Para cada afirmação, assinale uma opção: 1 -- discordo totalmente; 2 -- discordo; 3 -- nem discordo nem concordo; 4 -- concordo; 5 -- concordo totalmente.
+
+\small
+\begin{tabularx}{\textwidth}{|c|X|*{5}{C{0.65cm}|}}
+\hline
+\textbf{ID} & \textbf{Afirmação} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} \\
+\hline
+Q01 & Aprender a utilizar o FlashFood para realizar as tarefas do meu perfil seria fácil. & \caixa & \caixa & \caixa & \caixa & \caixa \\
+\hline
+Q02 & Considero fácil encontrar no FlashFood as funcionalidades necessárias para minhas tarefas. & \caixa & \caixa & \caixa & \caixa & \caixa \\
+\hline
+Q03 & A interação com o FlashFood é clara e compreensível. & \caixa & \caixa & \caixa & \caixa & \caixa \\
+\hline
+Q04 & O FlashFood é útil para realizar as tarefas relacionadas ao meu perfil. & \caixa & \caixa & \caixa & \caixa & \caixa \\
+\hline
+Q05 & O FlashFood ajuda a organizar as informações necessárias para minhas tarefas. & \caixa & \caixa & \caixa & \caixa & \caixa \\
+\hline
+Q06 & As funcionalidades do FlashFood atendem às necessidades das tarefas que realizei. & \caixa & \caixa & \caixa & \caixa & \caixa \\
+\hline
+Q07 & Pretendo utilizar o FlashFood quando precisar realizar essas tarefas. & \caixa & \caixa & \caixa & \caixa & \caixa \\
+\hline
+Q08 & Eu escolheria o FlashFood para realizar tarefas semelhantes no meu contexto de uso. & \caixa & \caixa & \caixa & \caixa & \caixa \\
+\hline
+\end{tabularx}
+\normalsize
+
+\textbf{3. O que foi mais fácil de realizar?}
+\linharesposta\linharesposta
+
+\textbf{4. Em qual tarefa você encontrou mais dificuldade? O que dificultou?}
+\linharesposta\linharesposta
+
+\textbf{5. O que você mudaria ou melhoraria no sistema?}
+\linharesposta\linharesposta
+
+\newpage
+\section*{4. Ficha de observação do moderador}
+
+\textit{Esta página é de uso do moderador e não deve ser entregue ao participante. Identifique-o somente pelo código, sem registrar nome ou dados de contato.}
+
+\textbf{Código:} \rule{2.5cm}{0.4pt}\quad
+\textbf{Perfil:} \rule{3cm}{0.4pt}
+
+\textbf{Navegador:} \rule{4cm}{0.4pt}\hfill
+\textbf{Duração:} \rule{3cm}{0.4pt}
+
+\textbf{Dispositivo/tamanho da tela:} \rule{10cm}{0.4pt}
+
+Para cada tarefa aplicada, registre o resultado, o tempo, os erros ou desvios observados e os pedidos de ajuda. Marque apenas uma opção de resultado.
+
+\scriptsize
+\begin{tabularx}{\textwidth}{|c|X|C{1.25cm}|C{1.25cm}|C{1.4cm}|C{1.2cm}|}
+\hline
+\textbf{ID} & \textbf{Critério de conclusão} & \textbf{Sem ajuda} & \textbf{Com ajuda} & \textbf{Não concluiu} & \textbf{Tempo} \\
+\hline
+U01 & Produto correto no carrinho, com duas unidades e subtotal correspondente. & \caixa & \caixa & \caixa & \\
+\hline
+U02 & Pedido de teste concluído e confirmado pelo sistema. & \caixa & \caixa & \caixa & \\
+\hline
+U03 & Pedido localizado e status identificado corretamente. & \caixa & \caixa & \caixa & \\
+\hline
+U04 & Pedido correto atualizado para o status \textit{em preparo}. & \caixa & \caixa & \caixa & \\
+\hline
+U05 & Informação do produto alterada e atualização confirmada. & \caixa & \caixa & \caixa & \\
+\hline
+\end{tabularx}
+\normalsize
+
+\textbf{Erros, pedidos de ajuda e comentários espontâneos (identifique a tarefa):}
+\linharesposta\linharesposta\linharesposta\linharesposta\linharesposta
+
+\end{document}

@@ -1,43 +1,43 @@
-\chapter[Referencial Teórico]{Referencial Teórico}
+\chapter[Referencial teórico]{Referencial teórico}
 Nesta seção, são apresentados os principais conceitos e fundamentos teóricos utilizados no desenvolvimento deste trabalho, abordando os conhecimentos necessários para a compreensão das tecnologias e metodologias empregadas no sistema.
 
-\subsection{Trabalhos correlatos}
+\section{Trabalhos correlatos}
 
 Os trabalhos correlatos permitem observar como problemas semelhantes foram tratados em outros contextos e quais lacunas permanecem em relação à proposta deste projeto.
 
-\subsubsection{Sistema de Point of Sale em cafeteria}
+\subsection{Sistema de \textit{Point of Sale} em cafeteria}
 
-\citeonline{hidayat2023} desenvolveram um sistema de informação POS para uma cafeteria, utilizando Laravel, PHP, MySQL e o padrão MVC. O estudo informa que registros manuais de relatórios e estoque podiam gerar demora, perda de documentos e erros de cadastro. A solução foi projetada com método waterfall e diagramas como atividade, contexto, caso de uso e fluxograma.
+\citeonline{hidayat2023} desenvolveram um sistema de informação POS para uma cafeteria, utilizando Laravel, PHP, MySQL e o padrão MVC. O estudo informa que registros manuais de relatórios e estoque podiam gerar demora, perda de documentos e erros de cadastro. A solução foi projetada segundo o modelo em cascata (\textit{waterfall}), uma forma de organizar o desenvolvimento de \textit{software} em que o trabalho avança por fases planejadas em sequência. Primeiro, a equipe define o que o sistema deve fazer; depois, planeja sua estrutura, implementa e testa o \textit{software} e, por fim, coloca-o em operação e realiza sua manutenção. Os resultados de cada fase orientam a fase seguinte, como etapas de uma cascata \citeonline{Sommerville2011}. O estudo também utilizou diagramas de atividade, contexto, caso de uso e fluxograma.
 
 A proximidade com este trabalho está no uso de Laravel, MySQL e no foco em ambiente de venda de alimentos e bebidas. A diferença principal está na proposta deste projeto de enfatizar também comandas, RBAC e organização operacional integrada.
 
-\subsubsection{Restaurant Management System}
+\subsection{\textit{Restaurant Management System}}
 
-\citeonline{jingga2014} propuseram um modelo de Restaurant Management System desenvolvido com PHP e MySQL. O sistema buscava apoiar a comunicação entre garçom, chef e caixa em tempo real, além de contemplar processos ligados a pedidos e pagamentos.
+\citeonline{jingga2014} propuseram um modelo de \textit{Restaurant Management System} desenvolvido com PHP e MySQL. O sistema buscava apoiar a comunicação entre garçom, chef e caixa em tempo real, além de contemplar processos ligados a pedidos e pagamentos.
 
 Esse trabalho é relevante por tratar diretamente de restaurantes e por reconhecer a importância da integração entre atendimento e preparação. Contudo, a proposta aqui apresentada adota Laravel, Docker e controle de acesso baseado em papéis, além de direcionar a solução para lanchonetes de pequeno porte.
 
-\subsubsection{POS web com Laravel para Meetup Station}
+\subsection{POS \textit{web} com Laravel para Meetup Station}
 
-\citeonline{khairunnisa2022} desenvolveram um sistema POS web para a UMKM Meetup Station, negócio do setor de alimentos e bebidas. Segundo o estudo, a empresa realizava registros de transações em livro físico e cálculos manuais, o que causava erros. A solução utilizou Laravel, PHP, PostgreSQL e metodologia waterfall.
+\citeonline{khairunnisa2022} desenvolveram um sistema POS \textit{web} para a Meetup Station, um negócio do setor de alimentos e bebidas classificado como UMKM na Indonésia. UMKM é a sigla de \textit{Usaha Mikro, Kecil, dan Menengah}, expressão que designa micro, pequenas e médias empresas \cite{ojk2024tkbi}. Segundo o estudo, a empresa realizava registros de transações em livro físico e cálculos manuais, o que causava erros. A solução utilizou Laravel, PHP, PostgreSQL e o modelo em cascata (\textit{waterfall}).
 
-Os testes indicaram validação funcional completa e funcionamento responsivo em diferentes navegadores e resoluções. A principal contribuição para este projeto é a demonstração de viabilidade de uma solução web para pequenos negócios alimentícios. Como diferença, o sistema proposto neste trabalho utilizará MySQL e dará maior ênfase a estoque, comandas e RBAC.
+Os testes indicaram validação funcional completa e funcionamento responsivo em diferentes navegadores e resoluções. A principal contribuição para este projeto é a demonstração de viabilidade de uma solução \textit{web} para pequenos negócios alimentícios. Como diferença, o sistema proposto neste trabalho utilizará MySQL e dará maior ênfase a estoque, comandas e RBAC.
 
-\subsubsection{POS multipagamento para UMKM Mr. Boba}
+\subsection{POS multipagamento para a empresa Mr. Boba}
 
-\citeonline{lathief2023} apresentaram um sistema POS multipagamento baseado em Laravel para a UMKM Mr. Boba. O estudo relata dificuldades com vendas manuais, ausência de alternativas de pagamento não presencial e demora no fechamento de relatórios. O desenvolvimento adotou o método RAD e testes black-box.
+\citeonline{lathief2023} apresentaram um sistema POS multipagamento baseado em Laravel para a empresa Mr. Boba, classificada no estudo como UMKM. Na Indonésia, essa sigla significa \textit{Usaha Mikro, Kecil, dan Menengah}, categoria que abrange micro, pequenas e médias empresas \cite{ojk2024tkbi}. O estudo relata dificuldades com vendas manuais, ausência de alternativas de pagamento não presencial e demora no fechamento de relatórios. O desenvolvimento adotou o método RAD e testes \textit{black-box}.
 
 Esse trabalho contribui por evidenciar a importância de relatórios computadorizados e de maior agilidade no atendimento. A proposta deste projeto, entretanto, não se concentra em múltiplos meios de pagamento, mas na gestão operacional integrada da lanchonete.
 
-\subsubsection{Sistema de caixa web para Natta Coffee}
+\subsection{Sistema de caixa \textit{web} para Natta Coffee}
 
-\citeonline{rusmara2025} desenvolveu um sistema de caixa web para a Natta Coffee com framework Laravel, visando melhorar transações de venda, controle de estoque e relatórios financeiros. O estudo adotou RAD e indicou ganhos na precisão de registros, velocidade de pagamento e emissão de relatórios.
+\citeonline{rusmara2025} desenvolveu um sistema de caixa \textit{web} para a Natta Coffee com \textit{framework} Laravel, visando melhorar transações de venda, controle de estoque e relatórios financeiros. O estudo adotou RAD e indicou ganhos na precisão de registros, velocidade de pagamento e emissão de relatórios.
 
-A relação com este trabalho é direta, pois ambos tratam de estabelecimentos de alimentação e de sistemas web com Laravel. A diferença está na ampliação proposta para controle de comandas, perfis de usuário e estrutura de permissões.
+A relação com este trabalho é direta, pois ambos tratam de estabelecimentos de alimentação e de sistemas \textit{web} com Laravel. A diferença está na ampliação proposta para controle de comandas, perfis de usuário e estrutura de permissões.
 
 \subsection{Comparação entre trabalhos correlatos e sistema proposto}
 
-O Quadro 1 sintetiza as principais características dos trabalhos analisados e as compara com o sistema proposto.
+A Tabela 1 sintetiza as principais características dos trabalhos analisados e as compara com o sistema proposto.
 
 \begin{table}[htbp]
 \centering
@@ -52,16 +52,16 @@ Hidayat e Farell (2023) & Cafeteria & Laravel, PHP, MySQL, MVC & POS, vendas, re
 \hline
 Jingga e Limantara (2014) & Restaurante & PHP, MySQL & Pedido, comunicação garçom-chef-caixa e pagamento & Similar na integração operacional; não utiliza Laravel nem Docker. \\
 \hline
-Khairunnisa, Arwani e Hanggara (2022) & Alimentos e bebidas & Laravel, PHP, PostgreSQL & POS, transações e relatórios & Similar em POS web; usa PostgreSQL e não prioriza RBAC. \\
+Khairunnisa, Arwani e Hanggara (2022) & Alimentos e bebidas & Laravel, PHP, PostgreSQL & POS, transações e relatórios & Similar em POS \textit{web}; usa PostgreSQL e não prioriza RBAC. \\
 \hline
 Lathief, Hasdiana e Lubis (2023) & Bebidas/UMKM & Laravel & POS multipagamento e relatórios & Similar na automação de vendas; foco maior em pagamento. \\
 \hline
-Rusmara (2025) & Cafeteria & Laravel & Caixa web, estoque e relatórios financeiros & Próximo ao tema; proposta atual amplia perfis, comandas e controle operacional. \\
+Rusmara (2025) & Cafeteria & Laravel & Caixa \textit{web}, estoque e relatórios financeiros & Próximo ao tema; proposta atual amplia perfis, comandas e controle operacional. \\
 \hline
 Sistema proposto & Lanchonete & Laravel, PHP, MySQL, Docker, Git/GitHub & Produtos, pedidos, comandas, estoque, usuários, RBAC e relatórios & Integra gestão operacional, controle de acesso e ambiente padronizado para pequeno negócio. \\
 \hline
 \end{tabularx}
-\legend{Fonte: Elaborado pelo autor (2026).}
+\legend{Elaborado pelo autor (2026)}
 \end{table}
 
 A análise dos trabalhos correlatos indica que há soluções voltadas a POS, caixa e gestão de restaurantes, mas a proposta deste projeto se diferencia pela combinação de gestão operacional de lanchonete, comandas, estoque, Laravel, MySQL, Docker, versionamento e controle de acesso baseado em papéis.
@@ -70,42 +70,42 @@ Essa integração busca atender a uma necessidade prática: organizar a rotina d
 
 \section{MySQL}
 
-De acordo com \citeonline{milani2007}, o cenário de globalização e o avanço da automação, impulsionados pela popularização da internet, tornaram o armazenamento de dados um passo primordial para a migração de negócios para o ambiente digital. Nesse contexto, o MySQL surge para suprir essa demanda de organização de informações.
+De acordo com \citeonline{milani2007}, o cenário de globalização e o avanço da automação, impulsionados pela popularização da \textit{internet}, tornaram o armazenamento de dados um passo primordial para a migração de negócios para o ambiente digital. Nesse contexto, o MySQL surge para suprir essa demanda de organização de informações.
 
 O MySQL é um Sistema Gerenciador de Banco de Dados (SGBD) relacional distribuído sob um modelo de licenciamento duplo, que inclui uma versão de código aberto. Embora tenha sido projetado inicialmente para aplicações de pequeno e médio porte, a ferramenta evoluiu para atender também a projetos de maior escala. Segundo \citeonline{milani2007}, o MySQL apresenta robustez e recursos comparáveis aos de sistemas proprietários, como SQL Server e Oracle.
 
 \section{PHP}
-Conforme afirma \citeonline{DallOglio2015}, o PHP — que originalmente significava Personal Home Page — é uma linguagem de programação criada por Rasmus Lerdorf no outono de 1994. Inicialmente, a ferramenta consistia em um conjunto de scripts escritos em linguagem C, destinados à criação de páginas dinâmicas para que o autor monitorasse o acesso ao seu currículo na internet. Com o aumento da popularidade entre outros usuários, Lerdorf adicionou novos recursos, como a interação com bancos de dados. Em 1995, o código-fonte foi liberado, permitindo a colaboração de novos desenvolvedores. Vale ressaltar que, durante um curto período, a linguagem também foi denominada FI (Forms Interpreter).
+Conforme afirma \citeonline{DallOglio2015}, o PHP — que originalmente significava \textit{Personal Home Page} — é uma linguagem de programação criada por Rasmus Lerdorf no outono de 1994. Inicialmente, a ferramenta consistia em um conjunto de \textit{scripts} escritos em linguagem C, destinados à criação de páginas dinâmicas para que o autor monitorasse o acesso ao seu currículo na \textit{internet}. Com o aumento da popularidade entre outros usuários, Lerdorf adicionou novos recursos, como a interação com bancos de dados. Em 1995, o código-fonte foi liberado, permitindo a colaboração de novos desenvolvedores. Vale ressaltar que, durante um curto período, a linguagem também foi denominada FI (\textit{Forms Interpreter}).
 \section{Laravel}
 
-De acordo com \citeonline{Laravel2025}, o Laravel é um \textit{framework} para o desenvolvimento de aplicações web em PHP. A ferramenta oferece recursos para tarefas recorrentes, como roteamento, acesso a bancos de dados, autenticação e organização da aplicação, podendo ser utilizada tanto no desenvolvimento do \textit{back-end} quanto em aplicações completas.
+De acordo com \citeonline{Laravel2025}, o Laravel é um \textit{framework} para o desenvolvimento de aplicações \textit{web} em PHP. A ferramenta oferece recursos para tarefas recorrentes, como roteamento, acesso a bancos de dados, autenticação e organização da aplicação, podendo ser utilizada tanto no desenvolvimento do \textit{back-end} quanto em aplicações completas.
 
 \section{Git}
 Segundo \citeonline{Ferreira2014}, o Git é um sistema de controle de versão que permite registrar e acompanhar as alterações realizadas no código-fonte ao longo do desenvolvimento.
 
-Seu fundador, Linus Torvalds, criador do sistema operacional Linux, estava descontente com o BitKeeper, o sistema para controle de versão no desenvolvimento do kernel Linux. O Git também é bastante utilizado em empresas em todo o mundo, inclusive no Brasil.
+Seu fundador, Linus Torvalds, criador do sistema operacional Linux, estava descontente com o BitKeeper, o sistema para controle de versão no desenvolvimento do \textit{kernel} Linux. O Git também é bastante utilizado em empresas em todo o mundo, inclusive no Brasil.
 
 O uso dessa tecnologia favorece a rastreabilidade das modificações e a colaboração entre desenvolvedores.
 
 \section{GitHub}
-Conforme afirma \citeonline{Ferreira2014}, o GitHub foi criado em 2008 como uma aplicação web para hospedagem de repositórios Git e colaboração entre desenvolvedores.
+Conforme afirma \citeonline{Ferreira2014}, o GitHub foi criado em 2008 como uma aplicação \textit{web} para hospedagem de repositórios Git e colaboração entre desenvolvedores.
 
 Diversos projetos de código aberto importantes são hospedados no GitHub, como jQuery, Node.js, Ruby on Rails, Jenkins, Spring, JUnit e muitos outros.
 
-Atualmente, o GitHub se tornou uma das principais plataformas utilizadas por desenvolvedores e empresas para compartilhamento de código, controle de versões e colaboração em projetos de software.
+Atualmente, o GitHub se tornou uma das principais plataformas utilizadas por desenvolvedores e empresas para compartilhamento de código, controle de versões e colaboração em projetos de \textit{software}.
 
-\section{Blade (Sistema de Templates)}
+\section{Blade (sistema de \textit{templates})}
 
-Conforme \citeonline{blade2016}, grande parte dos frameworks web utiliza sistemas de templates para padronizar a interface visual das aplicações. Esse recurso otimiza a construção do projeto, facilitando o reuso de código e centralizando partes fixas da interface.
+Conforme \citeonline{blade2016}, grande parte dos \textit{frameworks} \textit{web} utiliza sistemas de \textit{templates} para padronizar a interface visual das aplicações. Esse recurso otimiza a construção do projeto, facilitando o reuso de código e centralizando partes fixas da interface.
 
-Com esse objetivo, o Laravel utiliza o Blade, um sistema de templates que se diferencia de outras soluções em PHP por não restringir o uso da linguagem PHP em suas páginas. Além disso, no Blade, cada view é compilada e armazenada em cache até sofrer alguma alteração, o que torna a aplicação mais eficiente e leve.
+Com esse objetivo, o Laravel utiliza o Blade, um sistema de \textit{templates} que se diferencia de outras soluções em PHP por não restringir o uso da linguagem PHP em suas páginas. Além disso, no Blade, cada \textit{view} é compilada e armazenada em \textit{cache} até sofrer alguma alteração, o que torna a aplicação mais eficiente e leve.
 
 \section{Visual Studio Code}
-O Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft, amplamente utilizado no desenvolvimento de software. Ele oferece suporte a múltiplas linguagens de programação, integração com Git e extensões que aumentam sua funcionalidade \citeonline{vscode2026}.
+O Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft, amplamente utilizado no desenvolvimento de \textit{software}. Ele oferece suporte a múltiplas linguagens de programação, integração com Git e extensões que aumentam sua funcionalidade \citeonline{vscode2026}.
 
-Devido à sua leveza e flexibilidade, tornou-se uma das ferramentas mais populares entre desenvolvedores web e back-end.
+Devido à sua leveza e flexibilidade, tornou-se uma das ferramentas mais populares entre desenvolvedores \textit{web} e \textit{back-end}.
 
-\section{Controle de Acesso Baseado em Funções (RBAC)}
+\section{Controle de acesso baseado em funções (RBAC)}
 
 O modelo de Controle de Acesso Baseado em Funções, conhecido pela sigla RBAC (\textit{Role-Based Access Control}), é um método de autorização que gerencia o acesso de usuários a sistemas, aplicações e dados com base em funções predefinidas. Segundo \citeonline{ibm_rbac}, nesse modelo, o acesso não é atribuído diretamente ao indivíduo, mas ao papel que ele desempenha na organização.
 
@@ -129,27 +129,27 @@ A aplicação do RBAC é fundamental para manter a integridade dos dados e a org
 \section{Docker}
 Segundo \citeonline{vitalino2018docker}, o Docker surgiu em 2013 a partir da empresa dotCloud, fundada por Solomon Hykes. Inicialmente, a empresa atuava com soluções PaaS (\textit{Platform as a Service}), permitindo suporte a diferentes linguagens de programação, diferentemente de outras plataformas da época.
 
-Os autores destacam que o Docker nasceu como uma tecnologia open source baseada inicialmente em LXC (Linux Containers) e Union Filesystem, possibilitando a criação de containers leves e eficientes. Seu crescimento ocorreu rapidamente, tornando-se amplamente utilizado por empresas de grande porte, como Spotify, além de receber suporte de plataformas como AWS e Google.
+Os autores destacam que o Docker nasceu como uma tecnologia \textit{open source} baseada inicialmente em LXC (\textit{Linux Containers}) e \textit{Union Filesystem}, possibilitando a criação de \textit{containers} leves e eficientes. Seu crescimento ocorreu rapidamente, tornando-se amplamente utilizado por empresas de grande porte, como Spotify, além de receber suporte de plataformas como AWS e Google.
 
-De acordo com Vitalino e Castro (2018), o Docker trouxe maior facilidade na criação, distribuição e execução de aplicações em containers, garantindo mais portabilidade e consistência entre ambientes de desenvolvimento e produção. Além disso, por utilizar o mesmo kernel do sistema operacional hospedeiro, a tecnologia apresenta maior eficiência no consumo de recursos quando comparada às máquinas virtuais tradicionais.
+De acordo com Vitalino e Castro (2018), o Docker trouxe maior facilidade na criação, distribuição e execução de aplicações em \textit{containers}, garantindo mais portabilidade e consistência entre ambientes de desenvolvimento e produção. Além disso, por utilizar o mesmo \textit{kernel} do sistema operacional hospedeiro, a tecnologia apresenta maior eficiência no consumo de recursos quando comparada às máquinas virtuais tradicionais.
 
-Os autores também ressaltam que o Docker possui melhor desempenho em sistemas Linux, embora atualmente também possa ser executado em ambientes Windows e macOS. Dessa forma, o Docker tornou-se uma das principais ferramentas utilizadas em processos modernos de desenvolvimento e implantação de software.
+Os autores também ressaltam que o Docker possui melhor desempenho em sistemas Linux, embora atualmente também possa ser executado em ambientes Windows e macOS. Dessa forma, o Docker tornou-se uma das principais ferramentas utilizadas em processos modernos de desenvolvimento e implantação de \textit{software}.
 
-\subsection{Testes automatizados de software}
+\subsection{Testes automatizados de \textit{software}}
 
-O teste de software é uma atividade importante no processo de desenvolvimento, pois permite identificar falhas e avaliar se o sistema apresenta o comportamento esperado. Conforme discutido por \citeonline{sousa2023}, os testes podem ser realizados com o apoio de ferramentas de automação, que permitem executar verificações de maneira repetível e analisar o funcionamento de aplicações web.
+O teste de \textit{software} é uma atividade importante no processo de desenvolvimento, pois permite identificar falhas e avaliar se o sistema apresenta o comportamento esperado. Conforme discutido por \citeonline{sousa2023}, os testes podem ser realizados com o apoio de ferramentas de automação, que permitem executar verificações de maneira repetível e analisar o funcionamento de aplicações \textit{web}.
 
-A automação de testes utiliza scripts e ferramentas para reproduzir ações e verificar resultados previamente definidos. Essa prática pode contribuir para reduzir o esforço associado à repetição manual de testes, especialmente quando o sistema passa por alterações durante o desenvolvimento. Entretanto, os resultados obtidos dependem dos cenários definidos e não garantem, isoladamente, a inexistência de defeitos na aplicação.
+A automação de testes utiliza \textit{scripts} e ferramentas para reproduzir ações e verificar resultados previamente definidos. Essa prática pode contribuir para reduzir o esforço associado à repetição manual de testes, especialmente quando o sistema passa por alterações durante o desenvolvimento. Entretanto, os resultados obtidos dependem dos cenários definidos e não garantem, isoladamente, a inexistência de defeitos na aplicação.
 
 \subsection{Testes de ponta a ponta (E2E)}
 
-Os testes de ponta a ponta, conhecidos como E2E (\textit{End-to-End}), verificam o comportamento de uma aplicação a partir de fluxos completos de utilização. Em aplicações web, esses testes podem reproduzir ações realizadas pelo usuário no navegador e verificar se a aplicação responde conforme o esperado.
+Os testes de ponta a ponta, conhecidos como E2E (\textit{End-to-End}), verificam o comportamento de uma aplicação a partir de fluxos completos de utilização. Em aplicações \textit{web}, esses testes podem reproduzir ações realizadas pelo usuário no navegador e verificar se a aplicação responde conforme o esperado.
 
-No estudo comparativo realizado por \citeonline{sousa2023}, o Cypress e o Selenium são analisados como ferramentas para automatização de testes em aplicações web. O trabalho aborda características como configuração, escrita dos scripts, recursos disponíveis e execução dos testes. Essa abordagem demonstra a importância de considerar tanto as funcionalidades das ferramentas quanto as necessidades específicas do sistema que será testado.
+No estudo comparativo realizado por \citeonline{sousa2023}, o Cypress e o Selenium são analisados como ferramentas para automatização de testes em aplicações \textit{web}. O trabalho aborda características como configuração, escrita dos \textit{scripts}, recursos disponíveis e execução dos testes. Essa abordagem demonstra a importância de considerar tanto as funcionalidades das ferramentas quanto as necessidades específicas do sistema que será testado.
 
 \subsection{Cypress}
 
-O Cypress é uma ferramenta voltada à automação de testes de aplicações web. Segundo \citeonline{sousa2023}, a ferramenta utiliza JavaScript para a criação dos scripts de teste e foi projetada para trabalhar diretamente com a aplicação executada no navegador. Essa característica permite que os testes realizem ações na interface e verifiquem elementos e comportamentos apresentados durante a execução.
+O Cypress é uma ferramenta voltada à automação de testes de aplicações \textit{web}. Segundo \citeonline{sousa2023}, a ferramenta utiliza JavaScript para a criação dos \textit{scripts} de teste e foi projetada para trabalhar diretamente com a aplicação executada no navegador. Essa característica permite que os testes realizem ações na interface e verifiquem elementos e comportamentos apresentados durante a execução.
 
 Entre as operações que podem compor um teste estão acessar uma página, localizar elementos, preencher campos, clicar em botões e verificar se o resultado esperado foi apresentado. A documentação oficial do Cypress também descreve recursos voltados à criação e execução de testes automatizados \cite{cypress2023}.
 
@@ -167,48 +167,56 @@ Em cada cenário, o teste deve executar as ações previstas e verificar se os r
 
 \section{Redis}
 
-O Redis (\textit{Remote Dictionary Server}) é um banco de dados NoSQL em memória amplamente utilizado como sistema de cache, armazenamento de sessões, filas de mensagens e banco de dados chave-valor. Diferentemente de outras soluções de cache, o Redis oferece suporte a diversas estruturas de dados, como listas, conjuntos, hashes e conjuntos ordenados, além de permitir persistência opcional dos dados em disco.
+O Redis (\textit{Remote Dictionary Server}) é um banco de dados NoSQL em memória amplamente utilizado como sistema de \textit{cache}, armazenamento de sessões, filas de mensagens e banco de dados chave-valor. Diferentemente de outras soluções de \textit{cache}, o Redis oferece suporte a diversas estruturas de dados, como listas, conjuntos, \textit{hashes} e conjuntos ordenados, além de permitir persistência opcional dos dados em disco.
 
 Segundo \citeonline{redis2025}, o armazenamento dos dados diretamente na memória RAM reduz o tempo de acesso em comparação com sistemas que dependem de operações em disco, tornando o Redis adequado a aplicações que exigem alto desempenho.
 
 Além disso, o Redis oferece mecanismos de expiração automática de chaves (\textit{Time To Live -- TTL}), permitindo que os dados armazenados sejam removidos automaticamente após determinado período, evitando inconsistências e desperdício de memória.
 
-\subsection{Cache em Aplicações Web}
+\subsection{\textit{Cache} em aplicações \textit{web}}
 
-O cache é uma técnica utilizada para reduzir o tempo de resposta das aplicações, armazenando temporariamente informações frequentemente acessadas em uma camada de memória de alta velocidade. Dessa forma, evita-se a execução repetitiva de consultas ao banco de dados e outros processos computacionalmente custosos, contribuindo para a melhoria do desempenho e da escalabilidade dos sistemas.
+O \textit{cache} é uma técnica utilizada para reduzir o tempo de resposta das aplicações, armazenando temporariamente informações frequentemente acessadas em uma camada de memória de alta velocidade. Dessa forma, evita-se a execução repetitiva de consultas ao banco de dados e outros processos computacionalmente custosos, contribuindo para a melhoria do desempenho e da escalabilidade dos sistemas.
 
-Em aplicações web modernas, o uso de mecanismos de cache torna-se essencial principalmente em cenários com elevado número de acessos simultâneos. A utilização dessa estratégia reduz a carga sobre o banco de dados, diminui a latência das requisições e melhora a experiência do usuário.
+Em aplicações \textit{web} modernas, o uso de mecanismos de \textit{cache} torna-se essencial principalmente em cenários com elevado número de acessos simultâneos. A utilização dessa estratégia reduz a carga sobre o banco de dados, diminui a latência das requisições e melhora a experiência do usuário.
 
 
 
-\subsection{Redis como Camada de Cache}
+\subsection{Redis como camada de \textit{cache}}
 
-O Redis é frequentemente utilizado como uma camada intermediária entre a aplicação e o banco de dados. Quando uma informação é solicitada, a aplicação verifica inicialmente se ela está armazenada no cache. Caso esteja disponível, o dado é retornado imediatamente. Caso contrário, a informação é recuperada do banco de dados, armazenada no Redis e posteriormente enviada ao usuário.
+O Redis é frequentemente utilizado como uma camada intermediária entre a aplicação e o banco de dados. Quando uma informação é solicitada, a aplicação verifica inicialmente se ela está armazenada no \textit{cache}. Caso esteja disponível, o dado é retornado imediatamente. Caso contrário, a informação é recuperada do banco de dados, armazenada no Redis e posteriormente enviada ao usuário.
 
-O fluxo de consulta ao cache e ao banco de dados adotado no sistema Flashfood é apresentado na \autoref{fig:fluxo-cache-redis}.
+O fluxo de consulta ao \textit{cache} e ao banco de dados adotado no sistema Flashfood é apresentado na \autoref{fig:fluxo-cache-redis}.
 
 \begin{figure}[htbp]
     \centering
     \caption{Fluxo de consulta ao Redis no sistema Flashfood}
     \label{fig:fluxo-cache-redis}
     \includegraphics[width=0.95\textwidth]{imagenRedis.png}
-    \legend{ Elaborado pelo autor (2026).}
+    \legend{ Elaborado pelo autor (2026)}
 \end{figure}
 
 Esse processo reduz significativamente a quantidade de consultas ao banco de dados, especialmente em informações acessadas repetidamente, como listas de produtos, categorias, configurações do sistema e dados estatísticos.
 
 De acordo com \citeonline{almeida2023}, o Redis apresenta desempenho superior em operações de leitura quando comparado a bancos relacionais tradicionais, tornando-se uma alternativa para aplicações com alta demanda de acesso.
 
-\subsection{Escalabilidade Horizontal}
+\subsection{Escalabilidade horizontal}
 
-A escalabilidade horizontal consiste na ampliação da capacidade de processamento de uma aplicação por meio da adição de novos servidores, em vez do aumento da capacidade de um único equipamento. Nesse cenário, soluções de cache como o Redis desempenham papel fundamental, reduzindo o número de acessos simultâneos ao banco de dados e distribuindo de forma mais eficiente a carga entre os servidores.
+A escalabilidade horizontal consiste na ampliação da capacidade de processamento de uma aplicação por meio da adição de novos servidores, em vez do aumento da capacidade de um único equipamento. Nesse cenário, soluções de \textit{cache} como o Redis desempenham papel fundamental, reduzindo o número de acessos simultâneos ao banco de dados e distribuindo de forma mais eficiente a carga entre os servidores.
 
-Segundo \citeonline{sabbag2025}, arquiteturas que utilizam cache podem responder mais rapidamente às requisições dos usuários, proporcionando maior disponibilidade e desempenho.
+Segundo \citeonline{sabbag2025}, arquiteturas que utilizam \textit{cache} podem responder mais rapidamente às requisições dos usuários, proporcionando maior disponibilidade e desempenho.
 
-\subsection{Aplicação do Redis no Sistema Desenvolvido}
+\subsection{Aplicação do Redis no sistema desenvolvido}
 
-Neste trabalho, o Redis foi utilizado como mecanismo de cache da aplicação desenvolvida em Laravel. Informações frequentemente consultadas, como listas de funcionários, categorias e outros registros de baixa frequência de alteração, foram armazenadas temporariamente no Redis utilizando o mecanismo \texttt{Cache::remember()} disponibilizado pelo framework.
+Neste trabalho, o Redis foi utilizado como mecanismo de \textit{cache} da aplicação desenvolvida em Laravel. Informações frequentemente consultadas, como listas de funcionários, categorias e outros registros de baixa frequência de alteração, foram armazenadas temporariamente no Redis utilizando o mecanismo \texttt{Cache::remember()} disponibilizado pelo \textit{framework}.
 
-Quando ocorre alteração nos dados, como inclusão, edição ou exclusão de registros, o cache correspondente é invalidado por meio do método \texttt{Cache::forget()}, garantindo que as informações apresentadas aos usuários permaneçam consistentes.
+Quando ocorre alteração nos dados, como inclusão, edição ou exclusão de registros, o \textit{cache} correspondente é invalidado por meio do método \texttt{Cache::forget()}, garantindo que as informações apresentadas aos usuários permaneçam consistentes.
 
 Essa estratégia reduz a quantidade de consultas ao banco de dados MySQL, melhora o tempo de resposta da aplicação e aumenta sua capacidade de atender múltiplos usuários simultaneamente.   
+
+\section{VPN e WireGuard}
+
+Uma rede privada virtual (VPN) conecta dispositivos ou redes por meio de uma infraestrutura compartilhada, como a \textit{Internet}. Segundo \citeonline{donenfeld2017wireguard}, o WireGuard implementa um túnel seguro na camada de rede e associa os pares de comunicação às respectivas chaves públicas e aos endereços IP autorizados. No FlashFood, essa tecnologia conecta a máquina virtual ao servidor próprio; os endereços e parâmetros usados na configuração são apresentados no Capítulo~\ref{chap:implantacao}.
+
+\section{Nginx como \textit{proxy} reverso}
+
+O Nginx é um servidor \textit{web} que também pode atuar como \textit{proxy} reverso. Nesse modo, recebe requisições dos clientes, encaminha-as a outro servidor e devolve as respostas recebidas \cite{nginxBeginnersGuide}. Essa função permite separar o ponto de entrada \textit{web} do servidor que executa a aplicação. Na implantação do FlashFood, o Nginx da máquina virtual encaminha as requisições ao servidor próprio, conforme descrito no Capítulo~\ref{chap:implantacao}.
