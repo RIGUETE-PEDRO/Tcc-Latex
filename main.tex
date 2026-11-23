@@ -7,11 +7,12 @@
   english,			  % idioma adicional para hifenização
   french,				  % idioma adicional para hifenização
   spanish,			  % idioma adicional para hifenização
-  brazil				  % o último idioma é o principal do documento
+  brazilian			  % o último idioma é o principal do documento
 ]{iftex}
 
 % Importa as macros do projeto
 \input{macros.tex}
+\hypersetup{hypertexnames=false}
 \usepackage{float}
 \usepackage{needspace}
 
@@ -28,7 +29,7 @@
   \capas
   \imprimircapa
   \imprimirfolhaderosto
-  \imprimirfichacatalografica
+  % \imprimirfichacatalografica
   % \includepdf[pages=-]{pre_textuais/ficha.pdf}
 
   % --------------------------------------------------- %
@@ -36,9 +37,9 @@
   % --------------------------------------------------- %
   % APROVAÇÃO, DEDICATÓRIA, AGRADECIMENTOS, EPÍGRAFE
   \pretextual
-  \imprimiraprovacao
+  % \imprimiraprovacao
   % \includepdf[pages=-]{pre_textuais/aprovacao.pdf}
-  \imprimirdedicatoria
+  % \imprimirdedicatoria
   \input{pre_textuais/declaracaoAutor}
   \imprimiragradecimentos
   

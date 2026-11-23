@@ -199,10 +199,10 @@ automation.
                               LISTA DE ILUSTRAÇÕES
 
 
-Figura 1 – Fluxo de consulta ao Redis no sistema Flashfood . . . . . . . . . . .          29
+Figura 1 – Fluxo de consulta ao Redis no sistema FlashFood . . . . . . . . . . .          29
 Figura 2 – Diagrama de casos de uso do sistema FlashFood . . . . . . . . . .              35
 Figura 3 – Visão resumida do modelo de classes do sistema FlashFood . . . .               37
-Figura 4 – Modelo físico do banco de dados do sistema Flashfood (visão geral)             39
+Figura 4 – Modelo físico do banco de dados do sistema FlashFood (visão geral)             39
 Figura 5 – Detalhe do modelo físico do banco de dados – região superior esquerda 40
 Figura 6 – Detalhe do modelo físico do banco de dados – região superior direita 41
 Figura 7 – Detalhe do modelo físico do banco de dados – região inferior esquerda 42
@@ -924,7 +924,7 @@ retornado imediatamente. Caso contrário, a informação é recuperada do banco 
 dados, armazenada no Redis e posteriormente enviada ao usuário.
 
 
-O fluxo de consulta ao cache e ao banco de dados adotado no sistema Flashfood é
+O fluxo de consulta ao cache e ao banco de dados adotado no sistema FlashFood é
 apresentado na Figura 1.
 
 
@@ -939,7 +939,7 @@ uma alternativa para aplicações com alta demanda de acesso.
                                                                                   29
 
 
-Figura 1 – Fluxo de consulta ao Redis no sistema Flashfood
+Figura 1 – Fluxo de consulta ao Redis no sistema FlashFood
 
 
 
@@ -1190,7 +1190,7 @@ sentam atributos e chaves, enquanto as associações e multiplicidades indicam c
 os registros se relacionam. A versão integral complementa essa visão com as classes
 de controle, serviços, repositórios e suas implementações, middleware, mensagens
 e enumerações. Devido à quantidade de elementos, o diagrama completo pode ser
-acessado pelo endereço: <https://github.com/RIGUETE-PEDRO/FastFood/blob/main/
+acessado pelo endereço: <https://github.com/RIGUETE-PEDRO/FlashFood/blob/main/
 diagrama%20de%20class.jpg>.
 
 
@@ -1200,12 +1200,12 @@ diagrama%20de%20class.jpg>.
 A Figura 4 apresenta a visão geral do banco de dados. Para facilitar a leitura das
 tabelas e de seus campos, as ampliações das diferentes regiões estão nas Figuras 5
 a 8.
-Figura 4 – Modelo físico do banco de dados do sistema Flashfood (visão geral)
+Figura 4 – Modelo físico do banco de dados do sistema FlashFood (visão geral)
 
 
 
 
-Fonte: elaborado pelo autor (2026).
+Fonte: Elaborado pelo autor (2026).
 
 
 
@@ -1216,7 +1216,7 @@ Fonte: elaborado pelo autor (2026).
 
 
 
-Fonte: elaborado pelo autor (2026).
+Fonte: Elaborado pelo autor (2026).
 
 
 
@@ -1227,7 +1227,7 @@ Fonte: elaborado pelo autor (2026).
 
 
 
-Fonte: elaborado pelo autor (2026).
+Fonte: Elaborado pelo autor (2026).
 
 
 
@@ -1238,7 +1238,7 @@ Fonte: elaborado pelo autor (2026).
 
 
 
-Fonte: elaborado pelo autor (2026).
+Fonte: Elaborado pelo autor (2026).
 
 
 
@@ -1249,7 +1249,7 @@ Fonte: elaborado pelo autor (2026).
 
 
 
-Fonte: elaborado pelo autor (2026).
+Fonte: Elaborado pelo autor (2026).
 
 
 

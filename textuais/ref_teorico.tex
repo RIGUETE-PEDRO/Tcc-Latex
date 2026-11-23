@@ -7,7 +7,7 @@ Os trabalhos correlatos permitem observar como problemas semelhantes foram trata
 
 \subsection{Sistema de \textit{Point of Sale} em cafeteria}
 
-\citeonline{hidayat2023} desenvolveram um sistema de informação POS para uma cafeteria, utilizando Laravel, PHP, MySQL e o padrão MVC. O estudo informa que registros manuais de relatórios e estoque podiam gerar demora, perda de documentos e erros de cadastro. A solução foi projetada segundo o modelo em cascata (\textit{waterfall}), uma forma de organizar o desenvolvimento de \textit{software} em que o trabalho avança por fases planejadas em sequência. Primeiro, a equipe define o que o sistema deve fazer; depois, planeja sua estrutura, implementa e testa o \textit{software} e, por fim, coloca-o em operação e realiza sua manutenção. Os resultados de cada fase orientam a fase seguinte, como etapas de uma cascata \citeonline{Sommerville2011}. O estudo também utilizou diagramas de atividade, contexto, caso de uso e fluxograma.
+\citeonline{hidayat2023} desenvolveram um sistema de informação POS para uma cafeteria, utilizando Laravel, PHP, MySQL e o padrão MVC. O estudo informa que registros manuais de relatórios e estoque podiam gerar demora, perda de documentos e erros de cadastro. A solução foi projetada segundo o modelo em cascata (\textit{waterfall}), uma forma de organizar o desenvolvimento de \textit{software} em que o trabalho avança por fases planejadas em sequência. Primeiro, a equipe define o que o sistema deve fazer; depois, planeja sua estrutura, implementa e testa o \textit{software} e, por fim, coloca-o em operação e realiza sua manutenção. Os resultados de cada fase orientam a fase seguinte, como etapas de uma cascata \cite{Sommerville2011}. O estudo também utilizou diagramas de atividade, contexto, caso de uso e fluxograma.
 
 A proximidade com este trabalho está no uso de Laravel, MySQL e no foco em ambiente de venda de alimentos e bebidas. A diferença principal está na proposta deste projeto de enfatizar também comandas, RBAC e organização operacional integrada.
 
@@ -101,7 +101,7 @@ Conforme \citeonline{blade2016}, grande parte dos \textit{frameworks} \textit{we
 Com esse objetivo, o Laravel utiliza o Blade, um sistema de \textit{templates} que se diferencia de outras soluções em PHP por não restringir o uso da linguagem PHP em suas páginas. Além disso, no Blade, cada \textit{view} é compilada e armazenada em \textit{cache} até sofrer alguma alteração, o que torna a aplicação mais eficiente e leve.
 
 \section{Visual Studio Code}
-O Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft, amplamente utilizado no desenvolvimento de \textit{software}. Ele oferece suporte a múltiplas linguagens de programação, integração com Git e extensões que aumentam sua funcionalidade \citeonline{vscode2026}.
+O Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft, amplamente utilizado no desenvolvimento de \textit{software}. Ele oferece suporte a múltiplas linguagens de programação, integração com Git e extensões que aumentam sua funcionalidade \cite{vscode2026}.
 
 Devido à sua leveza e flexibilidade, tornou-se uma das ferramentas mais populares entre desenvolvedores \textit{web} e \textit{back-end}.
 
@@ -185,11 +185,11 @@ Em aplicações \textit{web} modernas, o uso de mecanismos de \textit{cache} tor
 
 O Redis é frequentemente utilizado como uma camada intermediária entre a aplicação e o banco de dados. Quando uma informação é solicitada, a aplicação verifica inicialmente se ela está armazenada no \textit{cache}. Caso esteja disponível, o dado é retornado imediatamente. Caso contrário, a informação é recuperada do banco de dados, armazenada no Redis e posteriormente enviada ao usuário.
 
-O fluxo de consulta ao \textit{cache} e ao banco de dados adotado no sistema Flashfood é apresentado na \autoref{fig:fluxo-cache-redis}.
+O fluxo de consulta ao \textit{cache} e ao banco de dados adotado no sistema FlashFood é apresentado na \autoref{fig:fluxo-cache-redis}.
 
 \begin{figure}[htbp]
     \centering
-    \caption{Fluxo de consulta ao Redis no sistema Flashfood}
+    \caption{Fluxo de consulta ao Redis no sistema FlashFood}
     \label{fig:fluxo-cache-redis}
     \includegraphics[width=0.95\textwidth]{imagenRedis.png}
     \legend{ Elaborado pelo autor (2026)}

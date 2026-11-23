@@ -1,7 +1,7 @@
 \changetocdepth {4}
 \vspace {15pt}
+\babel@toc {brazilian}{}\relax 
 \babel@toc {brazil}{}\relax 
-\babel@toc {brazil}{}\relax 
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
@@ -9,85 +9,83 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Introdução}}{14}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Problema de pesquisa}{14}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Justificativa}{15}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Objetivos}{17}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Objetivo geral}{17}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Objetivos específicos}{17}{subsection.1.3.2}%
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Introdução}}{13}{chapter.14}%
+\contentsline {section}{\numberline {1.1}Problema de pesquisa}{13}{section.15}%
+\contentsline {section}{\numberline {1.2}Justificativa}{14}{section.16}%
+\contentsline {section}{\numberline {1.3}Objetivos}{16}{section.17}%
+\contentsline {subsection}{\numberline {1.3.1}Objetivo geral}{16}{subsection.18}%
+\contentsline {subsection}{\numberline {1.3.2}Objetivos específicos}{16}{subsection.19}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Referencial teórico}}{18}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Trabalhos correlatos}{18}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Sistema de \textit {Point of Sale} em cafeteria}{18}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}\textit {Restaurant Management System}}{18}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}POS \textit {web} com Laravel para Meetup Station}{19}{subsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.1.4}POS multipagamento para a empresa Mr. Boba}{19}{subsection.2.1.4}%
-\contentsline {subsection}{\numberline {2.1.5}Sistema de caixa \textit {web} para Natta Coffee}{20}{subsection.2.1.5}%
-\contentsline {subsection}{\numberline {2.1.6}Comparação entre trabalhos correlatos e sistema proposto}{20}{subsection.2.1.6}%
-\contentsline {section}{\numberline {2.2}MySQL}{21}{section.2.2}%
-\contentsline {section}{\numberline {2.3}PHP}{21}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Laravel}{22}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Git}{22}{section.2.5}%
-\contentsline {section}{\numberline {2.6}GitHub}{22}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Blade (sistema de \textit {templates})}{23}{section.2.7}%
-\contentsline {section}{\numberline {2.8}Visual Studio Code}{23}{section.2.8}%
-\contentsline {section}{\numberline {2.9}Controle de acesso baseado em funções (RBAC)}{23}{section.2.9}%
-\contentsline {section}{\numberline {2.10}Docker}{24}{section.2.10}%
-\contentsline {subsection}{\numberline {2.10.1}Testes automatizados de \textit {software}}{25}{subsection.2.10.1}%
-\contentsline {subsection}{\numberline {2.10.2}Testes de ponta a ponta (E2E)}{25}{subsection.2.10.2}%
-\contentsline {subsection}{\numberline {2.10.3}Cypress}{25}{subsection.2.10.3}%
-\contentsline {subsection}{\numberline {2.10.4}Uso do Cypress no sistema FlashFood}{26}{subsection.2.10.4}%
-\contentsline {section}{\numberline {2.11}Redis}{27}{section.2.11}%
-\contentsline {subsection}{\numberline {2.11.1}\textit {Cache} em aplicações \textit {web}}{27}{subsection.2.11.1}%
-\contentsline {subsection}{\numberline {2.11.2}Redis como camada de \textit {cache}}{27}{subsection.2.11.2}%
-\contentsline {subsection}{\numberline {2.11.3}Escalabilidade horizontal}{29}{subsection.2.11.3}%
-\contentsline {subsection}{\numberline {2.11.4}Aplicação do Redis no sistema desenvolvido}{29}{subsection.2.11.4}%
-\contentsline {section}{\numberline {2.12}VPN e WireGuard}{29}{section.2.12}%
-\contentsline {section}{\numberline {2.13}Nginx como \textit {proxy} reverso}{30}{section.2.13}%
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Referencial teórico}}{17}{chapter.20}%
+\contentsline {section}{\numberline {2.1}Trabalhos correlatos}{17}{section.21}%
+\contentsline {subsection}{\numberline {2.1.1}Sistema de \textit {Point of Sale} em cafeteria}{17}{subsection.22}%
+\contentsline {subsection}{\numberline {2.1.2}\textit {Restaurant Management System}}{17}{subsection.23}%
+\contentsline {subsection}{\numberline {2.1.3}POS \textit {web} com Laravel para Meetup Station}{18}{subsection.24}%
+\contentsline {subsection}{\numberline {2.1.4}POS multipagamento para a empresa Mr. Boba}{18}{subsection.25}%
+\contentsline {subsection}{\numberline {2.1.5}Sistema de caixa \textit {web} para Natta Coffee}{19}{subsection.26}%
+\contentsline {subsection}{\numberline {2.1.6}Comparação entre trabalhos correlatos e sistema proposto}{19}{subsection.27}%
+\contentsline {section}{\numberline {2.2}MySQL}{20}{section.30}%
+\contentsline {section}{\numberline {2.3}PHP}{20}{section.31}%
+\contentsline {section}{\numberline {2.4}Laravel}{21}{section.32}%
+\contentsline {section}{\numberline {2.5}Git}{21}{section.33}%
+\contentsline {section}{\numberline {2.6}GitHub}{21}{section.34}%
+\contentsline {section}{\numberline {2.7}Blade (sistema de \textit {templates})}{22}{section.35}%
+\contentsline {section}{\numberline {2.8}Visual Studio Code}{22}{section.36}%
+\contentsline {section}{\numberline {2.9}Controle de acesso baseado em funções (RBAC)}{22}{section.37}%
+\contentsline {section}{\numberline {2.10}Docker}{23}{section.38}%
+\contentsline {subsection}{\numberline {2.10.1}Testes automatizados de \textit {software}}{24}{subsection.39}%
+\contentsline {subsection}{\numberline {2.10.2}Testes de ponta a ponta (E2E)}{24}{subsection.40}%
+\contentsline {subsection}{\numberline {2.10.3}Cypress}{24}{subsection.41}%
+\contentsline {subsection}{\numberline {2.10.4}Uso do Cypress no sistema FlashFood}{25}{subsection.42}%
+\contentsline {section}{\numberline {2.11}Redis}{26}{section.43}%
+\contentsline {subsection}{\numberline {2.11.1}\textit {Cache} em aplicações \textit {web}}{26}{subsection.44}%
+\contentsline {subsection}{\numberline {2.11.2}Redis como camada de \textit {cache}}{26}{subsection.45}%
+\contentsline {subsection}{\numberline {2.11.3}Escalabilidade horizontal}{28}{subsection.48}%
+\contentsline {subsection}{\numberline {2.11.4}Aplicação do Redis no sistema desenvolvido}{28}{subsection.49}%
+\contentsline {section}{\numberline {2.12}VPN e WireGuard}{28}{section.50}%
+\contentsline {section}{\numberline {2.13}Nginx como \textit {proxy} reverso}{29}{section.51}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Requisitos de \textit {software}}}{31}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Requisitos funcionais}{31}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Requisitos não funcionais}{32}{section.3.2}%
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Requisitos de \textit {software}}}{30}{chapter.52}%
+\contentsline {section}{\numberline {3.1}Requisitos funcionais}{30}{section.53}%
+\contentsline {section}{\numberline {3.2}Requisitos não funcionais}{31}{section.56}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Modelagem de \textit {software}}}{34}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Diagrama de casos de uso}{34}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Diagrama de classes}{36}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Modelo f\'isico do banco de dados}{38}{section.4.3}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Modelagem de \textit {software}}}{33}{chapter.59}%
+\contentsline {section}{\numberline {4.1}Diagrama de casos de uso}{33}{section.60}%
+\contentsline {section}{\numberline {4.2}Diagrama de classes}{35}{section.63}%
+\contentsline {section}{\numberline {4.3}Modelo f\'isico do banco de dados}{37}{section.66}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Implementação e apresentação do sistema}}{44}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Telas de acesso e cadastro}{44}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Área do cliente}{45}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Área do administrador}{47}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Área do funcionário e do garçom}{49}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Experiência em dispositivos móveis}{50}{section.5.5}%
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Implementação e apresentação do sistema}}{43}{chapter.77}%
+\contentsline {section}{\numberline {5.1}Telas de acesso e cadastro}{43}{section.78}%
+\contentsline {section}{\numberline {5.2}Área do cliente}{44}{section.81}%
+\contentsline {section}{\numberline {5.3}Área do administrador}{46}{section.86}%
+\contentsline {section}{\numberline {5.4}Área do funcionário e do garçom}{48}{section.95}%
+\contentsline {section}{\numberline {5.5}Experiência em dispositivos móveis}{49}{section.98}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Implantação e hospedagem}}{52}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Infraestrutura de hospedagem}{52}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Recursos computacionais}{53}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Comunicação por meio do WireGuard}{53}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Serviços em contêineres}{54}{section.6.4}%
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Implantação e hospedagem}}{51}{chapter.101}%
+\contentsline {section}{\numberline {6.1}Infraestrutura de hospedagem}{51}{section.102}%
+\contentsline {section}{\numberline {6.2}Recursos computacionais}{52}{section.103}%
+\contentsline {section}{\numberline {6.3}Comunicação por meio do WireGuard}{52}{section.106}%
+\contentsline {section}{\numberline {6.4}Serviços em contêineres}{53}{section.107}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase []{Testes e validação}}{57}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Objetivo e escopo dos testes}{57}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Arquivos e cenários de teste}{57}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Cadastro, autenticação e controle de acesso}{58}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}Produtos, cardápio, carrinho e pedidos}{59}{subsection.7.2.2}%
-\contentsline {section}{\numberline {7.3}Ambiente e execução}{59}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Resultados}{60}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Evidências}{60}{section.7.5}%
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase []{Testes e validação do sistema}}{56}{chapter.112}%
+\contentsline {section}{\numberline {7.1}Objetivo e escopo dos testes}{56}{section.113}%
+\contentsline {section}{\numberline {7.2}Arquivos e cenários de teste}{56}{section.114}%
+\contentsline {section}{\numberline {7.3}Ambiente e execução}{58}{section.119}%
+\contentsline {section}{\numberline {7.4}Resultados}{59}{section.120}%
+\contentsline {section}{\numberline {7.5}Evidências}{59}{section.121}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {8}\MakeTextUppercase []{Teste de usabilidade}}{61}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Objetivo e escopo}{61}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Método de avaliação}{61}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Participantes}{62}{subsection.8.2.1}%
-\contentsline {subsection}{\numberline {8.2.2}Tarefas enviadas aos participantes}{62}{subsection.8.2.2}%
-\contentsline {subsection}{\numberline {8.2.3}Registro e análise dos dados}{62}{subsection.8.2.3}%
-\contentsline {section}{\numberline {8.3}Questionário pós-tarefa baseado no TAM}{63}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Resultados da avaliação}{64}{section.8.4}%
+\contentsline {chapter}{\chapternumberline {8}\MakeTextUppercase []{Avaliação de usabilidade do sistema}}{60}{chapter.122}%
+\contentsline {section}{\numberline {8.1}Objetivo e escopo}{60}{section.123}%
+\contentsline {section}{\numberline {8.2}Método de avaliação}{60}{section.124}%
+\contentsline {subsection}{\numberline {8.2.1}Participantes}{61}{subsection.125}%
+\contentsline {subsection}{\numberline {8.2.2}Tarefas enviadas aos participantes}{61}{subsection.126}%
+\contentsline {subsection}{\numberline {8.2.3}Registro e análise dos dados}{61}{subsection.129}%
+\contentsline {section}{\numberline {8.3}Questionário pós-tarefa baseado no TAM}{62}{section.130}%
+\contentsline {section}{\numberline {8.4}Resultados da avaliação}{63}{section.133}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {9}\MakeTextUppercase []{Conclusão}}{67}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Trabalhos futuros}{68}{section.9.1}%
+\contentsline {chapter}{\chapternumberline {9}\MakeTextUppercase []{Conclusão}}{66}{chapter.136}%
+\contentsline {section}{\numberline {9.1}Trabalhos futuros}{67}{section.137}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{69}{section*.19}%
+\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{68}{section*.141}%
 \vspace {\cftbeforechapterskip }

@@ -199,10 +199,10 @@ automation.
                               LISTA DE ILUSTRAÇÕES
 
 
-Figura 1 – Fluxo de consulta ao Redis no sistema Flashfood . . . . . . . . . . .          28
+Figura 1 – Fluxo de consulta ao Redis no sistema FlashFood . . . . . . . . . . .          28
 Figura 2 – Diagrama de casos de uso do sistema FlashFood . . . . . . . . . .              34
 Figura 3 – Visão resumida do modelo de classes do sistema FlashFood . . . .               36
-Figura 4 – Modelo físico do banco de dados do sistema Flashfood (visão geral)             38
+Figura 4 – Modelo físico do banco de dados do sistema FlashFood (visão geral)             38
 Figura 5 – Detalhe do modelo físico do banco de dados – região superior esquerda 39
 Figura 6 – Detalhe do modelo físico do banco de dados – região superior direita 40
 Figura 7 – Detalhe do modelo físico do banco de dados – região inferior esquerda 41
@@ -922,7 +922,7 @@ retornado imediatamente. Caso contrário, a informação é recuperada do banco 
 dados, armazenada no Redis e posteriormente enviada ao usuário.
 
 
-O fluxo de consulta ao cache e ao banco de dados adotado no sistema Flashfood é
+O fluxo de consulta ao cache e ao banco de dados adotado no sistema FlashFood é
 apresentado na Figura 1.
 
 
@@ -937,7 +937,7 @@ uma alternativa para aplicações com alta demanda de acesso.
                                                                                   28
 
 
-Figura 1 – Fluxo de consulta ao Redis no sistema Flashfood
+Figura 1 – Fluxo de consulta ao Redis no sistema FlashFood
 
 
 
@@ -1176,12 +1176,12 @@ diagrama%20de%20class.jpg>.
 A Figura 4 apresenta a visão geral do banco de dados. Para facilitar a leitura das
 tabelas e de seus campos, as ampliações das diferentes regiões estão nas Figuras 5
 a 8.
-Figura 4 – Modelo físico do banco de dados do sistema Flashfood (visão geral)
+Figura 4 – Modelo físico do banco de dados do sistema FlashFood (visão geral)
 
 
 
 
-Fonte: elaborado pelo autor (2026).
+Fonte: Elaborado pelo autor (2026).
 
 
 
@@ -1192,7 +1192,7 @@ Fonte: elaborado pelo autor (2026).
 
 
 
-Fonte: elaborado pelo autor (2026).
+Fonte: Elaborado pelo autor (2026).
 
 
 
@@ -1203,7 +1203,7 @@ Fonte: elaborado pelo autor (2026).
 
 
 
-Fonte: elaborado pelo autor (2026).
+Fonte: Elaborado pelo autor (2026).
 
 
 
@@ -1214,7 +1214,7 @@ Fonte: elaborado pelo autor (2026).
 
 
 
-Fonte: elaborado pelo autor (2026).
+Fonte: Elaborado pelo autor (2026).
 
 
 
@@ -1225,7 +1225,7 @@ Fonte: elaborado pelo autor (2026).
 
 
 
-Fonte: elaborado pelo autor (2026).
+Fonte: Elaborado pelo autor (2026).
 
 
 
